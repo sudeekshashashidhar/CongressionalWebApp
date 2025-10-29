@@ -1,0 +1,2613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>North Carolina Careers Hub — Generated Titles</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      --bg: #f5f7fb;
+      --text: #1f2933;
+      --muted: #637183;
+      --accent: #2463eb;
+      --card: #ffffff;
+      --shadow: 0 18px 45px rgba(15, 31, 62, 0.12);
+      --radius: 16px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 3.2rem 1.5rem 2.6rem;
+      background: linear-gradient(145deg, #102b5d, #15407c, #2463eb);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2.6rem, 3.8vw + 1.2rem, 4rem);
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      margin: 0.5rem auto 0;
+      max-width: 60ch;
+      color: #e5edff;
+      font-size: 1.05rem;
+    }
+
+    .home-button {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.6rem 1.35rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      background: rgba(255, 255, 255, 0.18);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .home-button:hover {
+      background: rgba(255, 255, 255, 0.28);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px rgba(15, 31, 62, 0.24);
+    }
+
+    main {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+      flex: 1 1 auto;
+      padding: 3rem 0 4rem;
+    }
+
+    .title-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.8rem;
+    }
+
+    .title-card {
+      background: linear-gradient(155deg, rgba(255, 255, 255, 0.97), rgba(212, 224, 255, 0.65));
+      border-radius: var(--radius);
+      padding: 1.4rem 1.9rem 4.4rem;
+      box-shadow: 0 22px 45px rgba(15, 31, 62, 0.14);
+      border: 1px solid rgba(36, 99, 235, 0.18);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .title-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(36, 99, 235, 0.22), transparent 58%);
+      opacity: 0.9;
+    }
+
+    .title-card > *:not(.card-actions) {
+      position: relative;
+      z-index: 1;
+    }
+
+    .title-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 65px rgba(15, 31, 62, 0.22);
+    }
+
+    .card-title {
+      margin: 0 0 0.6rem;
+      font-size: 1.22rem;
+      font-weight: 700;
+      color: #102b5d;
+      letter-spacing: -0.01em;
+    }
+
+    .card-company {
+      margin: 0 0 0.45rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .card-location {
+      margin: 0 0 0.75rem;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .card-category {
+      margin: 0;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: rgba(16, 43, 93, 0.86);
+    }
+
+    .card-actions {
+      position: absolute;
+      left: 1.9rem;
+      right: 1.9rem;
+      bottom: 1.4rem;
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      box-shadow: 0 14px 32px rgba(15, 31, 62, 0.16);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .card-link:hover {
+      background: #1a44a6;
+      transform: translateY(-2px);
+      box-shadow: 0 16px 38px rgba(15, 31, 62, 0.22);
+    }
+  
+    footer {
+      padding: 1.5rem 0 2rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="home-button" href="../../home.html">← Back to Home</a>
+    <h1>Wilmington, NC</h1>
+    <p>Fetched jobs from "Wilmington, NC"</p>
+  </header>
+  <main>
+<div class="title-grid">
+  <div class="title-card" data-row="1">
+    <div class="card-title">Travel Med Surg RN</div>
+    <div class="card-company">Fusion Medical Staffing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467111406?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=356D61A6D6516F60C558472EBFF9AFB038F4FA7B" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="2">
+    <div class="card-title">Travel Med Surg/Telemetry RN</div>
+    <div class="card-company">Fusion Medical Staffing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467111373?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5467E24524A80B4191C93DDEA29AFDACF6C017DC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="3">
+    <div class="card-title">Hospitalist Physician - Competitive Salary (Wilmington)</div>
+    <div class="card-company">DocCafe</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467099095?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="4">
+    <div class="card-title">Wanted: Public Accounting Tax Senior</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467059068?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="5">
+    <div class="card-title">Tax Manager Wanted!</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467058881?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="6">
+    <div class="card-title">Class A CDL Company Driver - 6mo EXP Required - OTR - Dry Van - U.S. Xpress - OTR</div>
+    <div class="card-company">U.S. Xpress - OTR</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467052479?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A48F185358EDB75721870F0AA427EBF74E4CB62A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="7">
+    <div class="card-title">Class A CDL Company Driver - 6mo EXP Required - OTR - Dry Van - U.S. Xpress - OTR</div>
+    <div class="card-company">U.S. Xpress - OTR</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467051407?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D54682DCFADD2B5240B203B23F65643888FA86DB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="8">
+    <div class="card-title">Class A CDL Company Driver - 6mo EXP Required - OTR - Dry Van - U.S. Xpress - OTR</div>
+    <div class="card-company">U.S. Xpress - OTR</div>
+    <div class="card-location">Carolina Beach, New Hanover County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467051011?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=37DA479EC941A1441701BCD6EEAD66350A1FE40A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="9">
+    <div class="card-title">Truck Driver Company - 6mo EXP Required - OTR - Dry Van - U.S. Xpress - OTR</div>
+    <div class="card-company">U.S. Xpress - OTR</div>
+    <div class="card-location">Rocky Point, Pender County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467050987?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F722377A1ED3A0CE38D23F040935C3420B661B70" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="10">
+    <div class="card-title">Class A CDL Company Driver - 6mo EXP Required - OTR - Dry Van - U.S. Xpress - OTR</div>
+    <div class="card-company">U.S. Xpress - OTR</div>
+    <div class="card-location">Castle Hayne, New Hanover County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467050709?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C56CB0C1BE2F91E485A9DF4F544FBC36790AF55C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="11">
+    <div class="card-title">Truck Driver Company - 2yrs EXP Required - OTR - Dry Van - Bison Transport Inc.</div>
+    <div class="card-company">Bison Transport Inc.</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467050320?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=469BC7E228112194223DD52A1BA7EC0C91B7A25F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="12">
+    <div class="card-title">CDL-A Company Driver - 2yrs EXP Required - OTR - Dry Van - Bison Transport Inc.</div>
+    <div class="card-company">Bison Transport Inc.</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467049992?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=1FF41ADB24E16D72F834243EA583A0EDA302E901" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="13">
+    <div class="card-title">Class A CDL Company Driver - 2yrs EXP Required - OTR - Dry Van - Bison Transport Inc.</div>
+    <div class="card-company">Bison Transport Inc.</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467050019?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=FB6BA858CAFABE8A710BF9CA3451FA5792FD4395" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="14">
+    <div class="card-title">Class A CDL Company Driver - 1-5mo EXP Required - OTR - Dry Van - Bison Transport Inc.</div>
+    <div class="card-company">Bison Transport Inc.</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467045577?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=97F8D1A3E87A8EFE9B71A1A50777D6A3FF358897" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="15">
+    <div class="card-title">Truck Driver Company - 1-5mo EXP Required - OTR - Dry Van - Bison Transport Inc.</div>
+    <div class="card-company">Bison Transport Inc.</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467045401?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=84F93DC817C11BED62D7B6BB86997ECB0E07FC7F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="16">
+    <div class="card-title">CDL-A Company Driver - 1-5mo EXP Required - OTR - Dry Van - Bison Transport Inc.</div>
+    <div class="card-company">Bison Transport Inc.</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467045432?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C063CF4B51F727872A1A3A97F9C49BC9F03120B5" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="17">
+    <div class="card-title">Truck Driver Company - 2yrs EXP Required - OTR - $1.6k - $2.1k per week - DMN Transport</div>
+    <div class="card-company">DMN Transport</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467044776?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=316C90CAAD91ED75F490275BCCFB575638D4EC01" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="18">
+    <div class="card-title">Class A CDL Company Driver - 2yrs EXP Required - OTR - $1.6k - $2.1k per week - DMN Transport</div>
+    <div class="card-company">DMN Transport</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467044617?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D61ABBAE2991EFFE4BC039EF3C7C9EF6446C4565" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="19">
+    <div class="card-title">CDL-A Company Driver - 2yrs EXP Required - OTR - $1.6k - $2.1k per week - DMN Transport</div>
+    <div class="card-company">DMN Transport</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467044628?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=18AA4DBA2A578FD58AD29E19C2435DFA543D7D30" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="20">
+    <div class="card-title">Travel Physical Therapist - $1,924 per week</div>
+    <div class="card-company">Skyline Med Staff Allied</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467037781?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=4FD37F31B75A7982B9B43C16FD7F8905B8CBEF24" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="21">
+    <div class="card-title">Travel Physical Therapist - $1,918 per week</div>
+    <div class="card-company">Fusion Medical Staffing-Therapy</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467028813?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5C0FB94730CD52E4426D3B3EAED3AD86EBFB5897" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="22">
+    <div class="card-title">Outside Sales Representative / Field Sales ( B2B )</div>
+    <div class="card-company">System One</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467018458?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="23">
+    <div class="card-title">Tax Expert</div>
+    <div class="card-company">Intuit</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467018249?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="24">
+    <div class="card-title">Tax Associate - Onsite</div>
+    <div class="card-company">Intuit</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467017275?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="25">
+    <div class="card-title">Travel - Med Surg - Nurse Job - $2,494/wk - $2,687/wk</div>
+    <div class="card-company">Aya Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466994850?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=CE65473E771BF0323406075BB85D41134BE1262F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="26">
+    <div class="card-title">Registered Nurse</div>
+    <div class="card-company">DaVita Kidney Care</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466994753?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=FC9E3A7D60FEBC1BB475CB0CEA06FE39262585EF" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="27">
+    <div class="card-title">CERTIFIED NURSING ASSISTANT - LIBERTY COMMONS</div>
+    <div class="card-company">Liberty Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466994675?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=DE554E2533A30C369FE233C033A989317A256A6B" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="28">
+    <div class="card-title">CERTIFIED NURSING ASSISTANT - THE COMMONS AT BRIGHTMORE</div>
+    <div class="card-company">Liberty Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466994269?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9F6C3D92E5D2286CB132E6EAD2C675EDC1BCAD1A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="29">
+    <div class="card-title">Nurse Practitioner</div>
+    <div class="card-company">Novant Health Provider Recruitment</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466993288?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A7EE43328A0B1214ABBEE32B54CBCC459A4BB3FD" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="30">
+    <div class="card-title">Facility Float Pool RN</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466991583?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=FC19AB1A5568A0FD05226A9D4519657149ABF415" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="31">
+    <div class="card-title">HOME CARE REGISTERED NURSE</div>
+    <div class="card-company">Liberty Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466984779?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=6CC909E2E70D1F4AAD59E500EBE5C2B200540552" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="32">
+    <div class="card-title">Registered Nurse (NHRMC Only)</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466984824?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=CFF9E4BAD8B65FD0ED2077991851D64394736D46" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="33">
+    <div class="card-title">Certified Nurse Assistant</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466982341?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0EA1A5C22A34391B1D8641AAE8BE47240E93C9F9" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="34">
+    <div class="card-title">Licensed Practical Nurse, LPN- Acute Care</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466981756?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=240EA048A120108AB740331F8CFEE6ECFA2541FF" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="35">
+    <div class="card-title">Registered Nurse - Surgical Short Stay</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466981909?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F69281A155619531C3543E69D505A4C1D5D6FC72" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="36">
+    <div class="card-title">Registered Nurse- PACU</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466981557?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C602D01BCF18300FB6D6075D61B78F86E334B592" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="37">
+    <div class="card-title">Registered Nurse</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466981262?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C6D1FBF0FAFDC2AEF14F71B2ADD068111E2BDE66" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="38">
+    <div class="card-title">Certified Nursing Assistant (CNA)</div>
+    <div class="card-company">All Ways Caring HomeCare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466979234?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=046FED43225793AA263861BEDC057B44F53FDD77" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="39">
+    <div class="card-title">Certified Nurse Assistant I (NHRMC Only)</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466976815?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=2BE0DA3EDF4E839E440FD84A7C7FE19382D2F0AD" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="40">
+    <div class="card-title">Registered Nurse (RN) - Neuro ICCU</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466976705?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=FE993D3D508A47B37F8CFB5EFFBDCC1C19FC3828" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="41">
+    <div class="card-title">Family Nurse Practitioner</div>
+    <div class="card-company">MainStreet Family Care</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466976176?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D40F841A0E64D8B42F64CC37E09C2DA1993A227D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="42">
+    <div class="card-title">Certified Nursing Assistant I - Inpatient Rehab</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466975765?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=AA49AD070333862378E0D85A31F9132E6AC0BDD9" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="43">
+    <div class="card-title">Certified Nursing Assistant I - Nursing Float Pool</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466972811?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=86A8C537DA4591C7FC922667E92F1311564014D3" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="44">
+    <div class="card-title">CERTIFIED NURSING ASSISTANT - BRADLEY CREEK HEALTH CENTER</div>
+    <div class="card-company">Liberty Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466971745?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=221EA139891289E06613A2ADA3AE5517B2C14A1D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="45">
+    <div class="card-title">CNA I (NHRMC Only)</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466970043?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9B850C4556CB4F1508137192C81ECFE15FE3CCBB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="46">
+    <div class="card-title">Registered Nurse - ED BH</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466968935?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=53F68266C6CBDF8243012F4F60D3BAFBBD89D983" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="47">
+    <div class="card-title">Certified Nursing Assistant I (NHRMC Only)</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466968924?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=3466B529DA0F4C3F85AB1BDF0D0815D04FDB9555" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="48">
+    <div class="card-title">Certified Registered Nurse Anesthetist (CRNA) II- NE</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466967104?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E51BCDAEA8DFC6A0BDB60CC8F59D2DCAD7B52FF8" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="49">
+    <div class="card-title">Registered Nurse - CVOR</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466963020?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E5E7136ABBEDA09D9DBF1B077AA6821EECF17A12" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="50">
+    <div class="card-title">Registered Nurse, RN- Lactation</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466962393?se=aH6py62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9FDBBF9A47BB0B56D094F81D6A9303811D0D7610" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="51">
+    <div class="card-title">Registered Nurse Ambulatory Specialty</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466961987?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=ECBF1B1F171E207EC13639FE5CC23537D78E7BD7" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="52">
+    <div class="card-title">Discharge Registered Nurse - Substance Use Disorder</div>
+    <div class="card-company">Wilmington Treatment Center</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466960743?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E5D6DC0E6862119D981C29026151BFB4FC033C19" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="53">
+    <div class="card-title">Registered Nurse - Stepdown ICU</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466960716?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=49D0CE35E281758BC3EAB11BF058C49596336CAE" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="54">
+    <div class="card-title">Family Nurse Practitioner Preceptorship Program  Wilmington, NC</div>
+    <div class="card-company">MainStreet Family Care</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466959222?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E82A0DB690ED4A72F24838F8928F90EBC95FA8A5" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="55">
+    <div class="card-title">Registered Nurse, RN- Acute Care</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466958171?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=52E5AF819B7BF20B7069A0B9F1885DCDA9E55297" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="56">
+    <div class="card-title">Regional Float Registered Nurse</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466956940?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=64CE6C90492360642DBBC74CE369E37228400F7C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="57">
+    <div class="card-title">Registered Nurse Medicine II</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466956768?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=DB744DF0556ED236C861B456DB0C49AF671C26B5" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="58">
+    <div class="card-title">Certified Nursing Aide, CNA I- Neuro Medicine</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466956764?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=AA1F6F81834D0BFC2D730BC6B62FD3574AC95856" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="59">
+    <div class="card-title">Certified Registered Nurse Anesthetist II (CRNA II)</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466956279?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B5429312B934A4E25DECA9D2A3A68AED0F4CC7D0" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="60">
+    <div class="card-title">Certified Registered Nurse Anesthetist (CRNA)</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466955611?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5E33461549D71001F390FDCC1C924F0719D7F880" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="61">
+    <div class="card-title">Registered Nurse, Intensive Care Unit</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466955270?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=24BD604E4CBC81AB5E38E95C36A5EF6C33C0270A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="62">
+    <div class="card-title">Registered Nurse (RN), Neuro Medicine</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466954472?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=1755BD04F86CC0F727092DC2CC00B3F6A5A5E04C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="63">
+    <div class="card-title">Registered Nurse Women&#x27;s Services</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466951604?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E920AF6D201CD6144CEFC36FDBDB0F6D9D111586" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="64">
+    <div class="card-title">Urgent Care FNP / PA-C (Immediate 10K Sign on Bonus) Wilmington NC</div>
+    <div class="card-company">Jobot</div>
+    <div class="card-location">Cape Fear, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466950666?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=1CE4278C0F7C4960C6AA452DC3F7D973171E2BA5" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="65">
+    <div class="card-title">Licensed Practical Nurse Medicine II Innovation Unit</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466947535?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=575F9F6B76B8027D1495713052743FA7E531828B" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="66">
+    <div class="card-title">Registered Nurse Med/Surg 3</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466947427?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=24BD5A939BB0D40CDC11934E8E6E0066A0C6435A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="67">
+    <div class="card-title">Certified Nursing Assistant II</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466946514?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=352F363B3D8B9C733D75320FA7248B5B9863A32B" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="68">
+    <div class="card-title">Certified Nursing Assistant I</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466944622?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=BB7E95BAE8C7778BF4F6166AEAF07DF19EEAFD66" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="69">
+    <div class="card-title">Registered Nurse, Ortho/Trauma</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466942023?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=EFBAAD207DA6E70CA10DA15A05481F735FC065DB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="70">
+    <div class="card-title">Registered Nurse (RN), Temporary Assignment Program - Days</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466941888?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C97485B137CC05C5096CE8E6C7580659A5B7902F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="71">
+    <div class="card-title">Registered Nurse- Infusion</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466941835?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9E3A66A34BCD52D7842780228E38A26B85C830EB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="72">
+    <div class="card-title">Registered Nurse (RN), Surgical I</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466942071?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=EC4EFA788EC3C0737366CEC374380BABDA6C4752" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="73">
+    <div class="card-title">Registered Nurse (RN), Progressive Care Unit (PCU)</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466941778?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=2CE9C6D224720E77F3DAEE6C595B0C822B5E39AA" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="74">
+    <div class="card-title">Certified Nurse Assistant I</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466940471?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C2F488191FF60579C816BC1EEB639952C68C19E3" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="75">
+    <div class="card-title">Registered Nurse- Cardiac Observation</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466940155?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8782BC4480E0AF4FF4678F1FA3AAAF37D7E4DCB5" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="76">
+    <div class="card-title">Registered Nurse (RN), Orthopedics</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466940084?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9F541CDD0A6AA5CD43EE15EF66AC19C002AAF26E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="77">
+    <div class="card-title">Non-QM Mortgage Sales Executive</div>
+    <div class="card-company">World Business Lenders, LLC</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466931412?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="78">
+    <div class="card-title">Overnight Shift Leader</div>
+    <div class="card-company">Taco Bell</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466923001?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=1E8DCA6267CE9B62737DA69530D8A76D83E2192E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="79">
+    <div class="card-title">Team Member</div>
+    <div class="card-company">Taco Bell</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466922989?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=CE1968B5E79BF826880B4F266E0F867997E2FBB1" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="80">
+    <div class="card-title">Assistant Manager</div>
+    <div class="card-company">Taco Bell</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466922988?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=91E05963BDF5953E1B5036191843629C138133C6" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="81">
+    <div class="card-title">Outside Sales Representative / Field Sales ( B2B )</div>
+    <div class="card-company">System One</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466919391?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5D88413E0A5D2DE193C8F28B5BB2A62E6D622566" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="82">
+    <div class="card-title">Diesel Mechanic</div>
+    <div class="card-company">Ryder System</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466918982?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A005988A562BCB3C09536BB5F7CF8C9485C14A65" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="83">
+    <div class="card-title">Dental Assistant</div>
+    <div class="card-company">Family Dental Care of Wilmington</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466910333?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="84">
+    <div class="card-title">Warehouse Part Time Overnight</div>
+    <div class="card-company">Lowe&#x27;s</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Part time Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466909832?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=74E0115D1D9F4F6EE7D2B52375A47F7D7BCBBED9" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="85">
+    <div class="card-title">Warehouse Part Time Overnight</div>
+    <div class="card-company">Lowe&#x27;s</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">Part time Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466909824?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=1824DB9A7C8699485FAA13E8650A7E1CBDF5BE5D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="86">
+    <div class="card-title">Store Associate</div>
+    <div class="card-company">CVS Health</div>
+    <div class="card-location">Carolina Beach, New Hanover County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466903274?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=95F9637673558A91C135084335E39651620D2B29" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="87">
+    <div class="card-title">Shift Supervisor Trainee</div>
+    <div class="card-company">CVS Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466903269?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=83A074E6576E32874D6CAEE1F260F49F2F3D023C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="88">
+    <div class="card-title">Looking For A Dependable House Cleaner For Family Living In Winnabow.</div>
+    <div class="card-company">Care.com</div>
+    <div class="card-location">Winnabow, Brunswick County</div>
+    <div class="card-category">Domestic help &amp; Cleaning Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466897308?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="89">
+    <div class="card-title">Looking For A Pet Sitter For 1 Cat In Wilmington</div>
+    <div class="card-company">Care.com</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466895724?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="90">
+    <div class="card-title">Nanny Needed For My Children In Wilmington.</div>
+    <div class="card-company">Care.com</div>
+    <div class="card-location">Wrightsville Beach, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466895242?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="91">
+    <div class="card-title">Retail Sales Associate - Part Time</div>
+    <div class="card-company">AutoZone, Inc.</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Part time Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466890946?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=24C189132E8479DB2387946649BFD1A54FEF81A7" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="92">
+    <div class="card-title">603 Strategic Digital Marketing Consultant</div>
+    <div class="card-company">WWAY</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">PR, Advertising &amp; Marketing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466866745?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="93">
+    <div class="card-title">Homecare Registered Nurse</div>
+    <div class="card-company">Care Options for Kids</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466865712?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="94">
+    <div class="card-title">Travel Cardiac Telemetry RN</div>
+    <div class="card-company">LeaderStat</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466865187?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C3F9BBAC4ABEFB86900DB3060FC73671D6944FF0" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="95">
+    <div class="card-title">Travel Cardiac Telemetry RN</div>
+    <div class="card-company">PRIDE Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466865175?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=41D1959896F69F7A2C7F587207BD340AF195F2AF" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="96">
+    <div class="card-title">Travel MRI Technologist</div>
+    <div class="card-company">Medical Solutions Allied</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466865166?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=951E4123D0CD44301FD9E1339DF3C9104DB31214" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="97">
+    <div class="card-title">[10/27/2025] Licensed Clinical Mental Health Counselor - School-Based Therapist</div>
+    <div class="card-company">LifeStance Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466864525?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F0A49EAB7B71ACD53356193D2ECAEE6DCFAEA4FC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="98">
+    <div class="card-title">Travel Medical-Surgical Oncology Registered Nurse [Apply in 3 Minutes]</div>
+    <div class="card-company">Genie Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466864267?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=65ADE4B5517539EC38C3D4E1D866C407293E36A8" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="99">
+    <div class="card-title">Immediate Start! Travel CVOR Registered Nurse</div>
+    <div class="card-company">CrossMed</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466864260?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=458945A1E4DF63770E481C6A86DDE5E80B6F0408" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="100">
+    <div class="card-title">Travel PACU Registered Nurse</div>
+    <div class="card-company">PRIDE Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466864227?se=0NgGz62z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0709243626162EC84342686132250A400B9D2266" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="101">
+    <div class="card-title">▷ High Salary: Travel Medical-Surgical Telemetry RN</div>
+    <div class="card-company">Planet Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466863810?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=DE0936900A1DF96E9C26C1BE9CD7B85BD94D707B" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="102">
+    <div class="card-title">(10/27/2025) Travel Neuro Med-Surg Registered Nurse</div>
+    <div class="card-company">PRN Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466863756?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D6CFED17CBBCC1A73E6B5884920E68A2715ADD91" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="103">
+    <div class="card-title">▷ Urgent: Travel Nurse RN - PACU - Post Anesthesia Care</div>
+    <div class="card-company">Nationwide Therapy Group</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466863395?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=503C73F0CBC6CE8EFB7F036521B6607C5086E59E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="104">
+    <div class="card-title">Travel Medical-Surgical Telemetry Float RN - $1,952 per week (3 Days Left)</div>
+    <div class="card-company">PRN Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466862843?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=EC6EDBE772E5A077FB1AB7702C15D258CB72DA52" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="105">
+    <div class="card-title">Travel Nurse RN - Med Surg - $2,752 per week [Urgent Search]</div>
+    <div class="card-company">Health Advocates Network - Nursing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466862202?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E8DFB7F56240F1F8820DA52E2A6CF371A45D9C2F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="106">
+    <div class="card-title">High Salary! Travel MRI Technologist - Radiology/Cardiology - $2,808 per week</div>
+    <div class="card-company">Coast Medical Service</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466861323?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E83043DC85027F3C7FBF980B86FB860F3456FDB7" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="107">
+    <div class="card-title">Travel Medical-Surgical Charge RN (Night Shift) - $1,864 per week</div>
+    <div class="card-company">Aequor Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466861117?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=AC19317DBD85640A6473C42904AD76997A2ACC95" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="108">
+    <div class="card-title">▷ High Salary: Travel Medical-Surgical Oncology Registered Nurse - $2,042 per week</div>
+    <div class="card-company">Access Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466860604?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=DB5F3314EF1685F71EA252BE6D127D11D29CDE38" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="109">
+    <div class="card-title">▷ Urgent Search: Travel Med-Surg/Telemetry Float RN - $2,067 per week</div>
+    <div class="card-company">Access Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466860220?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=DC6508B1406F4AB4FCC11763C754A471CFF53B82" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="110">
+    <div class="card-title">Travel MRI Technologist</div>
+    <div class="card-company">Premier Medical Staffing Services</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466856885?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=2D4550711F3CF652ED12FFE37B48C84FCBBD253B" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="111">
+    <div class="card-title">Delivery Driver - Choose your own hours</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466856723?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=ADAC4D692FEAC1FD23D62FA57496C1533D5933D7" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="112">
+    <div class="card-title">(Apply in 3 Minutes) Local Contract Nurse RN - Telemetry - $39 per hour</div>
+    <div class="card-company">ARMStaffing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466855604?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8E4E3DC4AC2AD08D430A7CE01CF98466790A1BF0" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="113">
+    <div class="card-title">Travel Med Surg / Telemetry - $2,522 per week (3 Days Left)</div>
+    <div class="card-company">ARMStaffing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466855331?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E43B46FA6FADB55CFE8BDDB913B155F073CF9994" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="114">
+    <div class="card-title">High Salary: Travel Med-Surg RN - $1,956 per week</div>
+    <div class="card-company">AHS Staffing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466854583?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=88AAD1FD828044A8627130E1D778A4AAE10C933A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="115">
+    <div class="card-title">Travel MRI Technologist - Radiology/Cardiology</div>
+    <div class="card-company">Nightingale Nurses</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466853403?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0222F8B7E3909E2E1B36CAE0D645DA7E0D2AF0C0" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="116">
+    <div class="card-title">Apply Now: Travel MRI Technologist - Radiology/Cardiology</div>
+    <div class="card-company">PRN Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466853243?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=28F5B805898B6CBC7EDD2C2A9F03A19D3D15D37E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="117">
+    <div class="card-title">Registered Nurse (RN)</div>
+    <div class="card-company">Care Options for Kids</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466847670?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="118">
+    <div class="card-title">Travel MRI Tech - $2,236 to $2,436 per week in Wilmington, NC</div>
+    <div class="card-company">AlliedTravelCareers</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466841307?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=DCD336289E24449D4231EA18A43A65A59658D5F0" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="119">
+    <div class="card-title">Travel CVOR Registered Nurse - $2,388 per week</div>
+    <div class="card-company">Source Medical Staffing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466841151?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=7578EBA0AC3D177D537EF1646543C981391B2B64" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="120">
+    <div class="card-title">Travel MRI Technologist - Radiology/Cardiology - $2,520 per week</div>
+    <div class="card-company">Source Medical Staffing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466839580?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=2447A44E562D438933F9E132093CE09A0C95AC97" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="121">
+    <div class="card-title">CDL-A Truck Driver - Home Weekly - Average $61,000/Year - 3 Months Exp</div>
+    <div class="card-company">C.R. England</div>
+    <div class="card-location">Rocky Point, Pender County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466809633?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D082ACF6F2AD84EA6494F8AA72683FEC634AA140" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="122">
+    <div class="card-title">CDL-A Truck Driver - Home Weekly - Average $61,000/Year - 3 Months Exp</div>
+    <div class="card-company">C.R. England</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466809379?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=62D15C93E74D24569572F7BBF005421824F46AC6" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="123">
+    <div class="card-title">RN Registered Nurse (Pediatric)</div>
+    <div class="card-company">Care Options for Kids</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466804942?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9E09040FD71BAA9FD9EB8CD8F6B27CB87A08E1E9" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="124">
+    <div class="card-title">Dialysis Clinical Manager Registered Nurse - RN</div>
+    <div class="card-company">Fresenius Medical Care</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466804355?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=FD77289576EEBF9F9AFAFFA7F474A03825B46610" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="125">
+    <div class="card-title">Licensed Practical Nurse (LPN)</div>
+    <div class="card-company">Care Options for Kids</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466804221?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F38B33284194345BE02E89415F6039300F3C37A8" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="126">
+    <div class="card-title">FLOATING DIRECTOR OF NURSING</div>
+    <div class="card-company">Liberty Healthcare Management Careers</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466803118?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=2A3685CF263A4421C33C7673EA2BB89D933BFD86" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="127">
+    <div class="card-title">HOME CARE REGISTERED NURSE</div>
+    <div class="card-company">Liberty Health Careers</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466801426?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=03823CFEBBDD362D52CF56A3BFCA874B6189213D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="128">
+    <div class="card-title">Shift Leaders</div>
+    <div class="card-company">Burrito Shak</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466771736?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="129">
+    <div class="card-title">CDL A Owner Operator OTR Power Only/Dry Van/Reefer</div>
+    <div class="card-company">MUGO LOGISTICS LLC</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762051?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="130">
+    <div class="card-title">Team OTR CDLA Owner Ops</div>
+    <div class="card-company">Stork Transport LLC</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466757319?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="131">
+    <div class="card-title">Class A Company Driver, OTR, Dry Van</div>
+    <div class="card-company">EOS Trucking</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466756192?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="132">
+    <div class="card-title">Class A Contract Driver (1099), OTR, Dry Van</div>
+    <div class="card-company">TIME EXPRESS INC</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747030?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="133">
+    <div class="card-title">HOME GOODS EXP Required - Regional, Dry Van 1099</div>
+    <div class="card-company">JK MOVING &amp; STORAGE INC</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466746767?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="134">
+    <div class="card-title">Class A Owner Operator, OTR, Flatbed trailer</div>
+    <div class="card-company">JBT Trucker inc</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466742799?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="135">
+    <div class="card-title">1099 OTR TRUCK DRIVER</div>
+    <div class="card-company">UNITY FREIGHT LLC</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466742066?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="136">
+    <div class="card-title">Class A Team Company Driver, OTR, Dry Van</div>
+    <div class="card-company">MC CARRIER LLC</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466739744?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="137">
+    <div class="card-title">Shift Supervisor</div>
+    <div class="card-company">Waffle House, Inc.</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466738065?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="138">
+    <div class="card-title">Behavioral Health Peer Support Specialist</div>
+    <div class="card-company">RHA Health Services, LLC</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Social work Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466735367?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="139">
+    <div class="card-title">Platform-Based Recruiter - Global Reach, No Overheads</div>
+    <div class="card-company">RecXchange</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466735215?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="140">
+    <div class="card-title">Freelance Recruiter (Remote / Global)</div>
+    <div class="card-company">RecXchange</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466735144?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="141">
+    <div class="card-title">Travel MRI Technologist - Radiology/Cardiology - $2,800 per week</div>
+    <div class="card-company">Trailblazer Staffing Solutions</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Consultancy Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466680729?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F43FAF18F8DE1C2DF8EB479833D132605080CFDF" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="142">
+    <div class="card-title">Delivery Driver (Seasonal) Full-Time Part-Time</div>
+    <div class="card-company">Lowes</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Part time Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466680603?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="143">
+    <div class="card-title">DevSecOps Engineer</div>
+    <div class="card-company">Maximus</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466607755?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="144">
+    <div class="card-title">Head of Occupational Health</div>
+    <div class="card-company">Maximus</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466607526?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="145">
+    <div class="card-title">WCA Nurse Assessor - Remote</div>
+    <div class="card-company">Maximus</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466599169?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="146">
+    <div class="card-title">Travel Cardiac Telemetry RN - $2,060 per week</div>
+    <div class="card-company">Wellspring Nurse Source</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466595655?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D98CBBB54E13751618221EA87C48AD140CB3B7A9" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="147">
+    <div class="card-title">Residential Construction Superintendent</div>
+    <div class="card-company">Premier Exteriors, LLC</div>
+    <div class="card-location">Wrightsville Beach, New Hanover County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466553756?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="148">
+    <div class="card-title">Registered Sleep Technologist - RPSGT - Day PRN - Sleep Care of Wilmington, Wilmington, NC</div>
+    <div class="card-company">Medbridge Healthcare</div>
+    <div class="card-location">Wrightsville Beach, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466552587?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="149">
+    <div class="card-title">Merhandiser</div>
+    <div class="card-company">Jacent Strategic Merchandising</div>
+    <div class="card-location">Wrightsville Beach, New Hanover County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466530597?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=46B5EB05738E978398C5B86C10C68A7E0F202534" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="150">
+    <div class="card-title">Travel MRI Tech in Wilmington, NC</div>
+    <div class="card-company">TNAA | TotalMed</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466497265?se=xAVv0q2z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C58EE03BAB79EC26C28610238E148781A3A8B370" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="151">
+    <div class="card-title">Travel Nurse RN - Med Surg - $1,967 per week</div>
+    <div class="card-company">LRS Healthcare - Travel Nursing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466450656?se=nG4C1q2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=BA5CB8F984A8A85B868BB0DB15AFD1FDF9B86B88" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="152">
+    <div class="card-title">Travel MRI Technologist - $2,448 per week</div>
+    <div class="card-company">Malone Healthcare - Nursing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466449942?se=nG4C1q2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=187829F4B8CAE0614B87A2B04E9929199DFB3045" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="153">
+    <div class="card-title">Travel MRI Technologist - $2,646 per week</div>
+    <div class="card-company">The Judge Group</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466449850?se=nG4C1q2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5E32647F2F69F6BE4CE9C25348A5C1D1A6392AFC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="154">
+    <div class="card-title">Travel Nurse RN - CVOR - $2,399 per week</div>
+    <div class="card-company">LRS Healthcare - Travel Nursing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466424202?se=nG4C1q2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=09695BAE20FE7B1F1E6C1ADD4D0B4744BCAE4FB0" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="155">
+    <div class="card-title">Travel Nurse RN - PCU - Progressive Care Unit - $1,919 per week</div>
+    <div class="card-company">LRS Healthcare - Travel Nursing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466424160?se=nG4C1q2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0C9E76DDE1DE942D1D48A7E62ADAD7388528A286" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="156">
+    <div class="card-title">Customer Service Rep(04484) Wrightsville Beach, Wilmington, NC</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466406715?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="157">
+    <div class="card-title">FOOD SERVICE UTILITY (FULL TIME)</div>
+    <div class="card-company">Unidine</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466406439?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="158">
+    <div class="card-title">Diesel Generator Field Technician</div>
+    <div class="card-company">D2B Groups</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466404776?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="159">
+    <div class="card-title">Sandwich Artist</div>
+    <div class="card-company">Subway - 31835-0</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466404835?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="160">
+    <div class="card-title">Brand Sales Ambassador - Willmington</div>
+    <div class="card-company">ARS-Rescue Rooter</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466404161?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="161">
+    <div class="card-title">Handyman / Home Service Technician</div>
+    <div class="card-company">TruBlue of North Wilmington</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Maintenance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466401500?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="162">
+    <div class="card-title">School Based Outpatient Therapist</div>
+    <div class="card-company">Coastal Horizons Center</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466401489?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="163">
+    <div class="card-title">Orthodontic Office Admin - Insurance Coordinator</div>
+    <div class="card-company">Cherubini Orthodontics</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Admin Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466401409?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="164">
+    <div class="card-title">Survey Technician</div>
+    <div class="card-company">Bateman Civil Survey</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Energy, Oil &amp; Gas Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466400954?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="165">
+    <div class="card-title">CDS Mail Carrier</div>
+    <div class="card-company">ABC CONTRACTING LLC</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466400360?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="166">
+    <div class="card-title">Restaurant General Manager</div>
+    <div class="card-company">Smithfield&#x27;s Chicken &#x27;N Bar-B-Q</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466400177?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="167">
+    <div class="card-title">WAREHOUSE DRIVER-NON-CDL AND INCL/WAREHOUSE TASKS</div>
+    <div class="card-company">Industrial &amp; Construction Enterprises Inc</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466399078?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="168">
+    <div class="card-title">Lead Home Service Technician/Handyman</div>
+    <div class="card-company">TruBlue of South Wilmington</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466398395?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="169">
+    <div class="card-title">Jaguar Land Rover Cape Fear Sales Associate</div>
+    <div class="card-company">AUDI JLR LOTUS BMW MOTO</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466397228?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="170">
+    <div class="card-title">Bartender</div>
+    <div class="card-company">Applebee&#x27;s</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466397075?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="171">
+    <div class="card-title">Survey Party Chief</div>
+    <div class="card-company">Summit Design and Engineering Services</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466396590?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="172">
+    <div class="card-title">Community Support Technician - Client Specific- Winnabow</div>
+    <div class="card-company">UMHS</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466395431?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="173">
+    <div class="card-title">CNC Equipment Services Technician</div>
+    <div class="card-company">Morris Group, Inc.</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466394028?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="174">
+    <div class="card-title">Landscaping/Park Maintenance - Seasonal</div>
+    <div class="card-company">Town of Wrightsville Beach</div>
+    <div class="card-location">Wrightsville Beach, New Hanover County</div>
+    <div class="card-category">Maintenance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466393757?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="175">
+    <div class="card-title">Weekend Shift -Community Support Specialist - Direct Support Professional - (3000)-Wilmington</div>
+    <div class="card-company">Charles Lea Center</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466393271?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="176">
+    <div class="card-title">Home Care Coordinator, RN</div>
+    <div class="card-company">Kintegra Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466391206?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="177">
+    <div class="card-title">Clinical Pharmacist-Oncology-NEW Position, Wilmington, NC</div>
+    <div class="card-company">Wilmington Health PLLC</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466391076?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="178">
+    <div class="card-title">Restaurant Shift Supervisor</div>
+    <div class="card-company">Qdoba</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466390969?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="179">
+    <div class="card-title">Now Hiring IT and Telecom Field Technicians</div>
+    <div class="card-company">HARDY INDUSTRIES</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466389690?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="180">
+    <div class="card-title">Account Executive</div>
+    <div class="card-company">Xplor</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466389077?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="181">
+    <div class="card-title">Leaderboard Sales Star - Remote</div>
+    <div class="card-company">Reid Agency</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466388568?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="182">
+    <div class="card-title">Customer Service Representative</div>
+    <div class="card-company">Pivot Parking LLC</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466387614?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="183">
+    <div class="card-title">CareGiver, PCA, CNA - Home Care - $250 Sign On Bonus!</div>
+    <div class="card-company">Griswold Home Care for Wilmington</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466387392?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="184">
+    <div class="card-title">Outpatient Dermatology | Coastal, NC | Private Practice</div>
+    <div class="card-company">Wilmington Health PLLC</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466387244?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="185">
+    <div class="card-title">Associate Veterinarian (DVM) Leland, NC</div>
+    <div class="card-company">woodside health and wellness</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466386324?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="186">
+    <div class="card-title">Dental Assistants</div>
+    <div class="card-company">DOCS Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466386290?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="187">
+    <div class="card-title">Packaging Technician I | 2nd Shift | Wilmington, NC</div>
+    <div class="card-company">FedUp Foods</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Manufacturing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466385776?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="188">
+    <div class="card-title">Sandwich Artist</div>
+    <div class="card-company">Subway - 67410-0</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466385750?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="189">
+    <div class="card-title">Project Manager</div>
+    <div class="card-company">Samet Corporation</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466385621?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="190">
+    <div class="card-title">CSR</div>
+    <div class="card-company">Community Veterinary Partners</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Admin Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466384779?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="191">
+    <div class="card-title">Registered Nurse, RN-CVOR</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466379819?se=nG4C1q2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A68552CB09E3D854B7E912FF75E8C8FD27E92BC4" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="192">
+    <div class="card-title">Registered Nurse, Ortho/Trauma</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466375065?se=nG4C1q2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A9AEAAF16022F64A424237C5E520072E7070C607" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="193">
+    <div class="card-title">Registered Nurse, RN- Acute Care</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466374867?se=nG4C1q2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=557EF761414D488B8C5F654F8A54E824C45CF255" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="194">
+    <div class="card-title">RN Ambulatory Specialty</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466374770?se=nG4C1q2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C62A58F83A996E411D039ED070C71BE07CFC0055" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="195">
+    <div class="card-title">Registered Nurse-Cardiac</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466374280?se=nG4C1q2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=BD7B55E352C911F6DD9749F100E186E3D01D903F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="196">
+    <div class="card-title">Certified Nursing Assistant I</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466374035?se=nG4C1q2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=3368AE5EE191D27EA4CE016532E866B2AF4C5D5F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="197">
+    <div class="card-title">Certified Nurse Assistant I</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466373741?se=nG4C1q2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=6AF15D2863A7C0F215E9D6CDE23A93AC3C5340AD" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="198">
+    <div class="card-title">RN Ambulatory Specialty</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466363891?se=nG4C1q2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E7296B54C1AED22B146FF591C5867E482C04573D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="199">
+    <div class="card-title">RN Ambulatory Specialty</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466363551?se=nG4C1q2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=50F0D0555500D794886BCA120C0D8901C3851B55" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="200">
+    <div class="card-title">Registered Nurse</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466363349?se=nG4C1q2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B77E6B2DA139DFD3560264FCCB9A90704D710D4C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="201">
+    <div class="card-title">Certified Registered Nurse Anesthetist -CRNA II</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466363353?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=834C8B433198C2E014CA588B81C890813614208C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="202">
+    <div class="card-title">Certified Nursing Assistant I (NHRMC Only)</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466363232?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8B9A2A8432C32E6D539C2D2C379029D1B579A600" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="203">
+    <div class="card-title">Registered Nurse - Surgery</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466363032?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A6066FEB4F4B39CDFD87CCC6F7FBCB191F452C42" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="204">
+    <div class="card-title">Registered Nurse, Surgical II Ortho/Trauma</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466363185?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=419C35E56FD5F80C6666A37DC141E7037FB023B7" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="205">
+    <div class="card-title">Certified Nursing Assistant I</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466362827?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9EA753619D431C9761F6F36B45DBFEE6E8350207" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="206">
+    <div class="card-title">Registered Nurse, RN- Acute Care</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466362684?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E8B2001BE259F582DB66257CBD1BC6A3F09B5EA3" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="207">
+    <div class="card-title">Registered Nurse, RN- Orthopedic</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466362502?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=00498940947A2170BB8F56870A2ADBA164A7A78E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="208">
+    <div class="card-title">Staff Nurse - WOW (NHRMC Only)</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466362187?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=515A8DECA2F1598C53E25C9E23D76E0AA698E322" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="209">
+    <div class="card-title">Travel - Med Surg - Nurse Job - $2,494/wk - $2,687/wk</div>
+    <div class="card-company">Aya Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466362035?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9BE3BA7384DC29D82FD04F6155628A75DA1971EC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="210">
+    <div class="card-title">Registered Nurse - Oncology Infusion - Scotts Hill</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466361859?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=BEDC5C6595C524E3CEF855888B1C45FFE5DEB7C7" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="211">
+    <div class="card-title">CNA Weekly Pay</div>
+    <div class="card-company">LHC Group</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Social work Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466361977?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9E0FDC4108EE5249C65894E6270EF62A690D26A8" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="212">
+    <div class="card-title">CNA I</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466345682?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=36BB5F8F254F353236D1B7F3BA3007CF83BF91C1" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="213">
+    <div class="card-title">Registered Nurse, RN- Behavioral Health</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466345292?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=046F5CED74804B6F2266BEBF29048238E690B8D7" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="214">
+    <div class="card-title">Registered Nurse - Hospital at Home</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466345073?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D2A04CFFBCBF786B223FB18F1EBE4B304A2FC69C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="215">
+    <div class="card-title">Certified Nursing Assistant I</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466344591?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F8F1424AC34EDCED7D4B80A7C700EE93ACBA7B97" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="216">
+    <div class="card-title">Certified Nursing Assistant I</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466343809?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A7A7DAA1271A285C1918956FE58B09A653C7A79D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="217">
+    <div class="card-title">Certified Nursing Assistant I</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466343563?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=07DE3D531AD11489E098EC0501DDF90829B4D863" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="218">
+    <div class="card-title">Regional Float Registered Nurse</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466343206?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0ADE79F592FB17F7C8DB02C466F3B3D0A4CC7E23" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="219">
+    <div class="card-title">Registered Nurse - Same Day Surgery</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466343187?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A92ED70D616920523ED20B5929B4F31B43A62A37" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="220">
+    <div class="card-title">Certified Nursing Assistant I</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466342607?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=04CF458350EF2ABC420C0993794254EFF6B00137" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="221">
+    <div class="card-title">Registered Nurse (NHRMC Only)</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466341841?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=6ECA3AF16A7BAD9DB824AB72FDA41963A6DA7C2E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="222">
+    <div class="card-title">Certified Nursing Aide, CNA I- Cardiac I</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466341875?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=36D28A4E4D6C20CE26EDE82AD77AA3D41DB7418D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="223">
+    <div class="card-title">Travel Nurse RN - Med Surg - Paying up to $2,900/week</div>
+    <div class="card-company">Vivian Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466300474?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0A289E6901A8AE8282FAE7E2D3D33F0C5F1365A1" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="224">
+    <div class="card-title">RN New Grad</div>
+    <div class="card-company">BAYADA Home Health Care</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466299124?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="225">
+    <div class="card-title">HOME CARE REGISTERED NURSE</div>
+    <div class="card-company">Liberty Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466298497?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="226">
+    <div class="card-title">RN Nurse Manager-Pediatrics</div>
+    <div class="card-company">BAYADA Home Health Care</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466298015?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="227">
+    <div class="card-title">Physical Therapy- Newton, NC</div>
+    <div class="card-company">Trinity Rehab, LLC</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466296990?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="228">
+    <div class="card-title">HVAC Service Apprentice - Helper</div>
+    <div class="card-company">Atlantic Constructors, Inc.</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466293479?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="229">
+    <div class="card-title">Audi Cape Fear Sales BDC</div>
+    <div class="card-company">AUDI JLR LOTUS BMW MOTO</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466293131?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="230">
+    <div class="card-title">HVAC Technician</div>
+    <div class="card-company">Taylor&#x27;s Heating &amp; Air llc</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466291167?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="231">
+    <div class="card-title">Entry Level Tax Preparer</div>
+    <div class="card-company">Jackson Hewitt - 3483</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466290892?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="232">
+    <div class="card-title">Territory Manager - Wilmington, NC</div>
+    <div class="card-company">BioTAB Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466290780?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="233">
+    <div class="card-title">Virtual Speech Language Pathologist - Remote - North Carolina</div>
+    <div class="card-company">Connected Teletherapy</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466290187?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="234">
+    <div class="card-title">Power Distribution Make Ready Designer (Remote)</div>
+    <div class="card-company">Sigma Technologies, Ltd.</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Energy, Oil &amp; Gas Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466280073?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="235">
+    <div class="card-title">Travel MRI Technologist - $2,106 per week</div>
+    <div class="card-company">GQR Healthcare-Allied</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466279698?se=FFOE2a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F7FA5F05A9E60AD1263BD8168E805E6A2777F323" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="236">
+    <div class="card-title">Customer Service Associate</div>
+    <div class="card-company">Walgreens</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466231112?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="237">
+    <div class="card-title">Functional Family Therapist (FFT) - Lumberton Area</div>
+    <div class="card-company">AMIkids Careers</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466229895?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="238">
+    <div class="card-title">Radiology / Sonography - MRI Tech</div>
+    <div class="card-company">New Hanover Regional Medical Center</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466228857?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="239">
+    <div class="card-title">Application Support/Python/Shell Scripting/Unix - Technology Support III</div>
+    <div class="card-company">JPMorganChase</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466227329?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="240">
+    <div class="card-title">RN - Oncology</div>
+    <div class="card-company">aya</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466224621?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="241">
+    <div class="card-title">2026 Global Markets Summer Analyst, Origination - Delaware</div>
+    <div class="card-company">Royal Bank of Canada</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466223132?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="242">
+    <div class="card-title">Damage Specialist</div>
+    <div class="card-company">PRG</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466206842?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="243">
+    <div class="card-title">RN-Pro (ASC) - Full-Time</div>
+    <div class="card-company">Wilmington Health Pllc</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466206793?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="244">
+    <div class="card-title">Certified Nurse Assistant (CNA)</div>
+    <div class="card-company">Home Healthcare Agency</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466204511?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="245">
+    <div class="card-title">Tech - MRI Tech</div>
+    <div class="card-company">Novant Health New Hanover Regional Medical Center</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466203776?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="246">
+    <div class="card-title">Automatic Door Technician</div>
+    <div class="card-company">Lane Valente Industries</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466195174?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="247">
+    <div class="card-title">RN - Cvor</div>
+    <div class="card-company">Novant Health New Hanover Regional Medical Center</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466191953?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="248">
+    <div class="card-title">Business Development Executive - Carolina</div>
+    <div class="card-company">Pritchard Industries</div>
+    <div class="card-location">Carolina Beach, New Hanover County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466190556?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="249">
+    <div class="card-title">Outside Sales Representative</div>
+    <div class="card-company">ForgeFit</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466171709?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="250">
+    <div class="card-title">RN - Med/Surg</div>
+    <div class="card-company">AYA-Novant Health New Hanover Regional Medical Center</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466167895?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="251">
+    <div class="card-title">Class A CDL Driver/Rigger</div>
+    <div class="card-company">Edwards, Inc.</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466167396?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="252">
+    <div class="card-title">Foreman - Commercial Grade Division</div>
+    <div class="card-company">S.T. Wooten Corporation</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466167258?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="253">
+    <div class="card-title">Pharmacy Technician / Pharm Tech Apprenticeship</div>
+    <div class="card-company">Walgreens</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466167071?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="254">
+    <div class="card-title">Roadway Worker In Charge (RWIC)</div>
+    <div class="card-company">National Railroad Safety Services, Inc.</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466166558?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="255">
+    <div class="card-title">Senior Human Factors Engineer (HFE) – Nuclear (Remote Eligible, U.S.)</div>
+    <div class="card-company">GE Vernova</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466164066?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="256">
+    <div class="card-title">Deposit Operations Specialist</div>
+    <div class="card-company">Newtek One</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466135838?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="257">
+    <div class="card-title">RN - Tele</div>
+    <div class="card-company">Novant Health New Hanover Regional Medical Center</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466129740?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="258">
+    <div class="card-title">Auto Glass Installation Technician Trainee</div>
+    <div class="card-company">Safelite</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466043813?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="259">
+    <div class="card-title">(Urgent Search) Travel Medical-Surgical Charge RN (Night Shift) - $1,966 per week</div>
+    <div class="card-company">Meda Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466041889?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=795EBA6A0080C46C036B315E8EE668C84E691FB7" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="260">
+    <div class="card-title">▷ (Immediate Start) Travel PCU Cardiac Telemetry RN - $2,116 per week</div>
+    <div class="card-company">Coast Medical Service</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466039864?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B8D07D48D0F9BED69ED0D30D59E29B3A1CACF232" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="261">
+    <div class="card-title">▷ (10/16/2025) Travel Nurse RN - Med Surg - $1,836 per week</div>
+    <div class="card-company">Malone Healthcare - Nursing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466039665?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8B094FC247ADF5232037EB8483E0C7DAD51A0AFC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="262">
+    <div class="card-title">Apply Now: Travel Med/Surg Registered Nurse - $1,968 per week</div>
+    <div class="card-company">Premier Medical Staffing Services</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466039257?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D08957C4DAB00C5BD7DB7218AD0A5654688FECA0" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="263">
+    <div class="card-title">FLOATING DIRECTOR OF NURSING [Only 24h Left]</div>
+    <div class="card-company">Liberty Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466038703?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=68572CBC2A6D6F42D110AE96EC7FAE61EE0C8C2E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="264">
+    <div class="card-title">Travel Cardiac Telemetry RN</div>
+    <div class="card-company">GetMed Staffing, Inc.</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466038013?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=DB6209EEC1B0E97C66CA8D3817F689E26D1DA3B1" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="265">
+    <div class="card-title">▷ 15h Left! Travel CVOR Registered Nurse</div>
+    <div class="card-company">ARMStaffing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466037507?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C90BA6EF2DBAF973A244F707EE639C16360DAF0D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="266">
+    <div class="card-title">Travel Medical-Surgical Charge RN (Night Shift)</div>
+    <div class="card-company">Care Career</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466036929?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5385A8B39D75F2CEA378ACD55784237520443B3E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="267">
+    <div class="card-title">Dynamic PC Support Techician</div>
+    <div class="card-company">Worldwide TechServices Open</div>
+    <div class="card-location">Wrightsville Beach, New Hanover County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466036594?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="268">
+    <div class="card-title">3 Days Left: Travel MRI Technologist</div>
+    <div class="card-company">Triage Staffing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466036480?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=1FA90AA40208E7812136828D15EF5E18EBC649E9" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="269">
+    <div class="card-title">Travel PCU Cardiac Telemetry RN</div>
+    <div class="card-company">Anders Group</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466036290?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=295C185558E68AB290EE134E9D0314A9F4C4B8E4" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="270">
+    <div class="card-title">(10/27/2025) Travel RN - Med/Surg Telemetry</div>
+    <div class="card-company">PRN Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466035736?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=36D904E338A5F08C8A55D9C3741B1D59CAF8DF06" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="271">
+    <div class="card-title">Travel CVOR Registered Nurse</div>
+    <div class="card-company">Genie Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466035735?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5F7579BC9BA4FCBAD8CC45DA04E92166C60ACC33" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="272">
+    <div class="card-title">Automotive Parts Delivery Driver</div>
+    <div class="card-company">LKQ</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466035681?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="273">
+    <div class="card-title">▷ [Urgent Search] Travel Medical-Surgical Charge RN (Night Shift) - $1,992 per week</div>
+    <div class="card-company">Access Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466034060?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5AD6C8AEBABB85150018B344C3920D0889877649" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="274">
+    <div class="card-title">(10/27/2025) Travel Medical-Surgical Registered Nurse - $2,474 per week</div>
+    <div class="card-company">Stability Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466033940?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=FB3CB35F8B3147FA0595B0396561B98BC50FD54C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="275">
+    <div class="card-title">Travel Nurse RN - Med Surg - $1,935 per week (3 Days Left)</div>
+    <div class="card-company">Health Advocates Network - Nursing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466033825?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=EA08AA623368D5417B2EE3CDC27898526D354C51" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="276">
+    <div class="card-title">▷ (High Salary) Travel Medical-Surgical/Orthopedic Registered Nurse - $2,656 per week</div>
+    <div class="card-company">Access Healthcare</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466033086?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=563BC5F0D2E4365122C1479CECE3115F931A4EB7" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="277">
+    <div class="card-title">Travel Neuro Medical-Surgical Registered Nurse - $2,170 per week</div>
+    <div class="card-company">Wellspring Nurse Source</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466032435?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E327EAAB361BED29B0DDF62C6869C498CAB487C5" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="278">
+    <div class="card-title">Weekend Cleaner</div>
+    <div class="card-company">Pritchard Industries</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Domestic help &amp; Cleaning Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466025068?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="279">
+    <div class="card-title">Assistant Coach/Coaching Analyst (Delaware Blue Coats)</div>
+    <div class="card-company">Harris Blitzer Sports &amp; Entertainment</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466024612?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="280">
+    <div class="card-title">Recycle Technician</div>
+    <div class="card-company">SBM Management</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Manufacturing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466024269?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="281">
+    <div class="card-title">Merchandising Part Time Days</div>
+    <div class="card-company">Lowe&#x27;s Home Centers</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Part time Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466024144?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="282">
+    <div class="card-title">Day Porter</div>
+    <div class="card-company">SBM Management</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Domestic help &amp; Cleaning Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466020583?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="283">
+    <div class="card-title">CRNA / Anesthesiology / North Carolina / Locum tenens / CRNA Locums Need in Eastern North Carolina Job</div>
+    <div class="card-company">Hayman Daugherty Associates, Inc</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466011334?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=798B084BBC61DD0D605D903492DD763A394C8780" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="284">
+    <div class="card-title">Customer Service Rep(04484) Wrightsville Beach, Wilmington, NC</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466004473?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="285">
+    <div class="card-title">Delivery Driver(08814) Ploof Rd, Leland, NC</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466004451?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="286">
+    <div class="card-title">Assistant Manager(08814) 9413 Ploof Rd</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466004275?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="287">
+    <div class="card-title">Customer Service Rep(08943) 3604 S College Rd, Wilmington, NC</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466003959?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="288">
+    <div class="card-title">Customer Service Rep(08944) 7208 Market St, Wilmington, NC</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466003706?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="289">
+    <div class="card-title">Delivery Driver(08944) 7208 Market St, Wilmington, NC</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466003352?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="290">
+    <div class="card-title">Customer Service Rep(04482) Gordon Rd, Wilmington, NC</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466001834?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="291">
+    <div class="card-title">Assistant Manager(05589) 4714 College Acres De</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466001001?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="292">
+    <div class="card-title">Childcare Floater/Teacher Aide</div>
+    <div class="card-company">Children’s Cottage of Wilmington</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465997388?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="293">
+    <div class="card-title">Cardiac Sonographer I</div>
+    <div class="card-company">Novant Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465994636?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=BBF070F503D9D1F8CAFF7D53D01ED99233DC2F83" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="294">
+    <div class="card-title">Remote Customer Service Specialist</div>
+    <div class="card-company">ForgeFit</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465988474?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="295">
+    <div class="card-title">Night Cleaner Janitor</div>
+    <div class="card-company">Pritchard Industries</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Domestic help &amp; Cleaning Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465977926?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="296">
+    <div class="card-title">Financial Solutions Advisor Registration Candidate - Coastal Carolina&#x27;s</div>
+    <div class="card-company">Bank of America</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465977855?se=FvEI3a2z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=18EDB7FDBFE96A90040B93CB1F0C9D1977FF4A1E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="297">
+    <div class="card-title">Insurance Commercial Lines Account Manager</div>
+    <div class="card-company">Marsh McLennan</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465972284?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="298">
+    <div class="card-title">Pharmacy Customer Service Associate</div>
+    <div class="card-company">Walgreens</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465966717?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="299">
+    <div class="card-title">RN - Med Surg</div>
+    <div class="card-company">Novant Health New Hanover Regional Medical Center Crisis Response</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465963077?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="300">
+    <div class="card-title">Electrical Foreman</div>
+    <div class="card-company">Cogent Talent Solutions</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465962555?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="301">
+    <div class="card-title">Custodian</div>
+    <div class="card-company">SBM Management</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Domestic help &amp; Cleaning Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465960328?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="302">
+    <div class="card-title">Rad Tech - MRI</div>
+    <div class="card-company">Novant Health New Hanover Regional Medical Center</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465960292?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="303">
+    <div class="card-title">Registered Nurse (RN) - Med Surg</div>
+    <div class="card-company">Novant Health New Hanover Regional Medical Center Crisis Response</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465959206?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="304">
+    <div class="card-title">Yard Associate</div>
+    <div class="card-company">Sunbelt Rentals</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465954838?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="305">
+    <div class="card-title">Field Technician Level 1</div>
+    <div class="card-company">Rangeline Group</div>
+    <div class="card-location">Wrightsville Beach, New Hanover County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465943101?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="306">
+    <div class="card-title">Travel MRI Technologist - $2,470 per week</div>
+    <div class="card-company">TNAA TotalMed Allied</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465903318?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="307">
+    <div class="card-title">Special Agent, $40,000 Recruitment Incentive</div>
+    <div class="card-company">The United States Secret Service</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Property Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465902202?se=_JiL4K2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F06B1493B38CD142380B9FAD50624033446C24B6" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="308">
+    <div class="card-title">Federal Police Officer (Uniformed Division) $50,000 Recruitment Incentive</div>
+    <div class="card-company">The United States Secret Service</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Legal Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465902050?se=_JiL4K2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=AAF5280E4B65F206F762BF3CF1B4AFDB4D4A368B" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="309">
+    <div class="card-title">Federal Police Officer (Uniformed Division) $50,000 Recruitment Incentive</div>
+    <div class="card-company">The United States Secret Service</div>
+    <div class="card-location">Wrightsville Beach, New Hanover County</div>
+    <div class="card-category">Legal Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465902053?se=_JiL4K2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F96D948ED5C117FD19ADA463414094F828C0F833" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="310">
+    <div class="card-title">Medical/Surgical - MedSurg RN - Travel Nurse</div>
+    <div class="card-company">Travel Nurse Across America</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465891726?se=_JiL4K2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=DD93BE30777D3532407B30DDD281416F6B65C9FF" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="311">
+    <div class="card-title">Telemetry - TELE RN - Travel Nurse</div>
+    <div class="card-company">Travel Nurse Across America</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465889804?se=_JiL4K2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D1629B07298762A89B08870A7827C0F23577C170" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="312">
+    <div class="card-title">Gastroenterology Physician - Competitive Salary (Wilmington)</div>
+    <div class="card-company">DocCafe</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465870964?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="313">
+    <div class="card-title">Dynamic Manufacturing Technician</div>
+    <div class="card-company">Express Employment Professionals - Wilmington</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Manufacturing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465844841?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="314">
+    <div class="card-title">Cook</div>
+    <div class="card-company">EveryAge</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465844949?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="315">
+    <div class="card-title">Audiologist</div>
+    <div class="card-company">DOCS Health</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465842409?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="316">
+    <div class="card-title">Maintenance Technician</div>
+    <div class="card-company">Morningside of Wilmington</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Maintenance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465841955?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="317">
+    <div class="card-title">Fit Specialist - Wilmington, NC</div>
+    <div class="card-company">The Cole Family of Harley-Davidson Dealerships</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465841488?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="318">
+    <div class="card-title">Earn Cash - Drive with Uber</div>
+    <div class="card-company">Uber</div>
+    <div class="card-location">Winnabow, Brunswick County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465840578?se=_JiL4K2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=CBD93336BE94CB2ACEF037E0DC803E3B90018E4E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="319">
+    <div class="card-title">Practice Manager - Wilmington, NC</div>
+    <div class="card-company">QualDerm Partners</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465840293?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="320">
+    <div class="card-title">WAITER/WAITRESS (FULL TIME AND PART TIME)</div>
+    <div class="card-company">Morrison Living</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Part time Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465840231?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="321">
+    <div class="card-title">Crane Operator</div>
+    <div class="card-company">Edwards, Inc.</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465836832?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="322">
+    <div class="card-title">Mortgage Field Services Inspector</div>
+    <div class="card-company">FAR Inspections</div>
+    <div class="card-location">Leland, Brunswick County</div>
+    <div class="card-category">Property Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465833239?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="323">
+    <div class="card-title">Direct Support Professional (DSP) / Caregiver</div>
+    <div class="card-company">Dungarvin</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465833104?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="324">
+    <div class="card-title">Tennis Coach (Private) in Wilmington, North Carolina | TeachMe.To</div>
+    <div class="card-company">TeachMe.To</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465832826?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="325">
+    <div class="card-title">Survey Crew Chief</div>
+    <div class="card-company">ESP Associates</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465828853?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="326">
+    <div class="card-title">Revenue Cycle Specialist, Primary Care</div>
+    <div class="card-company">Coastal Horizons Center</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465828235?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="327">
+    <div class="card-title">Senior Project Manager</div>
+    <div class="card-company">Bristol Industries, LLC</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465827994?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="328">
+    <div class="card-title">Group Fitness Instructor/Dance Cardio</div>
+    <div class="card-company">Foresight Fitness</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465821485?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="329">
+    <div class="card-title">Driver</div>
+    <div class="card-company">Uber</div>
+    <div class="card-location">Rocky Point, Pender County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465810632?se=_JiL4K2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=44F569B3D282A4362BF5271B0CF4E79367C0E863" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="330">
+    <div class="card-title">Earn Cash - Drive with Uber</div>
+    <div class="card-company">Uber</div>
+    <div class="card-location">Castle Hayne, New Hanover County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465810624?se=_JiL4K2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5D19C1B42C2B6312743A25AB71BC1727BFF1F67E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="331">
+    <div class="card-title">Driver</div>
+    <div class="card-company">Uber</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465795937?se=_JiL4K2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=968A07AEE602A40F2FBACFA593CA34A1C823A126" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="332">
+    <div class="card-title">Customer Service / Administrative Assistant - Leading Blinds &amp; Shutter</div>
+    <div class="card-company">Budget Blinds of Wilmington</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Admin Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465783668?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="333">
+    <div class="card-title">Drive with Uber</div>
+    <div class="card-company">Uber</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465782359?se=_JiL4K2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5687E863926E5C7CC88B7E0635EA3F54DDDFC87D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="334">
+    <div class="card-title">Pest Control Specialist</div>
+    <div class="card-company">Economy Exterminators - Apex</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465780644?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="335">
+    <div class="card-title">Business Development Specialist - Electrical Services</div>
+    <div class="card-company">Cogent Talent Solutions</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465778182?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="336">
+    <div class="card-title">School Psychologist</div>
+    <div class="card-company">Epic Special Education Staffing</div>
+    <div class="card-location">Wilmington, New Hanover County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465775048?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="337">
+    <div class="card-title">Sign up to Drive with Uber</div>
+    <div class="card-company">Uber</div>
+    <div class="card-location">Castle Hayne, New Hanover County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465772126?se=_JiL4K2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E9D60C69FF260E797BB92ECF09E7A8344A2E7E72" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="338">
+    <div class="card-title">Driver - Get Paid Daily</div>
+    <div class="card-company">Uber</div>
+    <div class="card-location">Castle Hayne, New Hanover County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465769292?se=_JiL4K2z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=44F26CFF622C19568EF427E09115B91BFF2EC3BF" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+</div>
+<script>
+(function(){
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const qraw = (params.get('q') || '').trim();
+    if (!qraw) return;
+
+    const q = qraw.toLowerCase();
+    const terms = q.split(/\s+/).filter(Boolean);
+    const cards = document.querySelectorAll('.title-card');
+    let shown = 0;
+
+    cards.forEach(card => {
+      const hay = card.textContent.toLowerCase();
+      const match = terms.every(t => hay.includes(t));
+      card.style.display = match ? '' : 'none';
+      if (match) shown++;
+    });
+
+    // Small banner to show filter status and offer a "Clear" link
+    const grid = document.querySelector('.title-grid');
+    if (grid && grid.parentNode) {
+      const bar = document.createElement('div');
+      bar.setAttribute('role','status');
+      bar.style.cssText = 'margin:12px 0 16px;padding:10px 12px;border:1px solid #e6e8eb;border-radius:12px;background:#fff;line-height:1.45;';
+      // escape < > & in qraw
+      const safe = qraw.replace(/[&<>]/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[s]));
+      bar.innerHTML = 'Filtering by "<strong>' + safe + '</strong>" — <strong>' + shown + '</strong> match' + (shown===1?'':'es') + '. ' +
+                      '<a href="' + location.pathname + '">Clear</a>';
+      grid.parentNode.insertBefore(bar, grid);
+    }
+  } catch (e) {
+    if (window.console) console.warn('Filter error:', e);
+  }
+})();
+</script>
+
+  </main>
+  <footer>
+    &copy; 2024 North Carolina Careers Hub. Generated report.
+  </footer>
+</body>
+</html>

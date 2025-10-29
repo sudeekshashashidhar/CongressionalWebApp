@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>North Carolina Careers Hub — Generated Titles</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      --bg: #f5f7fb;
+      --text: #1f2933;
+      --muted: #637183;
+      --accent: #2463eb;
+      --card: #ffffff;
+      --shadow: 0 18px 45px rgba(15, 31, 62, 0.12);
+      --radius: 16px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 3.2rem 1.5rem 2.6rem;
+      background: linear-gradient(145deg, #102b5d, #15407c, #2463eb);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2.6rem, 3.8vw + 1.2rem, 4rem);
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      margin: 0.5rem auto 0;
+      max-width: 60ch;
+      color: #e5edff;
+      font-size: 1.05rem;
+    }
+
+    .home-button {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.6rem 1.35rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      background: rgba(255, 255, 255, 0.18);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .home-button:hover {
+      background: rgba(255, 255, 255, 0.28);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px rgba(15, 31, 62, 0.24);
+    }
+
+    main {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+      flex: 1 1 auto;
+      padding: 3rem 0 4rem;
+    }
+
+    .title-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.8rem;
+    }
+
+    .title-card {
+      background: linear-gradient(155deg, rgba(255, 255, 255, 0.97), rgba(212, 224, 255, 0.65));
+      border-radius: var(--radius);
+      padding: 1.4rem 1.9rem 4.4rem;
+      box-shadow: 0 22px 45px rgba(15, 31, 62, 0.14);
+      border: 1px solid rgba(36, 99, 235, 0.18);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .title-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(36, 99, 235, 0.22), transparent 58%);
+      opacity: 0.9;
+    }
+
+    .title-card > *:not(.card-actions) {
+      position: relative;
+      z-index: 1;
+    }
+
+    .title-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 65px rgba(15, 31, 62, 0.22);
+    }
+
+    .card-title {
+      margin: 0 0 0.6rem;
+      font-size: 1.22rem;
+      font-weight: 700;
+      color: #102b5d;
+      letter-spacing: -0.01em;
+    }
+
+    .card-company {
+      margin: 0 0 0.45rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .card-location {
+      margin: 0 0 0.75rem;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .card-category {
+      margin: 0;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: rgba(16, 43, 93, 0.86);
+    }
+
+    .card-actions {
+      position: absolute;
+      left: 1.9rem;
+      right: 1.9rem;
+      bottom: 1.4rem;
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      box-shadow: 0 14px 32px rgba(15, 31, 62, 0.16);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .card-link:hover {
+      background: #1a44a6;
+      transform: translateY(-2px);
+      box-shadow: 0 16px 38px rgba(15, 31, 62, 0.22);
+    }
+  
+    footer {
+      padding: 1.5rem 0 2rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="home-button" href="../../home.html">← Back to Home</a>
+    <h1>Greensville, NC</h1>
+    <p>Fetched jobs from "Greensville, NC"</p>
+  </header>
+  <main>
+<div class="title-grid">
+  <div class="title-card" data-row="1">
+    <div class="card-title">Aveanna Healthcare Private Duty Nurse LPN - G-Tube Child (Weekdays)</div>
+    <div class="card-company">Aveanna Healthcare</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467073876?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="2">
+    <div class="card-title">Tax Manager Wanted!</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467058897?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="3">
+    <div class="card-title">Travel Nurse RN - ICU - Intensive Care Unit - $1,515 per week</div>
+    <div class="card-company">Cross Country Nurses</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467056309?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=BF92C761380CE20CD5F7F989B9FD874407BBF267" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="4">
+    <div class="card-title">Truck Driver Company - 6mo EXP Required - OTR - Dry Van - U.S. Xpress - OTR</div>
+    <div class="card-company">U.S. Xpress - OTR</div>
+    <div class="card-location">Winterville, Pitt County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467050735?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=1A1D25BF805373B640DFF1446C92231B782B51F2" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="5">
+    <div class="card-title">RN - ICU - Intensive Care Unit in Greenville, North Carolina - $1,519/week</div>
+    <div class="card-company">Vetted</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467047821?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=74B6E6E4E3F0E869B4614A9C50986DDA32F9533A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="6">
+    <div class="card-title">Physical Therapist in Greenville, North Carolina - $2,148/week</div>
+    <div class="card-company">Vetted</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467037190?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C549D3D1DAD72ED4AFBDAED6517F7EB338F3E89A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="7">
+    <div class="card-title">Travel Nurse RN - Psychiatric - $1,945 per week</div>
+    <div class="card-company">Supplemental Health Care</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467035440?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=00A9F76BFCF7D125A3C82A3AE06E08FA02B0D202" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="8">
+    <div class="card-title">Registered Nurse (RN) - Cardiac Intensive Care Unit (CICU)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466994156?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=7E11404BF98DBA09CD5536C6BEE73434C5E58B51" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="9">
+    <div class="card-title">Registered Nurse (RN), Neonatal Intensive Care Unit (NICU)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466993377?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=68215782D5D50FE66AA430153930B56E6A93BD17" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="10">
+    <div class="card-title">Registered Nurse (RN) - Surgical Oncology (SONC)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466990634?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=3066E90BD40C12998159BB169C6E9C2AC8186ED6" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="11">
+    <div class="card-title">Registered Nurse (RN) - Dermatology</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466989226?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=3D7F95DEA499DD0787A7BF749221EB435717C9FC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="12">
+    <div class="card-title">RN Admissions - Behavioral Health - Weekends</div>
+    <div class="card-company">Acadia Healthcare</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466987487?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=59B54B5C190A67F3A53399BDEE509AE374776189" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="13">
+    <div class="card-title">HOSPICE RN - WEEKEND</div>
+    <div class="card-company">Liberty Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466986570?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=94F7DE5118EFC31F1FAD9D083D9F3970D9DFC76B" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="14">
+    <div class="card-title">Nurse Practitioner</div>
+    <div class="card-company">Theoria Medical</div>
+    <div class="card-location">Ayden, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466986086?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=2F9813A2CB0D4E07335ED9B8C55AFFC0675A7739" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="15">
+    <div class="card-title">Registered Nurse (RN) - 2 South B Internal Medicine</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466985670?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=58A5707FDEB6068BF3A372D1A025480B53F1ACC8" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="16">
+    <div class="card-title">Registered Nurse (RN) - Urgent Care Roanoke Rapids</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466984727?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=FFCC9AFA28E9608873158B9C282B104B8A4F1353" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="17">
+    <div class="card-title">Experience Nurse Specialist</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466983074?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=2DFEB0E9B9326E24564B3F20F0623DE33C6F4526" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="18">
+    <div class="card-title">Family Nurse Practitioner</div>
+    <div class="card-company">MainStreet Family Care</div>
+    <div class="card-location">Winterville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466981912?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=03150CFE360111F05807105CDEA3C1B77398A1A3" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="19">
+    <div class="card-title">Certified Registered Nurse Anesthetist</div>
+    <div class="card-company">ECAA - Anesthesia Specialists</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466982044?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8C68E4FD5ADBC42A8DF94559C2847F796EF9BD82" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="20">
+    <div class="card-title">Registered Nurse (RN)- Orthopedic Trauma and Fracture Care</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466979754?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=6137C3CA7FD47B5272B2CFD1F38213AAF7618439" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="21">
+    <div class="card-title">Primary Care APRN / PA-C - Greenville NC (Immediate 10K Sign on Bonus)</div>
+    <div class="card-company">Jobot</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466977861?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A16F3251207271EA91C789DA08F3DA70CA986CEE" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="22">
+    <div class="card-title">RN Case Manager, Home Health</div>
+    <div class="card-company">CenterWell Home Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466974919?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5E68DCFF9845AA5AE81AFABF41E9A8720B7BE2C5" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="23">
+    <div class="card-title">Oncology Nurse (RN) Navigator</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466974715?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0CCD515C93BCC4773787E0315FEC78CD27C941D1" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="24">
+    <div class="card-title">Nursing Assistant I - Neo IV NICU</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466973832?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=EDAE74F032AABCB30EBF5448184128CB15243577" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="25">
+    <div class="card-title">Registered Nurse (RN) Neuroscience IU General (NSIU)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466972790?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F899CAA94B4FC3D837E5087A3B292E80E8DEDC72" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="26">
+    <div class="card-title">Registered Nurse (RN) - 2 South B - Internal Medicine</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466968517?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=FC0D3CA045AA82DC0C9DDE447E4648B7F8729A75" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="27">
+    <div class="card-title">Registered Nurse- Radiology (Nights)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466968552?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=02C87BC70C98235D7A639A34C7A91E5744FB62F6" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="28">
+    <div class="card-title">Registered Nurse, Baylor - Home Health</div>
+    <div class="card-company">CenterWell Home Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466967859?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8AFF1AAED2B399C98427CB3AC81BB186F61024AB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="29">
+    <div class="card-title">Assistant Nurse Manager, Pediatric Intensive Care Unit - (PICU)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466967194?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=075C96897FF8EAE158CA83ABE11D175CDBCA8701" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="30">
+    <div class="card-title">Family Nurse Practitioner</div>
+    <div class="card-company">MainStreet Family Care</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466961886?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E1BEF2C32F59A836B821432FF03DF179A80E4F7F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="31">
+    <div class="card-title">Staff Nurse IV</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466961640?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=101D999954875D4267A6AB351C3439E62A2D008F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="32">
+    <div class="card-title">Flight Nurse (RN) - EastCare</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466961772?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F86B263C760668049E2E24BD97A3688345AA339E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="33">
+    <div class="card-title">RN Asst. Nurse Manager - Cardiovascular OR (CVOR)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466961515?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B182526BC2200C041CAAFF9B745B35BD78521C4E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="34">
+    <div class="card-title">Registered Nurse (RN) - Echocardiology</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466961134?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=BD0A40C2BEE9006F6611DC91E8AE52A380A5219E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="35">
+    <div class="card-title">Registered Nurse (RN) - Emergency Department (ED)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466960813?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=59BF5AB522A1B5123BBE5C3B408978D8018F39EA" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="36">
+    <div class="card-title">New Graduate Registered Nurse (RN) Residency Program</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Graduate Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466960917?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=1D46BE076CF6A810EB7F7EF01A41896B70D996AA" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="37">
+    <div class="card-title">Nurse Practitioner</div>
+    <div class="card-company">Healing Partners</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466960669?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8AD53131594BC2DAB54908E840138B89C274F6A4" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="38">
+    <div class="card-title">Registered Nurse (RN) - Adult Special Care Unit (ASCU)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466960254?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9B44CC095679F76098F47D412F85561F98B30D0D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="39">
+    <div class="card-title">Internal Travel Registered Nurse (RN) - ECU Health</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466959018?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=359798E0E45FE64B5C32B0A622D64121CE475A63" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="40">
+    <div class="card-title">Registered Nurse (RN) - Renal Dialysis</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466958955?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=47E29C3AD9D5BA962275E11B9A708BA4ABE8DB04" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="41">
+    <div class="card-title">Internal Travel Registered Nurse (RN) - Cancer Services</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466958956?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=12ECC831E246C9ACC42705043EC032EE12AA7445" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="42">
+    <div class="card-title">Registered Nurse (RN) - Radiology, Vascular Intervention</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466950767?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F178025B5B3631AA93BCEE8F4A3884E7357CE4F4" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="43">
+    <div class="card-title">Registered Nurse (RN) - Surgical Intensive Care Unit (SICU)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466948955?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=AF1A5BF64479027D35BE64EA2DC7E1903E66F45F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="44">
+    <div class="card-title">Internal Travel Registered Nurse (RN) - Trauma/Surgical Services</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466947590?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D402236F8C8EEC77E2F0E0B86062D2F8F6B1F881" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="45">
+    <div class="card-title">Licensed Practical Nurse (LPN) - Cardiology</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466947457?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=AEF5AA8B7F65869DCF534692CD012C331FA9E462" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="46">
+    <div class="card-title">Internal Travel Registered Nurse (RN) - System Float Pool</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466947382?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=18C1BB78ADE4507B92B4FD8F95EE63AF67FEA611" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="47">
+    <div class="card-title">Registered Nurse (RN) - Radiology</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466947413?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=DAC8C31A0DB2F6E65FE92C7DB74BCC306D3FDCD9" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="48">
+    <div class="card-title">Registered Nurse (RN) - Transfer Center (Nights)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466946586?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C83ED3327D8FFA26EF4CD4526965A2DDC1311252" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="49">
+    <div class="card-title">Registered Nurse (RN) - 4 N Surgery (TSIU)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466946767?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=28792B5756D505D1478D0396560BC97DAEB3657E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="50">
+    <div class="card-title">Internal Travel Registered Nurse (RN) - Central Staffing</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466946466?se=WDk_HK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=45CD5D1B8729A587318D9819871E26ACF8968140" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="51">
+    <div class="card-title">Registered Nurse (RN) - Rehab Pediatrics (Nights)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466946500?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B6377D4849782D985A8B3661722BEEB2AE7C7BAC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="52">
+    <div class="card-title">Registered Nurse (RN) - Home Hospice Ahoskie</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466945404?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=92E9391A1133F9BEE43489D30FA82E98A7B6BA0F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="53">
+    <div class="card-title">Internal Travel Registered Nurse (RN) - ECU Health Medical Center</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466944909?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=EFAEABA4EEE8FE55AE47F654D864C8BAE854E285" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="54">
+    <div class="card-title">Registered Nurse (RN) - Medical Step-Down Unit (MSDU)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466945047?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=AFC78E0001521F480B5D3B6699F419CF68C2780D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="55">
+    <div class="card-title">Registered Nurse (RN) - Pediatrics&#x27; Unit</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466945102?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=7D7A0EA30D1BAAE90102F253CA4FB260C0FD137A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="56">
+    <div class="card-title">Registered Nurse (RN) - Surgical Oncology - (SONC)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466944994?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C30BF82937AFB263610B954485FEAE8781B83335" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="57">
+    <div class="card-title">Registered Nurse (RN) - Medical Oncology (MONC)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466945137?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=949E298CB3B1E56A0EEFEFED51F9BCC25C484F28" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="58">
+    <div class="card-title">Registered Nurse- Intermediate Neonatal RN, Children&#x27;s and Women Operational Pool</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466944741?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A4E5F74BE8998754A7D1A0359949FB400BD02679" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="59">
+    <div class="card-title">Outpatient Registered Nurse - RN</div>
+    <div class="card-company">Fresenius Medical Care</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466940604?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C7AA4FA2A5E538449064DA46E5A3FE1212FC9EE5" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="60">
+    <div class="card-title">Travel Nurse RN - ICU - Intensive Care Unit - $1,970 per week</div>
+    <div class="card-company">Cross Country Nurses</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466936830?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=56001EA15F8DC2CB5DB5ADBA444E512175D2B3EB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="61">
+    <div class="card-title">Travel Physical Therapist - $2,259 per week</div>
+    <div class="card-company">MedPro Healthcare Allied Staffing</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466936283?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8D116A5AEB83D776201BCC2572F83572AA1F0302" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="62">
+    <div class="card-title">Travel Physical Therapist - $2,230 per week</div>
+    <div class="card-company">Trustaff Allied</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466935792?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=03591E5117B6EE1C2AA5804B9410E6D27B5898E6" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="63">
+    <div class="card-title">Travel Physical Therapist - $2,276 per week</div>
+    <div class="card-company">Focus Staff</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466935338?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=74F70CB167B5AEF6D733D1CB6C428E024C4B9116" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="64">
+    <div class="card-title">Travel Physical Therapist - $2,444 per week</div>
+    <div class="card-company">Nurse First</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466931134?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E373CB5FCDEA3D4F50FFFEC9FF6B1E71A88AF5CD" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="65">
+    <div class="card-title">Legal Entities Specialist III</div>
+    <div class="card-company">ThermoFisher Scientific</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466923137?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F27D045FFF560CD172C99B8EFDB0926DB446CC46" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="66">
+    <div class="card-title">Travel Physical Therapist - $2,278 per week</div>
+    <div class="card-company">Healthcare Support</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466912014?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=33630D6E95DC4AF511CAB01718CE8EDD938AAECC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="67">
+    <div class="card-title">Travel Outpatient Physical Therapist - $2,149 per week</div>
+    <div class="card-company">Aequor Allied</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466911479?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9E14F1B0D26C4A7A6CEE14FEC94667FCB92699CD" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="68">
+    <div class="card-title">Hands-on Care Needed For My Husband In Greenville</div>
+    <div class="card-company">Care.com</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466896011?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="69">
+    <div class="card-title">Travel Nurse RN - PCU - Progressive Care Unit</div>
+    <div class="card-company">Anders Group</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466864448?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=4548929A5930FE8CB605916E9DF3C04D6B02B565" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="70">
+    <div class="card-title">▷ High Salary: Travel Nurse RN - Interventional Radiology</div>
+    <div class="card-company">Planet Healthcare</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466863220?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D3C174D1397EF903E10513444DA728B7641834EB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="71">
+    <div class="card-title">Travel ICU Float RN - $2,062 per week</div>
+    <div class="card-company">Aequor Healthcare</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466861695?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E86EF1DBB27B7BDE15AAFE232AA3CC4F7FD6C173" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="72">
+    <div class="card-title">Delivery Driver - Driver Food Delivery Driver (Dasher)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Farmville, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466856565?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0792C544B96873EB55E286A2D4CFFB7ADFBE36F8" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="73">
+    <div class="card-title">Travel Nurse RN - ICU - Intensive Care Unit - $2,287 per week</div>
+    <div class="card-company">Nurse First</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466855989?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=166E32ABA578BEFF5E0EFC46EE92501AC9808C36" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="74">
+    <div class="card-title">▷ Apply Now! Travel Radiology ICU Registered Nurse - $2,142 per week</div>
+    <div class="card-company">GHR Healthcare - Travel Division</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466855127?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=57EEAE0EB2FB49E9E61CA3B3F7DF1873994A54F4" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="75">
+    <div class="card-title">▷ [Apply Now] Delivery Driver - Driver Food Delivery Driver (Dasher)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Simpson, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466853298?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=37F1705B45064CBD52A969B9A5744DD619F00DD5" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="76">
+    <div class="card-title">(Only 24h Left) Drive with Doordash - No CDL license needed</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Ayden, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466852962?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0F8A3540AB585D4A7769F98FD0EA6D4815AAC7FB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="77">
+    <div class="card-title">(Only 24h Left) Delivery Driver - Food Delivery</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Simpson, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466852577?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D260F64CEACFC116889FA05D43646C5766D8567E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="78">
+    <div class="card-title">Delivery Driver - Food Delivery</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Farmville, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466852399?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=17D38CA4224A5D9C446459E4D2602C2403D6019D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="79">
+    <div class="card-title">Delivery Driver [10/27/2025]</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Ayden, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466852340?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=6D68CB344ADD9217E91456B827B7AA0A21F1D794" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="80">
+    <div class="card-title">Delivery Driver - Become a Dasher: Deliver with DoorDash</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Ayden, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466852196?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=ECBF53FFF29CEDEB3BE047ABF199C8145E589FDA" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="81">
+    <div class="card-title">Delivery Driver - Deliver with DoorDash</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Falkland, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466852010?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C94FE3490E6C6500B91DAEFC7A93002E8A666564" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="82">
+    <div class="card-title">(Urgent Search) Delivery Driver - Become a Dasher: Deliver with DoorDash</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Grimesland, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466850926?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B586108C688BBE07E3C69EF40F2510872367C4A0" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="83">
+    <div class="card-title">Delivery Driver - Sign Up and Start Earning (Ayden)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Ayden, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466812673?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=84DA9C2328CB52303EE57EFAA651CAD7E192581A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="84">
+    <div class="card-title">Delivery Driver - Sign Up and Start Earning (Bellarthur)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Bellarthur, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466812443?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D0442C9F6F49AA8CA272066F3FA5E0E2E44D9990" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="85">
+    <div class="card-title">NURSE PRACTITIONER/PHYSICIAN ASSISTANT (CSNP)</div>
+    <div class="card-company">Liberty Healthcare Management Careers</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466801423?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=3D466B2945E648DBB9944F616D5DD784742E5DE7" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="86">
+    <div class="card-title">Work From Home</div>
+    <div class="card-company">Remote Jobs</div>
+    <div class="card-location">Falkland, Pitt County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466774457?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="87">
+    <div class="card-title">OTR W2 - No Touch Freight &amp; Great Sign On Bonus - Class A</div>
+    <div class="card-company">LNL Trucking LLC</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466763876?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="88">
+    <div class="card-title">Local Class A Company Driver (Flatbed)</div>
+    <div class="card-company">TRIAD CORRUGATED METAL INC</div>
+    <div class="card-location">Falkland, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762674?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="89">
+    <div class="card-title">Local Class A Company Driver (Flatbed)</div>
+    <div class="card-company">TRIAD CORRUGATED METAL INC</div>
+    <div class="card-location">Farmville, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762115?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="90">
+    <div class="card-title">CDL A Owner Operator OTR Power Only/Dry Van/Reefer</div>
+    <div class="card-company">MUGO LOGISTICS LLC</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466761970?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="91">
+    <div class="card-title">Class A Team Contract Driver (1099), OTR, Flatbed trailer</div>
+    <div class="card-company">BSL EXPRESS TRUCKING INC</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466749709?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="92">
+    <div class="card-title">Class A Company Driver, OTR, Refrigerated</div>
+    <div class="card-company">AMISTAD FREIGHT INC</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466745151?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="93">
+    <div class="card-title">RN - Progressive Care Unit in Greenville, North Carolina - $1,974/week</div>
+    <div class="card-company">Vetted</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466745145?se=_tXpH66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C3EDED91E08228569D011305976DB6162AB5CCEE" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="94">
+    <div class="card-title">Consumer Loan Processor</div>
+    <div class="card-company">AgCarolina Farm Credit</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466736802?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="95">
+    <div class="card-title">LPN / IDD Licensed Practical Nurse / Nights</div>
+    <div class="card-company">RHA Health Services, LLC</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466735406?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="96">
+    <div class="card-title">Respiratory Care Assistant</div>
+    <div class="card-company">RHA Health Services, LLC</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Social work Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466735409?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="97">
+    <div class="card-title">Respiratory Therapist</div>
+    <div class="card-company">RHA Health Services, LLC</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Social work Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466735401?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="98">
+    <div class="card-title">Vocational Rehabilitation Employment Specialist in Greenville NC</div>
+    <div class="card-company">RHA Health Services, LLC</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Social work Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466735392?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="99">
+    <div class="card-title">Direct Support Professional</div>
+    <div class="card-company">RHA Health Services, LLC</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Social work Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466735370?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="100">
+    <div class="card-title">Custodian</div>
+    <div class="card-company">RHA Health Services, LLC</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466735365?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="101">
+    <div class="card-title">Work From Home</div>
+    <div class="card-company">AMAZON</div>
+    <div class="card-location">Falkland, Pitt County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466721002?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="102">
+    <div class="card-title">Pharmacy Relationship Manager</div>
+    <div class="card-company">America&#x27;s Pharmacy Group, LLC</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466687806?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="103">
+    <div class="card-title">Delivery Driver (Greenville)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466681449?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9C3A62E67A0398FFEA509BB996C0D2705E229E4B" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="104">
+    <div class="card-title">Delivery Driver - No Experience Needed (Greenville)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466681387?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=CEB346C60B5C13F8A6DA1688C0F98A8F7D686B26" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="105">
+    <div class="card-title">Registered Nurse (RN) - Urology</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466671070?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=FE8E8135523551B04C9A77CC57633DAB99EE3496" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="106">
+    <div class="card-title">Registered Nurse - Behavioral Health</div>
+    <div class="card-company">Acadia Healthcare</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466670961?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=92145293D3DF94CD7B48FA7A21C90332FE4517D1" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="107">
+    <div class="card-title">Registered Nurse (RN) - Tarboro Walk-In Clinic</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466666537?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=922AD2D5A148BABD02A9424054E6CBAE95023A71" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="108">
+    <div class="card-title">Drive with Doordash - No CDL license needed (Greenville)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466619949?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A7A9C22722D9B56260415F91015222395A518D89" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="109">
+    <div class="card-title">Dashers - Sign Up and Start Earning (Greenville)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466619952?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9188D2C1F512D6C6AB787CE84BB36046690AAEBA" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="110">
+    <div class="card-title">Delivery Driver - Earn Extra Cash (Greenville)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466619945?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E5BF9C39F1E182275152D499AEEE295A5B5CCB98" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="111">
+    <div class="card-title">Restaurant Delivery (Greenville)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466619944?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0ACC2D36F15FC313ACCE0E52E13B6C322F388DE5" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="112">
+    <div class="card-title">Restaurant Delivery - Sign Up and Start Earning (Greenville)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466619932?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=3E6EA79FBB77BB83F2D7ED634FB1FEE77B1E5C26" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="113">
+    <div class="card-title">Delivery Driver - Sign Up and Start Earning (Greenville)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466597182?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D960B6DF0106F963604C8C21985E67A189FAC046" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="114">
+    <div class="card-title">Drive with DoorDash (Greenville)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466597162?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E70AC193FCE831A89B95653E382EE40A978B25CC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="115">
+    <div class="card-title">Owner-operator job - Box Truck</div>
+    <div class="card-company">Global Employment Team INC</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466401862?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="116">
+    <div class="card-title">Account Executive - Mechanical Servicing Company - Base Salary to 75k/year - Greenville, NC</div>
+    <div class="card-company">AllSearch Professional Staffing</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466401723?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="117">
+    <div class="card-title">Sales Associate</div>
+    <div class="card-company">Furniture Fair</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466400669?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="118">
+    <div class="card-title">CDL Propane Driver</div>
+    <div class="card-company">DCC Propane, LLC</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466399305?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="119">
+    <div class="card-title">Task Force</div>
+    <div class="card-company">MrBeast Contract Jobs</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Creative &amp; Design Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466398009?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="120">
+    <div class="card-title">Insurance Agent, New York Life Insurance Company</div>
+    <div class="card-company">New York Life</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466397205?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="121">
+    <div class="card-title">Account Representative - State Farm Agent Team Member</div>
+    <div class="card-company">Polly Piland - State Farm Agent</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466396701?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="122">
+    <div class="card-title">Cashier</div>
+    <div class="card-company">Dunhams Sports</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466393758?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="123">
+    <div class="card-title">Home Care - Registered Nurse (RN) or Licensed Practical Nurse (LPN)</div>
+    <div class="card-company">IntelliChoice Home Care</div>
+    <div class="card-location">Winterville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466392518?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="124">
+    <div class="card-title">Restaurant Team Member - Cook</div>
+    <div class="card-company">Noodles &amp; Company</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466392285?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="125">
+    <div class="card-title">Financial Professional -Bilingual (Mandarin, Cantonese, Fujianese)</div>
+    <div class="card-company">New York Life</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466392250?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="126">
+    <div class="card-title">Registered Nurse (RN) or Licensed Practical Nurse (LPN)</div>
+    <div class="card-company">IntelliChoice Home Care</div>
+    <div class="card-location">Grimesland, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466391917?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="127">
+    <div class="card-title">PRN (As Needed) shifts-Community Support Specialist - Direct Support Professional - Flex shift - (30</div>
+    <div class="card-company">Charles Lea Center</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466391602?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="128">
+    <div class="card-title">Warehouse Teammate</div>
+    <div class="card-company">World Cat</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466390846?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="129">
+    <div class="card-title">Freelance Subtitler - French Canadian</div>
+    <div class="card-company">MrBeast Contract Jobs</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Creative &amp; Design Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466390901?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="130">
+    <div class="card-title">Advanced Practice Provider (FNP or PA) - Cardiology</div>
+    <div class="card-company">Physicians East</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466387470?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="131">
+    <div class="card-title">Nurse Practitioner</div>
+    <div class="card-company">Theoria Medical</div>
+    <div class="card-location">Winterville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466380247?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=BDB25E331274771018CED90AA7024CAB1F8316DA" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="132">
+    <div class="card-title">Registered Nurse (RN), Outpatient- Pediatrics Day Unit</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466379676?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A4978D9D9E892728B88F5F1ADEF09A21441B9EA0" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="133">
+    <div class="card-title">Family Nurse Practitioner</div>
+    <div class="card-company">MainStreet Family Care</div>
+    <div class="card-location">Winterville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466374950?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0DC73E5C4595B46A5849009FDFAB41B263C15B32" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="134">
+    <div class="card-title">Registered Nurse (RN) - Cardiovascular OR (CVOR)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466362740?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B703023F29C18C79BF5AD9EF9E391B9B1958DD19" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="135">
+    <div class="card-title">Registered Nurse (RN) - Plastic and Reconstructive Surgery</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466362159?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E501370F973F2A341C8400C5B8AA3ED698875654" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="136">
+    <div class="card-title">Nursing Assistant II</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466361262?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=6DF389BFC7D48F6E1B1177431D12F48C60156548" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="137">
+    <div class="card-title">Staff Nurse III</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466351361?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0F154769CAA432FF288C5CE1C000A5C140701A33" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="138">
+    <div class="card-title">Nursing Assistant I</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466346115?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=BFBCD4E1F5F401B6D3EFC4CC83EA77305CE1BFB6" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="139">
+    <div class="card-title">Staff Nurse I</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466345891?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=91C3096A978537AC3BAB000EC201D3310F7467DE" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="140">
+    <div class="card-title">Telehealth Nurse (RN)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466345517?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=53433D8B3DA52020616F8AFC91EE718540915597" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="141">
+    <div class="card-title">Registered Nurse (RN) - Pediatric Intensive Care Unit (PICU)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466345323?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=74D9F34726DE0589EBC917AD010DC234B119EDBD" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="142">
+    <div class="card-title">Registered Nurse (RN) - Operating Room</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466344981?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=DE05CE71FB66B2A0C0518C254B3A0B0BD7E72A40" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="143">
+    <div class="card-title">Registered Nurse (RN) - Rehab Pediatrics</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466344478?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=7C020DCDE2576D670309DC1CB922B352CFACCFBB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="144">
+    <div class="card-title">Family Nurse Practitioner Preceptorship Program  Greenville, NC</div>
+    <div class="card-company">MainStreet Family Care</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466343449?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C4694D5421F95A31B0DB1D4C936C2A596797AFD1" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="145">
+    <div class="card-title">LOCUMS NP/PA Emergency Care Needed in Nags Head, NC</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466343252?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E45EE1CED1E25E2BC4F29452F9AFB2C39235D287" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="146">
+    <div class="card-title">Registered Nurse (RN) - Children&#x27;s Emergency Department (ED)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466343089?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A4865E679EF68775255A3DCA7545A0154E7A67D6" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="147">
+    <div class="card-title">Registered Nurse (RN) - Cardiac Intermediate Unit (CIU)</div>
+    <div class="card-company">ECU Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466342604?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=74AADFAA23E859838A3A9F14A0622C7938179551" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="148">
+    <div class="card-title">Outpatient Registered Nurse - RN</div>
+    <div class="card-company">Fresenius Medical Care</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466342194?se=QlFPI66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9C1562DDA28C36C04C36FAF5F0E571EBDF6056C2" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="149">
+    <div class="card-title">Director of Clinical Services</div>
+    <div class="card-company">Physicians East</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466297812?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="150">
+    <div class="card-title">RN Nurse Manager- Adults/Pediatrics</div>
+    <div class="card-company">BAYADA Home Health Care</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466297362?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="151">
+    <div class="card-title">Team Manager</div>
+    <div class="card-company">Dunhams Sports</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466292107?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="152">
+    <div class="card-title">Smoke and vape shop customer service and sales associate</div>
+    <div class="card-company">G-Vegas Smoke &amp; Vape</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466291941?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="153">
+    <div class="card-title">Commercial Electrician</div>
+    <div class="card-company">Pitt Electric ORI, LLC</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466291377?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="154">
+    <div class="card-title">MDU Sales Representative</div>
+    <div class="card-company">Indigo Solutions Group</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Property Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466291207?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="155">
+    <div class="card-title">Physical Therapist, (PT) - Home Health</div>
+    <div class="card-company">BAYADA Home Health Care</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466281538?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="156">
+    <div class="card-title">Travel Nurse RN - Intensive Care Unit (ICU) / Critical Care in Greenville, NC</div>
+    <div class="card-company">TravelNurseSource</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466277171?se=GIYdJ66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=CC654455F0DA623D3292F6431D67AFB6E66F4BBD" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="157">
+    <div class="card-title">GE Vernova Gas Power Manufacturing Engineering Co-op – Fall 2026</div>
+    <div class="card-company">GE Vernova</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466254337?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="158">
+    <div class="card-title">Tig Welder - Intermediate 2 Shift (Forrester Rd)</div>
+    <div class="card-company">GE Vernova</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466252843?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="159">
+    <div class="card-title">General Manager in Training</div>
+    <div class="card-company">Advance Stores Company</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466250032?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="160">
+    <div class="card-title">Dunkin&#x27; Baker</div>
+    <div class="card-company">Daughtridge Gas &amp; Oil</div>
+    <div class="card-location">Simpson, Pitt County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466243629?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="161">
+    <div class="card-title">CST Team Lead (Licensed Professional)</div>
+    <div class="card-company">Pathways to Life</div>
+    <div class="card-location">Winterville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466230109?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="162">
+    <div class="card-title">Senior Controls Monitoring Analyst</div>
+    <div class="card-company">Truist Bank</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466223741?se=GIYdJ66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E19D19DBF6AD46658699D66D21EEB469883AD5DE" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="163">
+    <div class="card-title">Fuel Nozzles Manufacturing and Repairs Cell Leader</div>
+    <div class="card-company">GE Vernova</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Energy, Oil &amp; Gas Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466222588?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="164">
+    <div class="card-title">Entry Level Sales Representative Work From Home</div>
+    <div class="card-company">Symmetry</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466219378?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="165">
+    <div class="card-title">RN Personal Care(Greenville)</div>
+    <div class="card-company">Pathways to Life</div>
+    <div class="card-location">Simpson, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466219212?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="166">
+    <div class="card-title">Pharmacy Customer Service Associate</div>
+    <div class="card-company">Walgreens</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466203943?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="167">
+    <div class="card-title">GE Vernova Wind Engineering Internship - Summer 2026</div>
+    <div class="card-company">GE Vernova</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466187958?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="168">
+    <div class="card-title">3 Days Left! Travel Physical Therapist - $2,146 per week</div>
+    <div class="card-company">Prime Time Healthcare Therapy</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466040177?se=GIYdJ66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=4E0388F6DFD711CF8BFF0090661EA2345B223AA1" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="169">
+    <div class="card-title">Travel PCU Palliative Care Registered Nurse - $2,033 per week (High Salary)</div>
+    <div class="card-company">Aequor Healthcare</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466033876?se=GIYdJ66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A1EA8658063EBA95CDD43471F9E71CBBB4D92EB8" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="170">
+    <div class="card-title">Travel ICU Float RN - $1,941 per week (3 Days Left)</div>
+    <div class="card-company">TRS Healthcare</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466033820?se=GIYdJ66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=67CF220CC51C0A88AFBDDA96B583177B59349504" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="171">
+    <div class="card-title">Substance Abuse Professional Community Support Team</div>
+    <div class="card-company">Pathways to Life</div>
+    <div class="card-location">Simpson, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466024284?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="172">
+    <div class="card-title">Host</div>
+    <div class="card-company">Red Robin</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466020382?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="173">
+    <div class="card-title">Customer Service Rep(04462) - 4201 Lee St.</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Ayden, Pitt County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466004595?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="174">
+    <div class="card-title">Customer Service Rep(05530) - 1201 S Charles Blvd</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466003922?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="175">
+    <div class="card-title">Assistant Manager(05534) - 3192 E Tenth St</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466002812?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="176">
+    <div class="card-title">Doctor&#x27;s Technician (PEG NC)</div>
+    <div class="card-company">Career Opportunities with Physicians Eyecare Group</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465992410?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="177">
+    <div class="card-title">RAC Customer Solutions team leader</div>
+    <div class="card-company">Truist Bank</div>
+    <div class="card-location">Winterville, Pitt County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465990778?se=GIYdJ66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F49CEEE84B4ED156A1E3BBB0ADB6766FB839E62E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="178">
+    <div class="card-title">Senior Compliance Engineer - Controls Platform</div>
+    <div class="card-company">GE Vernova</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465981803?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="179">
+    <div class="card-title">Intensive In Home (Iih) Qualafied Professional (Qp)</div>
+    <div class="card-company">Pathways to Life</div>
+    <div class="card-location">Simpson, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465975274?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="180">
+    <div class="card-title">Home Health Nurse, RN (Greenville NC)</div>
+    <div class="card-company">Home Health &amp; Hospice Care</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465966502?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="181">
+    <div class="card-title">Operations Specialist</div>
+    <div class="card-company">AdaptHealth</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465966196?se=GIYdJ66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C153A0554017638313076A53FB741CAF56259CEF" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="182">
+    <div class="card-title">CST Team Lead (Licensed Professional)</div>
+    <div class="card-company">Pathways to Life</div>
+    <div class="card-location">Simpson, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465963843?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="183">
+    <div class="card-title">GE Vernova Gas Power Welding Engineering Intern - Summer 2026</div>
+    <div class="card-company">GE Vernova</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Energy, Oil &amp; Gas Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465955390?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="184">
+    <div class="card-title">Family Practice-Without OB Physician - Competitive Salary (Greenville)</div>
+    <div class="card-company">DocCafe</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465864899?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="185">
+    <div class="card-title">Travel ICU Registered Nurse - $2,031 per week</div>
+    <div class="card-company">PRN Healthcare</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465849449?se=GIYdJ66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=6AC285C3BC58C41AA5F94648C2D4C826475F92B3" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="186">
+    <div class="card-title">Maintenance Technician - Student Housing</div>
+    <div class="card-company">University Partners</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Maintenance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465845140?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="187">
+    <div class="card-title">Cook</div>
+    <div class="card-company">SDS Restaurant Group</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465842802?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="188">
+    <div class="card-title">Photographer</div>
+    <div class="card-company">Bella Baby Photography</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Creative &amp; Design Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465841882?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="189">
+    <div class="card-title">Experienced Financial Professional - Experienced Agent - Experienced Financial Advisor</div>
+    <div class="card-company">New York Life</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465841442?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="190">
+    <div class="card-title">Intensive Care Unit - Travel Registered Nurse</div>
+    <div class="card-company">Trusted Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465795074?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="191">
+    <div class="card-title">Spark Summer Intern - Civil / Environmental Engineering</div>
+    <div class="card-company">S&amp;ME, Inc.</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465784503?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="192">
+    <div class="card-title">RN Clinical Manager, Home Health</div>
+    <div class="card-company">CenterWell Home Health</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465782067?se=GIYdJ66z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=3D45D5A790C94FFB31A369DD7B39C36B78239406" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="193">
+    <div class="card-title">Local HVAC Service and Maintenance Technician</div>
+    <div class="card-company">Advance Mechanical Inc.</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465778136?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="194">
+    <div class="card-title">Speech Language Pathologist, (SLP) - Home Health</div>
+    <div class="card-company">BAYADA Home Health Care</div>
+    <div class="card-location">Greenville, Pitt County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465778082?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+</div>
+<script>
+(function(){
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const qraw = (params.get('q') || '').trim();
+    if (!qraw) return;
+
+    const q = qraw.toLowerCase();
+    const terms = q.split(/\s+/).filter(Boolean);
+    const cards = document.querySelectorAll('.title-card');
+    let shown = 0;
+
+    cards.forEach(card => {
+      const hay = card.textContent.toLowerCase();
+      const match = terms.every(t => hay.includes(t));
+      card.style.display = match ? '' : 'none';
+      if (match) shown++;
+    });
+
+    // Small banner to show filter status and offer a "Clear" link
+    const grid = document.querySelector('.title-grid');
+    if (grid && grid.parentNode) {
+      const bar = document.createElement('div');
+      bar.setAttribute('role','status');
+      bar.style.cssText = 'margin:12px 0 16px;padding:10px 12px;border:1px solid #e6e8eb;border-radius:12px;background:#fff;line-height:1.45;';
+      // escape < > & in qraw
+      const safe = qraw.replace(/[&<>]/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[s]));
+      bar.innerHTML = 'Filtering by "<strong>' + safe + '</strong>" — <strong>' + shown + '</strong> match' + (shown===1?'':'es') + '. ' +
+                      '<a href="' + location.pathname + '">Clear</a>';
+      grid.parentNode.insertBefore(bar, grid);
+    }
+  } catch (e) {
+    if (window.console) console.warn('Filter error:', e);
+  }
+})();
+</script>
+
+  </main>
+  <footer>
+    &copy; 2024 North Carolina Careers Hub. Generated report.
+  </footer>
+</body>
+</html>

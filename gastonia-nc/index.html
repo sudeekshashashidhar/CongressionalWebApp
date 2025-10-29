@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>North Carolina Careers Hub — Generated Titles</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      --bg: #f5f7fb;
+      --text: #1f2933;
+      --muted: #637183;
+      --accent: #2463eb;
+      --card: #ffffff;
+      --shadow: 0 18px 45px rgba(15, 31, 62, 0.12);
+      --radius: 16px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 3.2rem 1.5rem 2.6rem;
+      background: linear-gradient(145deg, #102b5d, #15407c, #2463eb);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2.6rem, 3.8vw + 1.2rem, 4rem);
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      margin: 0.5rem auto 0;
+      max-width: 60ch;
+      color: #e5edff;
+      font-size: 1.05rem;
+    }
+
+    .home-button {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.6rem 1.35rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      background: rgba(255, 255, 255, 0.18);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .home-button:hover {
+      background: rgba(255, 255, 255, 0.28);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px rgba(15, 31, 62, 0.24);
+    }
+
+    main {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+      flex: 1 1 auto;
+      padding: 3rem 0 4rem;
+    }
+
+    .title-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.8rem;
+    }
+
+    .title-card {
+      background: linear-gradient(155deg, rgba(255, 255, 255, 0.97), rgba(212, 224, 255, 0.65));
+      border-radius: var(--radius);
+      padding: 1.4rem 1.9rem 4.4rem;
+      box-shadow: 0 22px 45px rgba(15, 31, 62, 0.14);
+      border: 1px solid rgba(36, 99, 235, 0.18);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .title-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(36, 99, 235, 0.22), transparent 58%);
+      opacity: 0.9;
+    }
+
+    .title-card > *:not(.card-actions) {
+      position: relative;
+      z-index: 1;
+    }
+
+    .title-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 65px rgba(15, 31, 62, 0.22);
+    }
+
+    .card-title {
+      margin: 0 0 0.6rem;
+      font-size: 1.22rem;
+      font-weight: 700;
+      color: #102b5d;
+      letter-spacing: -0.01em;
+    }
+
+    .card-company {
+      margin: 0 0 0.45rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .card-location {
+      margin: 0 0 0.75rem;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .card-category {
+      margin: 0;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: rgba(16, 43, 93, 0.86);
+    }
+
+    .card-actions {
+      position: absolute;
+      left: 1.9rem;
+      right: 1.9rem;
+      bottom: 1.4rem;
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      box-shadow: 0 14px 32px rgba(15, 31, 62, 0.16);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .card-link:hover {
+      background: #1a44a6;
+      transform: translateY(-2px);
+      box-shadow: 0 16px 38px rgba(15, 31, 62, 0.22);
+    }
+  
+    footer {
+      padding: 1.5rem 0 2rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="home-button" href="../../home.html">← Back to Home</a>
+    <h1>Gastonia, NC</h1>
+    <p>Fetched jobs from "Gastonia, NC"</p>
+  </header>
+  <main>
+<div class="title-grid">
+  <div class="title-card" data-row="1">
+    <div class="card-title">Travel Speech Language Pathologist - $2,326 per week</div>
+    <div class="card-company">Supplemental Health Care</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467108070?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A2F3A7A7BDF145D1C5DE67FC5F9DE5A6166A4ED4" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="2">
+    <div class="card-title">CT/Rad Tech Travel Job in North Carolina</div>
+    <div class="card-company">Sunbelt Staffing</div>
+    <div class="card-location">Kings Mountain, Cleveland County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467070914?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="3">
+    <div class="card-title">Assistant Plant Manager</div>
+    <div class="card-company">Ecruit</div>
+    <div class="card-location">Kings Mountain, Cleveland County</div>
+    <div class="card-category">Manufacturing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467067375?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="4">
+    <div class="card-title">Fire Sprinkler Fitter</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Victory, Gaston County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467066254?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="5">
+    <div class="card-title">Fire Sprinkler Fitter</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Bessemer City, Gaston County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467065861?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="6">
+    <div class="card-title">Fire Sprinkler Fitter</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Kings Mountain, Cleveland County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467065829?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="7">
+    <div class="card-title">Industrial Coatings Project Manager: $100K-$125K</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467065892?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="8">
+    <div class="card-title">Paint Project Manager: $100K-$125K</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467065668?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="9">
+    <div class="card-title">Industrial Coatings Estimator: $100K-$125K</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467065474?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="10">
+    <div class="card-title">Drywall Project Manager: $100K-$125K</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467065367?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="11">
+    <div class="card-title">Paint Estimator: $100K-$125K</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467062912?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="12">
+    <div class="card-title">Sales Professional (Remote)</div>
+    <div class="card-company">American Income Life</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467059902?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=018F4F1A4B0A9F17F9BB0D4D05376F1E75FB80E3" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="13">
+    <div class="card-title">Truck Driver Company - 6mo EXP Required - OTR - Dry Van - U.S. Xpress - OTR</div>
+    <div class="card-company">U.S. Xpress - OTR</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467050796?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=286A21865482315177328E7722BF66024BDC781D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="14">
+    <div class="card-title">RN - Progressive Care Unit in Gastonia, North Carolina - $1,641/week</div>
+    <div class="card-company">Vetted</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467047777?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=4A5706DBB3242F8897BB9AFE71F9FED7689AA04B" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="15">
+    <div class="card-title">Field Sales Representative</div>
+    <div class="card-company">AT&amp;T</div>
+    <div class="card-location">Alexis, Gaston County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467013719?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D9186849DCB61F3C2ED5884A3768553793E6C5D4" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="16">
+    <div class="card-title">Registered Nurse- Retention Bonus Offered!</div>
+    <div class="card-company">DaVita Kidney Care</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466994033?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=787979D5E81F6248C18A8EDE9D39AF0D81EC07BF" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="17">
+    <div class="card-title">Nurse Practitioner</div>
+    <div class="card-company">Healing Partners</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466993370?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8CE84F68AA52B031A21D0751A0B7CEAA4C50D1B4" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="18">
+    <div class="card-title">Licensed Practical Nurse</div>
+    <div class="card-company">Engage Partners Inc.</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466984370?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=4AA660300A630EDC30F140DAA7F2DBCFFD6A6DF0" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="19">
+    <div class="card-title">Certified Registered Nurse Anesthetist (CRNA)</div>
+    <div class="card-company">ECAA - Anesthesia Specialists</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466983808?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0E2999F16E8F9A121866E5484DC682A1D4F07B4A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="20">
+    <div class="card-title">Orthopedic Registered Nurse</div>
+    <div class="card-company">CaroMont Health</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466980618?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=7B8567CEAFB513FBDF200F317DE848423D44586E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="21">
+    <div class="card-title">Certified Nursing Assistant</div>
+    <div class="card-company">All Ways Caring HomeCare</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466976335?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A7E8BA170B8BC2D51ACE82176E98608C0CF393A9" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="22">
+    <div class="card-title">Family Nurse Practitioner</div>
+    <div class="card-company">ASK Consulting</div>
+    <div class="card-location">Stanley, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466973696?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=2D1011AC29E7C0BB6BE41CCF4A83F624A47CE5E6" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="23">
+    <div class="card-title">Family Nurse Practitioner</div>
+    <div class="card-company">MainStreet Family Care</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466973015?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=504C3AFA72FCEA6C1E78199255BA05665A89871C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="24">
+    <div class="card-title">Registered Nurse Home Health Baylor</div>
+    <div class="card-company">CenterWell Home Health</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466972619?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8D88F209A4910CACDB22E1C0521CD8B0AE79AD03" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="25">
+    <div class="card-title">Nurse Practitioner - Belmont, NC</div>
+    <div class="card-company">CaroMont Health</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466967362?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5F1FCAEE647E822FACBAC5D14FDC7094E47E5660" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="26">
+    <div class="card-title">Registered Nurse Emergency</div>
+    <div class="card-company">CaroMont Health</div>
+    <div class="card-location">Mount Holly, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466966115?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=46B7AFB8D257B76EEF9AF70E38F310924CEB0B99" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="27">
+    <div class="card-title">Registered Nurse</div>
+    <div class="card-company">CaroMont Health</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466965338?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=218975C6C97A2ED13D9C4818FF0108AD12BF1A3B" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="28">
+    <div class="card-title">Field Nurse Practitioner - Gaston County, North Carolina</div>
+    <div class="card-company">Advantmed</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466964325?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=737E138DB5325B1CAA1A67F0D5FF0C6A1B53C276" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="29">
+    <div class="card-title">RN NEURO</div>
+    <div class="card-company">CaroMont Health</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466961938?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B81D9DDE5626E6172B87E740989D55C249B2B2CD" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="30">
+    <div class="card-title">Licensed Practical Nurse, Home Health</div>
+    <div class="card-company">CenterWell Home Health</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466960543?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=DD6980FF7DADB20402F3FDC118FB6FCF73E26465" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="31">
+    <div class="card-title">LPN / Licensed Practical Nurse - Home Health (PRN)</div>
+    <div class="card-company">Adoration Health</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466959163?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F848A5BE23FBC835F3CA7930A380B7C4938DCF06" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="32">
+    <div class="card-title">Registered Nurse Home Health</div>
+    <div class="card-company">CenterWell Home Health</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466958249?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9BA81233BE0447E75CCD18643470002846A63FFF" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="33">
+    <div class="card-title">Family Nurse Practitioner Preceptorship Program  Cherryville, NC</div>
+    <div class="card-company">MainStreet Family Care</div>
+    <div class="card-location">Cherryville, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466957489?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E14352CB9A8CB4338AD668618543AE6180E8CF25" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="34">
+    <div class="card-title">Neonatal Nurse Practitioner (PT/Hourly)</div>
+    <div class="card-company">Pediatrix Medical Group</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466954870?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B9EA2CA078675F0757133110074ED71E6EF36085" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="35">
+    <div class="card-title">Neonatal Nurse Practitioner (PT/Hourly)</div>
+    <div class="card-company">Pediatrix Medical Group</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466954355?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8D435DACBD5E849471CEF1118375744E80F6E3DB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="36">
+    <div class="card-title">Neonatal Nurse Practitioner-NewBorn Nursery</div>
+    <div class="card-company">Pediatrix Medical Group</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466952735?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=06531D850F9C19F491453DFF8C459AF5F0C3DF61" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="37">
+    <div class="card-title">Registered Nurse, Home Health Full Time</div>
+    <div class="card-company">CenterWell Home Health</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466945933?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A01D7F75835533D84CE93D3EB5EBC643E9414BDD" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="38">
+    <div class="card-title">LPN / Licensed Practical Nurse / $5K Bonus</div>
+    <div class="card-company">Adoration Health</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466943625?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B3F639E5EBBBD2FEC6C3F7359BFE9CD52598D811" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="39">
+    <div class="card-title">Neonatal Nurse Practitioner</div>
+    <div class="card-company">Pediatrix Medical Group</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466942999?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E6ABAE946A922C6B120EFB5E60BB1C8221FEDE0A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="40">
+    <div class="card-title">Nurse Practitioner</div>
+    <div class="card-company">Theoria Medical</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466941771?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=4186DAF8E80E9DD830CCD78836C313E387D71AA0" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="41">
+    <div class="card-title">Local Contract Nurse RN - PCU - Progressive Care Unit - $41-45 per hour</div>
+    <div class="card-company">Host Healthcare</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466937063?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D335C16D6CE1CCE5DF1E527AEB730D8052732B70" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="42">
+    <div class="card-title">Travel Nurse RN - Cardiac Stepdown - $1,890 per week</div>
+    <div class="card-company">GHR Healthcare</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466930908?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B07690B5E3A612F11B4DFB2682F4E8DA7E2684B0" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="43">
+    <div class="card-title">Delivery Team Associate</div>
+    <div class="card-company">Walmart</div>
+    <div class="card-location">Victory, Gaston County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466926318?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=62E469052EDFC9B14B52B7A5706A8238A5BAA876" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="44">
+    <div class="card-title">Team Leader</div>
+    <div class="card-company">Tractor Supply Company</div>
+    <div class="card-location">Cherryville, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466923171?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0911A9FFE38D6A3220B8D105E1C44D0607A0B31C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="45">
+    <div class="card-title">shift supervisor - Store 52820, I-85 &amp; PARK STREET</div>
+    <div class="card-company">Starbucks</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466919377?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=758951B155625CCD2886BDF2B62C32C58A4200CE" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="46">
+    <div class="card-title">barista - Store 52820, I-85 &amp; PARK STREET</div>
+    <div class="card-company">Starbucks</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466919372?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=555571F590C088891756FA8657077EEB908EFEED" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="47">
+    <div class="card-title">Travel Nurse RN - Cardiac Stepdown - $1,890 per week</div>
+    <div class="card-company">GHR Healthcare - Travel Division</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466913713?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C3E720AA77B646C252E8ED248D55865A0D6EAC86" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="48">
+    <div class="card-title">Travel Cardiac Stepdown Registered Nurse - $1,890 per week</div>
+    <div class="card-company">GHR Healthcare</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466913667?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=3463040C4F6F1D17D609985C016EB5A4F21C027C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="49">
+    <div class="card-title">Travel Nurse RN - PCU - Progressive Care Unit - $1,990 per week</div>
+    <div class="card-company">Host Healthcare</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466904780?se=Uh-_Kq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=BAD3B299D6DA5E632C27F08148EB4375907EB372" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="50">
+    <div class="card-title">Nanny Needed For My Children In Gastonia.</div>
+    <div class="card-company">Care.com</div>
+    <div class="card-location">Victory, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466897906?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="51">
+    <div class="card-title">Looking For A Pet Sitter For 2 Cats In Gastonia</div>
+    <div class="card-company">Care.com</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Social work Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466897769?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="52">
+    <div class="card-title">Sitter Needed For 1 Dog In Gastonia</div>
+    <div class="card-company">Care.com</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466895543?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="53">
+    <div class="card-title">Wireless Sales Pro</div>
+    <div class="card-company">Acosta Group</div>
+    <div class="card-location">Victory, Gaston County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466889759?se=Th1JLq6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=130435940ED962B9AD213A64D1D4D488784E083B" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="54">
+    <div class="card-title">Drive with DoorDash (High Shoals)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">High Shoals, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466880277?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="55">
+    <div class="card-title">Drive with DoorDash (Dallas)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Dallas, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466880100?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="56">
+    <div class="card-title">Drive with DoorDash (Cherryville)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Cherryville, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466879381?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="57">
+    <div class="card-title">Drive with DoorDash (Belmont)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466879355?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="58">
+    <div class="card-title">Drive with DoorDash (Stanley)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Stanley, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466878476?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="59">
+    <div class="card-title">Drive with DoorDash (Lowell)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Lowell, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466878497?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="60">
+    <div class="card-title">Drive with DoorDash (Bessemer City)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Bessemer City, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466878341?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="61">
+    <div class="card-title">Drive with DoorDash (McAdenville)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">McAdenville, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466877897?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="62">
+    <div class="card-title">Drive with DoorDash (Mount Holly)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Mount Holly, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466877905?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="63">
+    <div class="card-title">Drive with DoorDash (Crouse)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Cherryville, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466877824?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="64">
+    <div class="card-title">Drive with DoorDash (Alexis)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Alexis, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466877244?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="65">
+    <div class="card-title">Drive with DoorDash (Gastonia)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466876826?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="66">
+    <div class="card-title">Drive with DoorDash (Gastonia)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Victory, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466876849?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="67">
+    <div class="card-title">Drive with DoorDash (Cramerton)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Cramerton, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466876149?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="68">
+    <div class="card-title">Drive with DoorDash (Kings Mountain)</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Kings Mountain, Cleveland County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466875412?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="69">
+    <div class="card-title">▷ Urgent Search: Travel Interventional Radiology Technologist - $2,377 per week</div>
+    <div class="card-company">Focus Staff</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466861656?se=Th1JLq6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=25BA9D0FC78436F12D6B2D094AF2E81D2B1D38AD" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="70">
+    <div class="card-title">Urgent! Travel Nurse RN - CVOR - $2,666 per week</div>
+    <div class="card-company">Magnet Medical</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466861002?se=Th1JLq6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=183B5C24C6B0089E79241E96F27336134DE526DC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="71">
+    <div class="card-title">Travel Speech Language Pathologist - $2,240 per week</div>
+    <div class="card-company">American Traveler</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466858310?se=Th1JLq6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=CAD36BEA85E76C2993DC846BCD4ABD23B139CD3F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="72">
+    <div class="card-title">Travel Home Health Registered Nurse</div>
+    <div class="card-company">PRIDE Health</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466857072?se=Th1JLq6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=1422B197720E923DD92E833BC4B13EA0714EC620" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="73">
+    <div class="card-title">[Only 24h Left] Travel Nurse RN - Electrophysiology Lab - $2,238 per week</div>
+    <div class="card-company">Stability Healthcare</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466854901?se=Th1JLq6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F7531909034A4AA3E7AD859CD1276074DC1047AB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="74">
+    <div class="card-title">Drive with DoorDash</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">High Shoals, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466848739?se=Th1JLq6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=EF2AB1FBEB5B7F3012D84834C2BEE8724310BC38" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="75">
+    <div class="card-title">Drive with DoorDash</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Lowell, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466848742?se=Th1JLq6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8106FFDFF215513E1E63B7646E6B15D882721E86" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="76">
+    <div class="card-title">Travel Nurse RN - PCU - Progressive Care Unit - $2,025 per week</div>
+    <div class="card-company">ADEX Healthcare Staffing LLC</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466841942?se=Th1JLq6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F58A2D2426F2438A07B1DE24661E6D11622DADDC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="77">
+    <div class="card-title">Travel ICU Registered Nurse - $1,890 per week</div>
+    <div class="card-company">Prime Staffing</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466841161?se=Th1JLq6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=85AD2F44A1FA7E5DA8AC8293F0263E064AD330C9" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="78">
+    <div class="card-title">Travel Telemetry Registered Nurse - $1,739 per week</div>
+    <div class="card-company">TRS Healthcare</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466838257?se=Th1JLq6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=462A09A11C5D3A4A4A3C46F88880353F8B927FA9" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="79">
+    <div class="card-title">Outpatient Registered Nurse - RN</div>
+    <div class="card-company">Fresenius Medical Care</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466801854?se=Th1JLq6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5C5FD9A7138ECA86D8E32D80C0D215EDBCE71D08" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="80">
+    <div class="card-title">Data Analytics Job Training Program</div>
+    <div class="card-company">Year Up United</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466780598?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="81">
+    <div class="card-title">Travel Nurse RN - Intermediate Care - $1,665 per week</div>
+    <div class="card-company">Cross Country Nurses</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466776609?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="82">
+    <div class="card-title">Travel Nurse RN - Home Health - $2,120 per week</div>
+    <div class="card-company">American Medical Staffing</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466776402?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="83">
+    <div class="card-title">Local Class A Company Driver (Flatbed)</div>
+    <div class="card-company">TRIAD CORRUGATED METAL INC</div>
+    <div class="card-location">Lowell, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762704?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="84">
+    <div class="card-title">Local Class A Company Driver (Flatbed)</div>
+    <div class="card-company">TRIAD CORRUGATED METAL INC</div>
+    <div class="card-location">Stanley, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762692?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="85">
+    <div class="card-title">Local Class A Company Driver (Flatbed)</div>
+    <div class="card-company">TRIAD CORRUGATED METAL INC</div>
+    <div class="card-location">Kings Mountain, Cleveland County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762651?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="86">
+    <div class="card-title">Local Class A Company Driver (Flatbed)</div>
+    <div class="card-company">TRIAD CORRUGATED METAL INC</div>
+    <div class="card-location">Bowling Green, York County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762564?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="87">
+    <div class="card-title">Local Class A Company Driver (Flatbed)</div>
+    <div class="card-company">TRIAD CORRUGATED METAL INC</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762419?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="88">
+    <div class="card-title">Local Class A Company Driver (Flatbed)</div>
+    <div class="card-company">TRIAD CORRUGATED METAL INC</div>
+    <div class="card-location">High Shoals, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762248?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="89">
+    <div class="card-title">Local Class A Company Driver (Flatbed)</div>
+    <div class="card-company">TRIAD CORRUGATED METAL INC</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762202?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="90">
+    <div class="card-title">CDL A Owner Operator OTR Power Only/Dry Van/Reefer</div>
+    <div class="card-company">MUGO LOGISTICS LLC</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762263?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="91">
+    <div class="card-title">Class A Company Driver, Local, Refrigerated</div>
+    <div class="card-company">SAIN &amp; HEAVNER TRUCKING CO INC</div>
+    <div class="card-location">Bowling Green, York County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466758217?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="92">
+    <div class="card-title">Class A Company Driver, Local, Refrigerated</div>
+    <div class="card-company">SAIN &amp; HEAVNER TRUCKING CO INC</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466758124?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="93">
+    <div class="card-title">Class A Company Driver, Local, Refrigerated</div>
+    <div class="card-company">SAIN &amp; HEAVNER TRUCKING CO INC</div>
+    <div class="card-location">Dallas, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466757889?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="94">
+    <div class="card-title">Class A Contract Driver (1099), OTR, Dry Van</div>
+    <div class="card-company">GJ GROUP INC</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466756296?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="95">
+    <div class="card-title">CDL A Company Driver, OTR, Refrigerated</div>
+    <div class="card-company">SATCHELL CREEK EXPRESS INC</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466748741?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="96">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">Alexis, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747932?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="97">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">Stanley, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747955?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="98">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">Iron Station, Lincoln County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747965?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="99">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">High Shoals, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747612?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="100">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">Cherryville, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747632?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="101">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">Lowell, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747616?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="102">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">Kings Mountain, Cleveland County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747646?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="103">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">Grover, Cleveland County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747636?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="104">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">Dallas, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747627?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="105">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747635?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="106">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747644?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="107">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">Waco, Cleveland County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747637?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="108">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">Bessemer City, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747586?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="109">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">Clover, York County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747580?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="110">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">Mount Holly, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747607?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="111">
+    <div class="card-title">Class A Company Driver, Local, Dump trailer</div>
+    <div class="card-company">METAL RECYCLING SERVICES LLC</div>
+    <div class="card-location">Cramerton, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466747606?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="112">
+    <div class="card-title">1099 OTR TRUCK DRIVER</div>
+    <div class="card-company">UNITY FREIGHT LLC</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466741796?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="113">
+    <div class="card-title">Class A Team Company Driver, OTR, Dry Van</div>
+    <div class="card-company">MC CARRIER LLC</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466739749?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="114">
+    <div class="card-title">Cook / Grill Operator</div>
+    <div class="card-company">Waffle House, Inc.</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466737778?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="115">
+    <div class="card-title">Server / Wait Staff</div>
+    <div class="card-company">Waffle House, Inc.</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466737746?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="116">
+    <div class="card-title">Business Foundations Job Training Program</div>
+    <div class="card-company">Year Up United</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466730338?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="117">
+    <div class="card-title">RN - Intermediate Care in Gastonia, North Carolina - $1,667/week</div>
+    <div class="card-company">Vetted</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466718945?se=oCa4Ma6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=07AC16644BC178D7F41B0EE160AC6CBABF1AC9FF" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="118">
+    <div class="card-title">Application Development &amp; Support Career Training Program</div>
+    <div class="card-company">Year Up United</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466702258?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="119">
+    <div class="card-title">Travel Nurse RN - Intermediate Care - $1,665 per week</div>
+    <div class="card-company">Cross Country Nurses</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466679783?se=oCa4Ma6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=928DFC5726FA57221E2112F0D0781715D03F121D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="120">
+    <div class="card-title">Computer Systems Administration Job Training Program</div>
+    <div class="card-company">Year Up United</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466621851?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="121">
+    <div class="card-title">Travel Nurse RN - PCU - Progressive Care Unit - $1,738 per week</div>
+    <div class="card-company">Stability Healthcare</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466620412?se=oCa4Ma6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=AAC8B9E8589D974FB608D446B6D0C90B835A49BC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="122">
+    <div class="card-title">Travel Nurse RN - PCU - Progressive Care Unit - $1,909 per week</div>
+    <div class="card-company">Focus Staff</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466620353?se=oCa4Ma6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=859AB5D5744F54A00340D26697D1409CF2D00C03" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="123">
+    <div class="card-title">Now Hiring: Direct Care Staff (Part-Time) – Mega Touch Concepts Inc.</div>
+    <div class="card-company">MEGA TOUCH CONCEPTS INC</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Part time Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466618833?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="124">
+    <div class="card-title">Direct Care Professional</div>
+    <div class="card-company">MEGA TOUCH CONCEPTS INC</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466618826?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="125">
+    <div class="card-title">Travel Nurse RN - ICU - Intensive Care Unit - $1,802 per week</div>
+    <div class="card-company">Triage Staffing</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466617813?se=oCa4Ma6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=72D0406DAED335F07B622F2FC31CA14DFC835E3D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="126">
+    <div class="card-title">Travel Nurse RN - PCU - Progressive Care Unit - $1,707 per week</div>
+    <div class="card-company">TNAA TotalMed RN</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466598184?se=oCa4Ma6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=49B74A16C502F2A92E72CD0CD6CF85E9E376396C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="127">
+    <div class="card-title">IT Sales Executive</div>
+    <div class="card-company">ICS Managed IT Services</div>
+    <div class="card-location">Victory, Gaston County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466596405?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="128">
+    <div class="card-title">Travel Nurse RN - PCU - Progressive Care Unit - $1,897 per week</div>
+    <div class="card-company">CrossMed</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466588817?se=oCa4Ma6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A15AD307B61A91EE46AE5EB76CF65E572D5BE910" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="129">
+    <div class="card-title">Travel Nurse RN - Home Health - $2,120 per week</div>
+    <div class="card-company">American Medical Staffing</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466588658?se=oCa4Ma6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=512C9F012BE62C7C0DA3813D551A878311721AFC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="130">
+    <div class="card-title">Amazon Freight Partner - Regional CDL-A Solo-2 Driver - $46.8K-$55.5K/Year</div>
+    <div class="card-company">Amazon Freight Partner</div>
+    <div class="card-location">Mount Holly, Gaston County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466457461?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="131">
+    <div class="card-title">CDL A OTR &amp; Regional Drivers</div>
+    <div class="card-company">Cargo Transporters</div>
+    <div class="card-location">Mount Holly, Gaston County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466457485?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="132">
+    <div class="card-title">Travel Nurse RN - Home Health - $2,005 per week</div>
+    <div class="card-company">TNAA TotalMed Case Management</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466450640?se=oCa4Ma6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=4F821179704D7EC5F96B60B37F5F1DFDB678866F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="133">
+    <div class="card-title">Programming Job Training Program</div>
+    <div class="card-company">Year Up United</div>
+    <div class="card-location">Mount Holly, Gaston County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466448416?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="134">
+    <div class="card-title">Travel Nurse RN - Home Health - $2,126 per week</div>
+    <div class="card-company">TNAA TotalMed RN</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466423680?se=oCa4Ma6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=3EB1CBFEE28C1C204E8B255F97A2A5DFD715E57C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="135">
+    <div class="card-title">Senior Electrical Control Engineer</div>
+    <div class="card-company">BlackStar</div>
+    <div class="card-location">Dallas, Gaston County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466402980?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="136">
+    <div class="card-title">1st/3rd Shift</div>
+    <div class="card-company">Arthur Services, Inc.</div>
+    <div class="card-location">Dallas, Gaston County</div>
+    <div class="card-category">Manufacturing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466402618?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="137">
+    <div class="card-title">1st Shift Warehouse Associates</div>
+    <div class="card-company">Allegiance Staffing</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466402297?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="138">
+    <div class="card-title">2nd Shift VAS Utility CB</div>
+    <div class="card-company">Arthur Services, Inc.</div>
+    <div class="card-location">Kings Mountain, Cleveland County</div>
+    <div class="card-category">Manufacturing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466402055?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="139">
+    <div class="card-title">Personal Trainer</div>
+    <div class="card-company">Svetness Personal Training</div>
+    <div class="card-location">McAdenville, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466402036?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="140">
+    <div class="card-title">FOOD SERVICE WORKER (FULL TIME)</div>
+    <div class="card-company">Morrison Living</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466401820?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="141">
+    <div class="card-title">Server</div>
+    <div class="card-company">Pizza Hut</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466401078?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="142">
+    <div class="card-title">General Dentists - Supporting Military Health Readiness</div>
+    <div class="card-company">DOCS Health</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466401027?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="143">
+    <div class="card-title">Supervisor, Plant</div>
+    <div class="card-company">Wind River Environmental LLC</div>
+    <div class="card-location">Dallas, Gaston County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466399315?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="144">
+    <div class="card-title">Service Plumber</div>
+    <div class="card-company">MASSEY PLUMBING INC</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466397979?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="145">
+    <div class="card-title">Environmental Services - Manager in Training</div>
+    <div class="card-company">Healthcare Services Group, Inc.</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466397381?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="146">
+    <div class="card-title">RN Home Care</div>
+    <div class="card-company">BAYADA Home Health Care</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466397328?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="147">
+    <div class="card-title">Shift Lead</div>
+    <div class="card-company">Pizza Hut</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466396946?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="148">
+    <div class="card-title">Traffic Control Flagger</div>
+    <div class="card-company">Wright</div>
+    <div class="card-location">Kings Mountain, Cleveland County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466394505?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="149">
+    <div class="card-title">Public Works Director</div>
+    <div class="card-company">City of Kings Mountain</div>
+    <div class="card-location">Kings Mountain, Cleveland County</div>
+    <div class="card-category">Admin Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466391427?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="150">
+    <div class="card-title">Cook</div>
+    <div class="card-company">Pizza Hut</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466387220?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="151">
+    <div class="card-title">Customer Service Rep(08856) - 110-7 West King Street</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Kings Mountain, Cleveland County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466386242?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="152">
+    <div class="card-title">Home Health Aide</div>
+    <div class="card-company">CenterWell Home Health</div>
+    <div class="card-location">Lincolnton, Lincoln County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466361993?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=CD08A47EE44487B192C59AD5BE66BF8E8F39D6B9" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="153">
+    <div class="card-title">Certified Registered Nurse Anesthetist (CRNA)</div>
+    <div class="card-company">ECAA - Anesthesia Specialists</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466342275?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=542734CA2F864F30403401506431777B537A1812" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="154">
+    <div class="card-title">RN NEURO</div>
+    <div class="card-company">CaroMont Health</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466341847?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=BBCF30D2B9C8A97E221AB4FF36A5F580FDFB70AE" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="155">
+    <div class="card-title">Application Development &amp; Support Career Training Program</div>
+    <div class="card-company">Year Up United</div>
+    <div class="card-location">Mount Holly, Gaston County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466303414?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="156">
+    <div class="card-title">Occupational Therapy Assistant / COTA / OTA / PRN</div>
+    <div class="card-company">Broad River Rehabilitation</div>
+    <div class="card-location">Cherryville, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466297373?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="157">
+    <div class="card-title">Physical Therapist / PT - PRN</div>
+    <div class="card-company">Continuum Therapy Partners</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466295385?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="158">
+    <div class="card-title">Looking for a FT RN who is also certified to inject Botox</div>
+    <div class="card-company">ANTHONY MEDICAL CLINIC, PA</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466294522?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="159">
+    <div class="card-title">Lead Sales Consultant</div>
+    <div class="card-company">Alleviation Enterprise LLC</div>
+    <div class="card-location">Clover, York County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466293444?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="160">
+    <div class="card-title">Physical Therapist Assistant / PTA - PRN</div>
+    <div class="card-company">Continuum Therapy Partners</div>
+    <div class="card-location">Cherryville, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466291330?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="161">
+    <div class="card-title">Speech Language Pathologist / Speech Therapist / SLP / PRN</div>
+    <div class="card-company">Broad River Rehabilitation</div>
+    <div class="card-location">Cherryville, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466290483?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="162">
+    <div class="card-title">Travel Home Health Registered Nurse - $2,174 per week</div>
+    <div class="card-company">PRIDE Health</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466283358?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8E656D51396EC66C0FB2C84094BB5646D96079C3" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="163">
+    <div class="card-title">Travel Radiology Technologist - $2,176 per week</div>
+    <div class="card-company">Planet Healthcare</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466283280?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A1B07D588487D65E06BA5C5B87C7045FF0075D92" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="164">
+    <div class="card-title">MHSU State Hospital Transition Coordinator (Raleigh, NC)</div>
+    <div class="card-company">Partners Behavioral Health Management</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466223360?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A06A5F76E6CD166A404B8F9FFD0323FC2651ACE2" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="165">
+    <div class="card-title">Team Member</div>
+    <div class="card-company">Regal Theatres</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466222661?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="166">
+    <div class="card-title">MHSU Care Manager, LTSS (Mobile Position-Gastonia NC)</div>
+    <div class="card-company">Partners Behavioral Health Management</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466210257?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=42AE0720A196628D2303E4D9441151318E1626BD" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="167">
+    <div class="card-title">Assistant General Manager</div>
+    <div class="card-company">Maya Hospitality Group Inc</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466204132?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="168">
+    <div class="card-title">Bus Driver - 6 hours/day, 10 months/year @ Bessemer City Middle</div>
+    <div class="card-company">Gaston County Schools</div>
+    <div class="card-location">Bessemer City, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466204091?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="169">
+    <div class="card-title">Building and Grounds Maintenance</div>
+    <div class="card-company">Campers Inn Inc</div>
+    <div class="card-location">Kings Mountain, Cleveland County</div>
+    <div class="card-category">Maintenance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466195108?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="170">
+    <div class="card-title">Travel Nurse RN - Electrophysiology Lab - $2,386 per week</div>
+    <div class="card-company">Supplemental Health Care</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466191460?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A57A042E43CAAE37158AF081DBE1513C0E815687" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="171">
+    <div class="card-title">IT Program Analyst - UM (Remote Option)</div>
+    <div class="card-company">Partners Behavioral Health Management</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466186979?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=11073CBD89B80498AB3F1988585237F3DF22DC1B" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="172">
+    <div class="card-title">Claims Director (Remote Option)</div>
+    <div class="card-company">Partners Behavioral Health Management</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Admin Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466179791?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=7551F5426F2A2C47D33F5E741B8BEDEFF1D99695" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="173">
+    <div class="card-title">Prov Network Relations Supervisor-Physical Health (Remote-NC)</div>
+    <div class="card-company">Partners Behavioral Health Management</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466108525?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=36E4AB885A52FF2710275FD911C10B041F779055" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="174">
+    <div class="card-title">General Cleaner</div>
+    <div class="card-company">ABM</div>
+    <div class="card-location">South Gastonia, Gaston County</div>
+    <div class="card-category">Domestic help &amp; Cleaning Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466043315?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="175">
+    <div class="card-title">Paralegal/Policies &amp; Procedures Specialist (Hybrid-Gastonia NC)</div>
+    <div class="card-company">Partners Behavioral Health Management</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Legal Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466042899?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5DE553DCBE2868F72BAD36736DB9A47DF8B1AD62" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="176">
+    <div class="card-title">Bojangles General Manager (Gerente General) – Gastonia, NC – 184</div>
+    <div class="card-company">Bojangles</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466042643?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="177">
+    <div class="card-title">▷ [Urgent Search] Travel Electrophysiology Technician - $2,237 per week</div>
+    <div class="card-company">Trustaff Allied</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466039976?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E814A1CFF115638165BB0D52B59E8584C9CA60A7" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="178">
+    <div class="card-title">▷ Urgent! Registered Nurse</div>
+    <div class="card-company">Encompass Health</div>
+    <div class="card-location">Kings Mountain, Cleveland County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466035805?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A601898D4DBA63F03DBEF71B1E994D61D4364F9A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="179">
+    <div class="card-title">Elementary Teacher - 3rd Grade - Interim @ Sherwood Elementary</div>
+    <div class="card-company">Gaston County Schools</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466024457?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="180">
+    <div class="card-title">Seasonal Stockroom Operations Associate</div>
+    <div class="card-company">KOHLS</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466023891?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="181">
+    <div class="card-title">Health Edu &amp; Aging Resources Team (HEART), RN - Gastonia, NC</div>
+    <div class="card-company">Partners Behavioral Health Management</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466023600?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=81B5F2ED56B852403DE9E3BBFE0F887E7FCF7F7F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="182">
+    <div class="card-title">Doctor&#x27;s Technician (PEG NC)</div>
+    <div class="card-company">Career Opportunities with Now Optics</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466015579?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="183">
+    <div class="card-title">Customer Service Rep(08864) - 206 S Hwy 27</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Stanley, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466003613?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="184">
+    <div class="card-title">Assistant Manager(04452) - 553 South Main Street</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Mount Holly, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466002179?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="185">
+    <div class="card-title">Customer Service Rep(04470) - 3130 Dallas High-Shoals Road</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Dallas, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466001791?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="186">
+    <div class="card-title">Adjunct Faculty in Economics, Hybrid - North Dallas, TX Campus</div>
+    <div class="card-company">Strayer University</div>
+    <div class="card-location">Dallas, Gaston County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465997423?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="187">
+    <div class="card-title">RN Clinical Coordinator - Night Shift</div>
+    <div class="card-company">Reserve Health</div>
+    <div class="card-location">Victory, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465990732?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="188">
+    <div class="card-title">BCBA ($15,000 Bonus, Hybrid)</div>
+    <div class="card-company">ABS Kids</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465987580?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="189">
+    <div class="card-title">Traffic Control Flagger</div>
+    <div class="card-company">Wright</div>
+    <div class="card-location">Victory, Gaston County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465960205?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="190">
+    <div class="card-title">Facilities - Custodian Floater 8hrs/day, 12months/year</div>
+    <div class="card-company">Gaston County Schools</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Maintenance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465950631?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="191">
+    <div class="card-title">Lead Generator Ambassador - Gastonia</div>
+    <div class="card-company">ARS</div>
+    <div class="card-location">Bessemer City, Gaston County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465927800?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="192">
+    <div class="card-title">RN - After Hours / Weekend On-Call $20,000 Sign-on Bonus!</div>
+    <div class="card-company">Agape Care Group</div>
+    <div class="card-location">Grover, Cleveland County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465891234?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=7080C04418A5D125B072D9F600091CBB3199AAD6" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="193">
+    <div class="card-title">RN - After Hours / Weekend On-Call $20,000 Sign-on Bonus!</div>
+    <div class="card-company">Agape Care Group</div>
+    <div class="card-location">Waco, Cleveland County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465891228?se=ZMcnNa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=2C9B65D7918A07EB1FDB1680722AF373F0E56A9F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="194">
+    <div class="card-title">Sales Representative</div>
+    <div class="card-company">Southern National Roofing</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465885796?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="195">
+    <div class="card-title">Lot Porter</div>
+    <div class="card-company">CAMPERS INN INC</div>
+    <div class="card-location">Kings Mountain, Cleveland County</div>
+    <div class="card-category">Maintenance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465843843?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="196">
+    <div class="card-title">T Mobile Authorized Retailer Sales Associate</div>
+    <div class="card-company">Luna Wireless, An Authorized T-Mobile Retailer</div>
+    <div class="card-location">Belmont, Gaston County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465843671?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="197">
+    <div class="card-title">Assistant Manager</div>
+    <div class="card-company">Pizza Hut</div>
+    <div class="card-location">Stanley, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465837124?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="198">
+    <div class="card-title">Caregiver - Home Health Aid-CNA</div>
+    <div class="card-company">Senior Helpers - Rock Hill</div>
+    <div class="card-location">Clover, York County</div>
+    <div class="card-category">Social work Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465828815?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="199">
+    <div class="card-title">General Accountant</div>
+    <div class="card-company">IFab Corporation</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465828679?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="200">
+    <div class="card-title">General Manager</div>
+    <div class="card-company">Pizza Hut</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465827700?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="201">
+    <div class="card-title">Independent Contractor - Janitorial Service - Kings Mountain</div>
+    <div class="card-company">City Wide Facility Solutions</div>
+    <div class="card-location">Kings Mountain, Cleveland County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465827754?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="202">
+    <div class="card-title">HVAC Technician II</div>
+    <div class="card-company">Carowinds</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Maintenance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465807956?se=4o3aOK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=62205D07B1D430CB5F3977762C8FFEA23193D5BE" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="203">
+    <div class="card-title">Ride Operator</div>
+    <div class="card-company">Carowinds</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465807963?se=4o3aOK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A7D3121AA86A96BA52004552BDCC9F114B803904" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="204">
+    <div class="card-title">Travel Hospital Speech Language Pathologist - $2,364 per week</div>
+    <div class="card-company">Aequor Allied</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465795800?se=4o3aOK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=FFD7AA295335B553D23B703F8569CEF3C6CB855F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="205">
+    <div class="card-title">Physical Therapist / PT - PRN</div>
+    <div class="card-company">Continuum Therapy Partners</div>
+    <div class="card-location">Cherryville, Gaston County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465785009?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="206">
+    <div class="card-title">Assistant Manager RN Emergency Department</div>
+    <div class="card-company">CaroMont Health</div>
+    <div class="card-location">Mount Holly, Gaston County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465784294?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="207">
+    <div class="card-title">Experienced Line Cook</div>
+    <div class="card-company">CATTLE CAR LLC</div>
+    <div class="card-location">Clover, York County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465778536?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="208">
+    <div class="card-title">Lead Electrical Estimator</div>
+    <div class="card-company">WALKER ELECTRIC SERVICES INC</div>
+    <div class="card-location">Gastonia, Gaston County</div>
+    <div class="card-category">Manufacturing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465776531?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="209">
+    <div class="card-title">Special Education Teacher (SPED)</div>
+    <div class="card-company">The Stepping Stones Group</div>
+    <div class="card-location">Boogertown, Gaston County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465771798?se=4o3aOK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=20EDDB1DF27F9BBA1778054127FBFFE1824B936D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+</div>
+<script>
+(function(){
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const qraw = (params.get('q') || '').trim();
+    if (!qraw) return;
+
+    const q = qraw.toLowerCase();
+    const terms = q.split(/\s+/).filter(Boolean);
+    const cards = document.querySelectorAll('.title-card');
+    let shown = 0;
+
+    cards.forEach(card => {
+      const hay = card.textContent.toLowerCase();
+      const match = terms.every(t => hay.includes(t));
+      card.style.display = match ? '' : 'none';
+      if (match) shown++;
+    });
+
+    // Small banner to show filter status and offer a "Clear" link
+    const grid = document.querySelector('.title-grid');
+    if (grid && grid.parentNode) {
+      const bar = document.createElement('div');
+      bar.setAttribute('role','status');
+      bar.style.cssText = 'margin:12px 0 16px;padding:10px 12px;border:1px solid #e6e8eb;border-radius:12px;background:#fff;line-height:1.45;';
+      // escape < > & in qraw
+      const safe = qraw.replace(/[&<>]/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[s]));
+      bar.innerHTML = 'Filtering by "<strong>' + safe + '</strong>" — <strong>' + shown + '</strong> match' + (shown===1?'':'es') + '. ' +
+                      '<a href="' + location.pathname + '">Clear</a>';
+      grid.parentNode.insertBefore(bar, grid);
+    }
+  } catch (e) {
+    if (window.console) console.warn('Filter error:', e);
+  }
+})();
+</script>
+
+  </main>
+  <footer>
+    &copy; 2024 North Carolina Careers Hub. Generated report.
+  </footer>
+</body>
+</html>

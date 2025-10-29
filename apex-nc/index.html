@@ -1,0 +1,2501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>North Carolina Careers Hub — Generated Titles</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      --bg: #f5f7fb;
+      --text: #1f2933;
+      --muted: #637183;
+      --accent: #2463eb;
+      --card: #ffffff;
+      --shadow: 0 18px 45px rgba(15, 31, 62, 0.12);
+      --radius: 16px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 3.2rem 1.5rem 2.6rem;
+      background: linear-gradient(145deg, #102b5d, #15407c, #2463eb);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2.6rem, 3.8vw + 1.2rem, 4rem);
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      margin: 0.5rem auto 0;
+      max-width: 60ch;
+      color: #e5edff;
+      font-size: 1.05rem;
+    }
+
+    .home-button {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.6rem 1.35rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      background: rgba(255, 255, 255, 0.18);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .home-button:hover {
+      background: rgba(255, 255, 255, 0.28);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px rgba(15, 31, 62, 0.24);
+    }
+
+    main {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+      flex: 1 1 auto;
+      padding: 3rem 0 4rem;
+    }
+
+    .title-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.8rem;
+    }
+
+    .title-card {
+      background: linear-gradient(155deg, rgba(255, 255, 255, 0.97), rgba(212, 224, 255, 0.65));
+      border-radius: var(--radius);
+      padding: 1.4rem 1.9rem 4.4rem;
+      box-shadow: 0 22px 45px rgba(15, 31, 62, 0.14);
+      border: 1px solid rgba(36, 99, 235, 0.18);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .title-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(36, 99, 235, 0.22), transparent 58%);
+      opacity: 0.9;
+    }
+
+    .title-card > *:not(.card-actions) {
+      position: relative;
+      z-index: 1;
+    }
+
+    .title-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 65px rgba(15, 31, 62, 0.22);
+    }
+
+    .card-title {
+      margin: 0 0 0.6rem;
+      font-size: 1.22rem;
+      font-weight: 700;
+      color: #102b5d;
+      letter-spacing: -0.01em;
+    }
+
+    .card-company {
+      margin: 0 0 0.45rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .card-location {
+      margin: 0 0 0.75rem;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .card-category {
+      margin: 0;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: rgba(16, 43, 93, 0.86);
+    }
+
+    .card-actions {
+      position: absolute;
+      left: 1.9rem;
+      right: 1.9rem;
+      bottom: 1.4rem;
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      box-shadow: 0 14px 32px rgba(15, 31, 62, 0.16);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .card-link:hover {
+      background: #1a44a6;
+      transform: translateY(-2px);
+      box-shadow: 0 16px 38px rgba(15, 31, 62, 0.22);
+    }
+  
+    footer {
+      padding: 1.5rem 0 2rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="home-button" href="../../home.html">← Back to Home</a>
+    <h1>Apex, NC</h1>
+    <p>Fetched jobs from "Apex, NC"</p>
+  </header>
+  <main>
+<div class="title-grid">
+  <div class="title-card" data-row="1">
+    <div class="card-title">Sales Professional</div>
+    <div class="card-company">Indoor Media</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467092826?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E19E8CEBE383DE9B4D562CE19CCFA2A3CFB066CF" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="2">
+    <div class="card-title">Production Team Member</div>
+    <div class="card-company">CRH</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Manufacturing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467071244?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="3">
+    <div class="card-title">Rebar Laborer</div>
+    <div class="card-company">CRH</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467071251?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="4">
+    <div class="card-title">Teacher, Special Programs, Orientation and Mobility Specialist</div>
+    <div class="card-company">Wake County Public School System</div>
+    <div class="card-location">Shannon Plaza, Durham County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467065570?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=3C555E744139993EAEB0D3FF8674BE2B99FEB0A2" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="5">
+    <div class="card-title">Teacher, Special Programs, Orientation and Mobility Specialist</div>
+    <div class="card-company">Wake County Public School System</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467065498?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=66CD2B253F54F0E8B52D0070CF68C3EE35453028" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="6">
+    <div class="card-title">Teacher, Special Programs, Orientation and Mobility Specialist</div>
+    <div class="card-company">Wake County Public School System</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467065276?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=87BD522D6BB302B6D0BB317DEA597D0AFE794109" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="7">
+    <div class="card-title">Teacher, Special Programs, Orientation and Mobility Specialist</div>
+    <div class="card-company">Wake County Public School System</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467065007?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=39D6BD4095E96C7A2AD9F4F90774E21C0BCDC73E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="8">
+    <div class="card-title">Teacher, Special Programs, Orientation and Mobility Specialist</div>
+    <div class="card-company">Wake County Public School System</div>
+    <div class="card-location">Holly Springs, Wake County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467064995?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E701BBC442AEBE31F17AD80FD9C2E3D6FB4F5708" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="9">
+    <div class="card-title">Teacher, Special Programs, Orientation and Mobility Specialist</div>
+    <div class="card-company">Wake County Public School System</div>
+    <div class="card-location">Cameron Village, Wake County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467065015?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=BD01B403CC21672F94078A47496336806E5C495E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="10">
+    <div class="card-title">Teacher, Special Programs, Orientation and Mobility Specialist</div>
+    <div class="card-company">Wake County Public School System</div>
+    <div class="card-location">Mccullers, Wake County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467065017?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=7193D3BC0F03DF5A19DCC813F0BF05EF7AA8291F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="11">
+    <div class="card-title">CDL A Truck Driver</div>
+    <div class="card-company">Specialized Transport Solutions</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467060408?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="12">
+    <div class="card-title">Calling All Tax Seniors</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467059292?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="13">
+    <div class="card-title">Wanted: Tax Senior</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467059291?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="14">
+    <div class="card-title">Tax Senior to join a great team!</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467059222?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="15">
+    <div class="card-title">Awesome Tax Senior Opportunity!</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467059198?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="16">
+    <div class="card-title">Amazing TAX SENIOR opportunity!</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467059196?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="17">
+    <div class="card-title">Tax Senior for a GREAT firm!</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467059197?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="18">
+    <div class="card-title">Tax Senior</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467059191?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="19">
+    <div class="card-title">Tax Senior Needed</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467059203?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="20">
+    <div class="card-title">Wanted: Tax Senior</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467059188?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="21">
+    <div class="card-title">Tax Manager - onsite</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Crabtree Valley, Wake County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467059136?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="22">
+    <div class="card-title">TAX SENIOR Wanted</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467058899?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="23">
+    <div class="card-title">TAX SENIOR Wanted ASAP</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467058887?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="24">
+    <div class="card-title">Tax Manager Wanted!</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467058861?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="25">
+    <div class="card-title">Senior Tax Manager - Hybrid</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Crabtree Valley, Wake County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467058845?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="26">
+    <div class="card-title">Hiring a Tax Associate ASAP</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Cameron Village, Wake County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467058846?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="27">
+    <div class="card-title">BOOKKEEPER in public accounting</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467058840?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="28">
+    <div class="card-title">Wanted: Tax Associate</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Cameron Village, Wake County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467058847?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="29">
+    <div class="card-title">Tax Associate</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Cameron Village, Wake County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467058791?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="30">
+    <div class="card-title">Public Accounting BOOKKEEPER</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467058629?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="31">
+    <div class="card-title">CONSTRUCTION SUPERINTENDENT</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">Cameron Village, Wake County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467058441?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="32">
+    <div class="card-title">PROJECT MANAGER/ESTIMATOR FOR CONSTRUCTION</div>
+    <div class="card-company">Gpac</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467058406?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="33">
+    <div class="card-title">CDL-A Company Driver - 6mo EXP Required - OTR - Dry Van - U.S. Xpress - OTR</div>
+    <div class="card-company">U.S. Xpress - OTR</div>
+    <div class="card-location">Holly Springs, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467050690?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D652C857727E4191ED6928DC17F6A819A75E39AE" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="34">
+    <div class="card-title">Truck Driver Company - 6mo EXP Required - OTR - Dry Van - U.S. Xpress - OTR</div>
+    <div class="card-company">U.S. Xpress - OTR</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467050701?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B5B42E9E302F65EE4F751A1B4F390D41118A0B5D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="35">
+    <div class="card-title">Truck Driver Company - 6mo EXP Required - OTR - Dry Van - U.S. Xpress - OTR</div>
+    <div class="card-company">U.S. Xpress - OTR</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467050682?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9CA6FDEC6C897F601B7E181099529A9B150D5E71" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="36">
+    <div class="card-title">Truck Driver Company - 6mo EXP Required - OTR - Dry Van - U.S. Xpress - OTR</div>
+    <div class="card-company">U.S. Xpress - OTR</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5467050391?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=1AA7E2160F99E5545614D9FF77A3799C235550BB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="37">
+    <div class="card-title">Customer Service Representative-Chat Repair</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467020591?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="38">
+    <div class="card-title">Customer Support Representative</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5467019781?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="39">
+    <div class="card-title">Telehealth Nurse</div>
+    <div class="card-company">Actalent</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466994420?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=1C3C296D3D3209A1C515022199CA579178E5937D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="40">
+    <div class="card-title">NP or PA - Urgent Care - Fuquay Varina</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466990741?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=AC305CC83863202D8CDDEA82CCCC1A05DE87CB2F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="41">
+    <div class="card-title">Ambulatory Care Nurse II</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466989347?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=03AC718FC4A78D146BF5148945F85740193822EC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="42">
+    <div class="card-title">CERTIFIED NURSING ASSISTANT - TEMPLETON OF CARY</div>
+    <div class="card-company">Liberty Health</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466985144?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=7680CFFE907AB1988170804B65E91DE58F4DE50D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="43">
+    <div class="card-title">Registered Nurse (RN) Emergency Department</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466981507?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=949E4BD843E9F112105C1A7228ABD57F2E0256C5" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="44">
+    <div class="card-title">RN, Registered Nurse - Acute MedSurgical A</div>
+    <div class="card-company">Christus Health</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466979418?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="45">
+    <div class="card-title">Lactation Consultant I, RN - Lactation Services</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466978408?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D4C778FC0A6D4CE837E7D6DBCA91954583332AE9" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="46">
+    <div class="card-title">Nurse Practitioner Hospitalist</div>
+    <div class="card-company">Jobot Consulting</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466978472?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=299367F53D6C4158D2414886DA06AF7F5AB258F1" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="47">
+    <div class="card-title">Hospice Registered Nurse</div>
+    <div class="card-company">Gentiva</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466973643?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A44C951185B462575999FEB1A7AFEB74A82C0A1C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="48">
+    <div class="card-title">WakeMed Intercanal Travel- ED Holding RN</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466971564?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=09EA81C5FED100B5AE80B70DE3FA3EA412168145" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="49">
+    <div class="card-title">WakeMed Internal Travel- ED Holding RN</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466971692?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=2F0C593840F2B6090A05FF5AEA9211E05110F34D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="50">
+    <div class="card-title">Registered Nurse (RN) ICU, Cary Hospital</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466970465?se=dqEzoa6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=64486DBA4042920490B5CA0EA4C71C60504DD21A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="51">
+    <div class="card-title">Registered Nurse (RN) - The Laurels of Chatham</div>
+    <div class="card-company">Ciena Healthcare</div>
+    <div class="card-location">Pittsboro, Chatham County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466966591?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=458D24B6C19B6405EFF761A9786225F46E84EAD4" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="52">
+    <div class="card-title">Ambulatory Care Nurse III</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466965920?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B454A50DA4854BB6A089C0C4A104B871AD63E0F7" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="53">
+    <div class="card-title">Nurse Aide I &amp; Clinical Secretary - Mother/Baby</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466966155?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8C083B4A0DA8FEB5FF9EE8610FE89906581040BD" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="54">
+    <div class="card-title">Registered Nurse (RN) - Neonatal ICU</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466962379?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B810F672A41A493BDA1CE976212B8FC2EA8694FF" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="55">
+    <div class="card-title">Registered Nurse (RN) - Medicine/Telemetry, Cary Hospital</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466961859?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=3B5D578CABED11100D4BEBF9223FFB5B42D002D3" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="56">
+    <div class="card-title">Registered Nurse (RN) - Step-Down/Intermediate Care, Cary Hospital</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466957191?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E6E13C18BA7B4002A68497F6C859C1AAB861B305" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="57">
+    <div class="card-title">Registered Nurse - Contractor</div>
+    <div class="card-company">SAS</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466951529?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0138F5C58994928C60960AF58E03FB7A863A9C97" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="58">
+    <div class="card-title">Registered Nurse (RN) Heart &amp; Vascular</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466950668?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C612A6ECDB14D400FE5192C26A58C11EF1960BC2" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="59">
+    <div class="card-title">Ambulatory Care Nurse, Infusion</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466949114?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A6DB2DDB3E7C586BEA08E57F329751253E88D3CE" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="60">
+    <div class="card-title">Registered Nurse (RN) - Labor &amp; Delivery</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466948376?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=2D5BBE91DDCF76867F53D7B2F9203A42B89334A9" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="61">
+    <div class="card-title">Clinical Nurse, Resident - Spring 2026 - 5W Surgery &amp; Trauma Intermediate Care</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466948190?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=7B809F73A58566EF830D0F8DB392BB54157A1363" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="62">
+    <div class="card-title">Clinical Nurse, Resident - Spring 2026 - 2West Intermediate Care</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466948169?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=3E51C7C7936ED16C552DABF39FE4CD848D899889" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="63">
+    <div class="card-title">Travel NICU Clinical Nurse-WMTS</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466947832?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=1263D3FE9A55A1BA85FEE6D36DD2D61BC670F43E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="64">
+    <div class="card-title">Clinical Nurse, Resident - Spring 2026 - Emergency Department (Cary)</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466948003?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=EB12059B922D17D4DAE8D53E793826B3EE00A7BF" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="65">
+    <div class="card-title">Experienced Advanced Practice Provider NP/PA - Cary</div>
+    <div class="card-company">Avance Care</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466943735?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A0A3EDE96AA675D0E64166B4D5EAD93E44AFC232" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="66">
+    <div class="card-title">Lactation Consultant I, RN</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466940674?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E087F6C2643D2B89F84C2C35E55965D75D6AEBB1" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="67">
+    <div class="card-title">Nurse Aide I-Staffing Resources</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466940377?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=08771E4325BBB3E95CF0B886DBBC83BB620DBE24" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="68">
+    <div class="card-title">LPN Evenings Consistent Hours, No Weekend Grind</div>
+    <div class="card-company">Southern Health Partners</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466938955?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=92E0EB3E9CC0A7811047D8FBB15AD338822CA0D4" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="69">
+    <div class="card-title">Roofing Project Manager</div>
+    <div class="card-company">On Tops Roofing</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466931247?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="70">
+    <div class="card-title">Travel Radiation Therapist - $2,502 per week</div>
+    <div class="card-company">LeaderStat</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466928167?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=73400315B480EBFBB893D4E02514D548341556E5" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="71">
+    <div class="card-title">Travel Radiologic Technologist - $2,120 per week</div>
+    <div class="card-company">LanceSoft</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466926467?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A1B9B0F60D944476CF6F9EEBE7349890B9E77A30" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="72">
+    <div class="card-title">Meat/Produce Team Associate</div>
+    <div class="card-company">Walmart</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Manufacturing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466926378?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9E549BD35B920FC8B92609196F62F06FA4B856A3" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="73">
+    <div class="card-title">Maintenance Technician</div>
+    <div class="card-company">Brooksource</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466915216?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="74">
+    <div class="card-title">Travel Surgical ICU Registered Nurse - $2,060 per week</div>
+    <div class="card-company">IDR Healthcare</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466913827?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E5FCB8C44E4723CA7552EBCF61CAA7619FC0484F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="75">
+    <div class="card-title">Assistant Project Manager K-12</div>
+    <div class="card-company">Jacobs</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Consultancy Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466909593?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C06199636E378A1D755C2464FAF82EC89CC92404" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="76">
+    <div class="card-title">Looking For A Dependable House Cleaner For Family Living In Cary.</div>
+    <div class="card-company">Care.com</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Domestic help &amp; Cleaning Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466906629?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="77">
+    <div class="card-title">Pharmacy Technician</div>
+    <div class="card-company">CVS Health</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466903255?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=076CF9187AC0BD349B6C0C0C06B04815DEA24F1F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="78">
+    <div class="card-title">Pharmacy Technician</div>
+    <div class="card-company">CVS Health</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466903238?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0E92E6FD11BEB5C68BCE8B5AB4F80F58A20EEB39" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="79">
+    <div class="card-title">Building Automation Field Installer Senior (BAS)</div>
+    <div class="card-company">Climatec, LLC</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466902577?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=EABDD2A6BF05BF8C15FB232B76535062514D8B3F" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="80">
+    <div class="card-title">Nanny Needed For 2 Children In Cary</div>
+    <div class="card-company">Care.com</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466898893?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="81">
+    <div class="card-title">Hands-on Care Needed For My Father In Raleigh</div>
+    <div class="card-company">Care.com</div>
+    <div class="card-location">Cameron Village, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466897157?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="82">
+    <div class="card-title">Looking For A Math Tutor In New Hill.</div>
+    <div class="card-company">Care.com</div>
+    <div class="card-location">New Hill, Wake County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466896625?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="83">
+    <div class="card-title">Nanny Needed For 1 Child In Cary.</div>
+    <div class="card-company">Care.com</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Domestic help &amp; Cleaning Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466896473?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="84">
+    <div class="card-title">Looking For A Dependable House Cleaner For Family Living In Apex.</div>
+    <div class="card-company">Care.com</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Domestic help &amp; Cleaning Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466896415?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="85">
+    <div class="card-title">Nanny Needed For My Children In Cary.</div>
+    <div class="card-company">Care.com</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466895930?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="86">
+    <div class="card-title">Babysitter Needed For 2 Children In Cary.</div>
+    <div class="card-company">Care.com</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Domestic help &amp; Cleaning Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466895145?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="87">
+    <div class="card-title">Building Engineer</div>
+    <div class="card-company">GTT, LLC</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466890235?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="88">
+    <div class="card-title">TRACS Territory Manager</div>
+    <div class="card-company">Genuine Parts Company</div>
+    <div class="card-location">Mccullers, Wake County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466873303?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=99C0FC38549965916C4BC4A886FF7C1912D2701B" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="89">
+    <div class="card-title">LPN/RN: Full Time Evening Shift Monday - Friday</div>
+    <div class="card-company">Southern Health Partners</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466870089?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=98120BBD6ACCDF609CFC40FB043285F6329E0FAB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="90">
+    <div class="card-title">LPN/RN: Full Time Evening Shift Monday - Friday</div>
+    <div class="card-company">Southern Health Partners</div>
+    <div class="card-location">Moncure, Chatham County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466870067?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B0697A76271D86DCEA73C43F12518112986AFC2A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="91">
+    <div class="card-title">LPN/RN: Full Time Evening Shift Monday - Friday</div>
+    <div class="card-company">Southern Health Partners</div>
+    <div class="card-location">Bynum, Chatham County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466870065?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="92">
+    <div class="card-title">Travel Radiologic Technologist - $2,117 per week</div>
+    <div class="card-company">LeaderStat</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466860868?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=EE5FD26074894DFC36EAC063EF8885A70122B434" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="93">
+    <div class="card-title">[3 Days Left] Delivery Driver</div>
+    <div class="card-company">DoorDash</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466850556?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8A788A47BC288FFB38F4EE38EB2F2E003234DB8E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="94">
+    <div class="card-title">Federal Police Officer (Uniformed Division) $50,000 Recruitment Incentive</div>
+    <div class="card-company">The United States Secret Service</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Legal Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466811569?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=787BEA1E52B52145A3DD68EDD0CA6A4928A42EF6" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="95">
+    <div class="card-title">Center Manager in Training - Relocation Required</div>
+    <div class="card-company">Biolife Plasma Services Careers</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">HR &amp; Recruitment Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466802309?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5197230D27E09623A3A618124000BBF67D577A96" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="96">
+    <div class="card-title">Leadership Management Program</div>
+    <div class="card-company">Biolife Plasma Services Careers</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">HR &amp; Recruitment Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466800090?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=BDC463DC35D0A0AB753B8611935C64E19BD43304" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="97">
+    <div class="card-title">Electrical Designer</div>
+    <div class="card-company">Jobot</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466798848?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=7E185692E847C9BEF7D74CDD925519401054F7D4" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="98">
+    <div class="card-title">Leadership Advancement Program</div>
+    <div class="card-company">Biolife Plasma Services Careers</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">HR &amp; Recruitment Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466798327?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A9A24BAFCE597236306F7448FE0E5D3AC3CE468C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="99">
+    <div class="card-title">Center Manager in Training - Relocation Required</div>
+    <div class="card-company">Biolife Plasma Services Careers</div>
+    <div class="card-location">Mccullers, Wake County</div>
+    <div class="card-category">HR &amp; Recruitment Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466798308?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=4DC14B247632138B2A92EB6CD83673D7FA8F28BB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="100">
+    <div class="card-title">Leadership Advancement Program</div>
+    <div class="card-company">Biolife Plasma Services Careers</div>
+    <div class="card-location">Mccullers, Wake County</div>
+    <div class="card-category">HR &amp; Recruitment Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466798323?se=ZjWnpK6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=26BF0F24328F0D69FEF48A4B90511E1BF001D338" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="101">
+    <div class="card-title">Class A Team Contract Driver (1099), OTR, Refrigerated</div>
+    <div class="card-company">GREEN STATE TRANSPORTATION LLC</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466768620?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="102">
+    <div class="card-title">Class A Team Contract Driver (1099), Regional, Refrigerated</div>
+    <div class="card-company">GREEN STATE TRANSPORTATION LLC</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466768317?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="103">
+    <div class="card-title">Local Class A Company Driver (Flatbed)</div>
+    <div class="card-company">TRIAD CORRUGATED METAL INC</div>
+    <div class="card-location">New Hill, Wake County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762763?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="104">
+    <div class="card-title">Local Class A Company Driver (Flatbed)</div>
+    <div class="card-company">TRIAD CORRUGATED METAL INC</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762727?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="105">
+    <div class="card-title">Local Class A Company Driver (Flatbed)</div>
+    <div class="card-company">TRIAD CORRUGATED METAL INC</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762470?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="106">
+    <div class="card-title">Local Class A Company Driver (Flatbed)</div>
+    <div class="card-company">TRIAD CORRUGATED METAL INC</div>
+    <div class="card-location">Bynum, Chatham County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762438?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="107">
+    <div class="card-title">CDL A Owner Operator OTR Power Only/Dry Van/Reefer</div>
+    <div class="card-company">MUGO LOGISTICS LLC</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466762414?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="108">
+    <div class="card-title">CDL A Contract Driver (1099), OTR, Refrigerated</div>
+    <div class="card-company">YULIVAN CARRIERS INC</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466760887?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="109">
+    <div class="card-title">Class A Contract Driver (1099), OTR, Dry Van</div>
+    <div class="card-company">GJ GROUP INC</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466756324?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="110">
+    <div class="card-title">Class A Company Driver, Refrigerated</div>
+    <div class="card-company">AFC Transport, Inc</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466755935?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="111">
+    <div class="card-title">Class A Company Driver, Refrigerated</div>
+    <div class="card-company">AFC Transport, Inc</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466755791?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="112">
+    <div class="card-title">Class A Team Contract Driver (1099), OTR, Flatbed trailer</div>
+    <div class="card-company">BSL EXPRESS TRUCKING INC</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466749605?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="113">
+    <div class="card-title">RN, Registered Nurse - Labor &amp; Delivery</div>
+    <div class="card-company">CHRISTUS Health</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466745669?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="114">
+    <div class="card-title">CDL A, Solo, OTR, Power Only</div>
+    <div class="card-company">MOSER FAMILY LOGISTIC SERVICES INC</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466744461?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="115">
+    <div class="card-title">Class A Contract Driver (1099), OTR, Refrigerated</div>
+    <div class="card-company">SUCCESS LOGISTICS INC</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466743497?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="116">
+    <div class="card-title">1099 OTR TRUCK DRIVER</div>
+    <div class="card-company">UNITY FREIGHT LLC</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466742063?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="117">
+    <div class="card-title">Class A Contract Driver (1099), Regional, Dry Van</div>
+    <div class="card-company">TOOR TRANSPORT LLC</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Energy, Oil &amp; Gas Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466740654?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="118">
+    <div class="card-title">Neurology Physician</div>
+    <div class="card-company">UNC Health</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466701949?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="119">
+    <div class="card-title">Dental Patient Coordinator</div>
+    <div class="card-company">Riccobene Associates Family Dentistry</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Admin Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466692870?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="120">
+    <div class="card-title">Registered Nurse (RN) Surgery &amp; Trauma, Cary Hospital</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466670595?se=ts4eqK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5A5AF9301D337F62049CE6EC4A2C2A4E65ADCE76" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="121">
+    <div class="card-title">Registered Nurse (RN) Telemetry Observation Unit</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466670123?se=ts4eqK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F743180E877315AF6CD5AE2E532A4EB12FA863DF" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="122">
+    <div class="card-title">Ambulatory Care Nurse I</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466670037?se=ts4eqK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=4927B47D2809051F542F6AB4DE6E813CDED4CF86" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="123">
+    <div class="card-title">Registered Nurse (RN) - Special Care Nursery</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466668483?se=ts4eqK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=2F3173AF060EE6E9EA1225570FD26E7CB8DABAE0" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="124">
+    <div class="card-title">RN Clinical Nurse II -PreOp/Post Anesthesia Care Unit</div>
+    <div class="card-company">UNC Health</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466666080?se=ts4eqK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F347C35E5E4A2DB65EE382437B4CBDD7F4E887A0" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="125">
+    <div class="card-title">Financial Advisor</div>
+    <div class="card-company">Edward Jones</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466661619?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="126">
+    <div class="card-title">Travel Nurse RN - SICU - Surgical Intensive Care - $2,736 per week</div>
+    <div class="card-company">LanceSoft</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466654948?se=ts4eqK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D1904926C2199A26A3761F60E9F7E28313FD9545" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="127">
+    <div class="card-title">Field Service Supervisor</div>
+    <div class="card-company">Clean Harbors</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Energy, Oil &amp; Gas Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466606763?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="128">
+    <div class="card-title">Experienced PCA&#x27;s</div>
+    <div class="card-company">Assisting Hands of Cary</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466601078?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="129">
+    <div class="card-title">Regional New Business Developer</div>
+    <div class="card-company">FreshPoint</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466599781?se=ts4eqK6z8BGfYovd5vV4wQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=09B79C5EBE82E185FB7809A7DA1610C6AF6B5CF8" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="130">
+    <div class="card-title">Cafe Line/Preston</div>
+    <div class="card-company">La Farm Bakery</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466594823?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="131">
+    <div class="card-title">Restaurant Kitchen Manager</div>
+    <div class="card-company">SomeCorral, LLC dba Golden Corral</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466573205?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="132">
+    <div class="card-title">Restaurant Team Member</div>
+    <div class="card-company">SomeCorral, LLC dba Golden Corral</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466565712?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="133">
+    <div class="card-title">Customer Support Representative</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500584?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="134">
+    <div class="card-title">Customer Support Representative ($20 PH starting)</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500582?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="135">
+    <div class="card-title">Customer Support Representative</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500580?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="136">
+    <div class="card-title">Customer Support Representative ($20 PH starting)</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500573?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="137">
+    <div class="card-title">Customer Service Representative - Chat Tech Support (On-site)</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500577?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="138">
+    <div class="card-title">Call Center Representative ($20 PH starting)</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500456?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="139">
+    <div class="card-title">Customer Service Representative ($20 PH starting)</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500462?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="140">
+    <div class="card-title">Customer Support Representative ($20 PH starting)</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500558?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="141">
+    <div class="card-title">Call Center Representative</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500458?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="142">
+    <div class="card-title">Customer Service Representative Reliability (On-Site)</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500552?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="143">
+    <div class="card-title">Customer Service Representative ($20 PH starting)</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500460?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="144">
+    <div class="card-title">Call Center Representative</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500482?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="145">
+    <div class="card-title">Customer Support Representative</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500353?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="146">
+    <div class="card-title">Customer Service Representative ($20 PH starting)</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500388?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="147">
+    <div class="card-title">Customer Service Representative Reliability (On-site, December Start)</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500411?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="148">
+    <div class="card-title">Customer Service Representative-Video Repair (Onsite)</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500447?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="149">
+    <div class="card-title">Call Center Representative ($20 PH starting)</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500449?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="150">
+    <div class="card-title">Call Center Representative ($20 PH starting)</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500427?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="151">
+    <div class="card-title">Call Center Representative</div>
+    <div class="card-company">SPECTRUM</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466500404?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="152">
+    <div class="card-title">Tax Senior</div>
+    <div class="card-company">CyberCoders</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Accounting &amp; Finance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466490729?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="153">
+    <div class="card-title">Family Law Attorney</div>
+    <div class="card-company">CyberCoders</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Legal Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466490574?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="154">
+    <div class="card-title">CDL Driver - Regional - Class A for Amazon Freight Partner - Solo 2 (Home every 2 days, up to $46,800-$55,500/ year)</div>
+    <div class="card-company">Amazon Freight Partner</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466457894?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="155">
+    <div class="card-title">Home Weekly &amp; Biggest Pay Raise in 90 Years Regional / OTR CDL Drivers</div>
+    <div class="card-company">Epes Transport, Inc.</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466457457?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="156">
+    <div class="card-title">Travel Radiologic Technologist - $2,221 per week</div>
+    <div class="card-company">Nurse First</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466448586?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=4104205A5DF3F6E22CF65AE08893F8AE6FD01E83" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="157">
+    <div class="card-title">Travel Nurse RN - ICU - Intensive Care Unit - $1,921 per week</div>
+    <div class="card-company">LRS Healthcare - Travel Nursing</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466430689?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8761790DFAA0FFC80879373A91B932C6A12ECEEE" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="158">
+    <div class="card-title">Registered Nurse Program Manager-Cardiothoracic Surgery</div>
+    <div class="card-company">Christus Health</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466424912?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="159">
+    <div class="card-title">Travel Radiation Therapist - $2,590 per week</div>
+    <div class="card-company">Nurse First</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466424194?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9330180B061C6971A66EEE3558EE33797B01D570" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="160">
+    <div class="card-title">Travel Radiation Therapist - Paying up to $2,516/week</div>
+    <div class="card-company">Vivian Health</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466421294?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="161">
+    <div class="card-title">Door Installer I</div>
+    <div class="card-company">Sydnic LLC</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466406359?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="162">
+    <div class="card-title">Soccer Coach (Private) in Cary | TeachMe.To</div>
+    <div class="card-company">TeachMe.To</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466406148?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="163">
+    <div class="card-title">Heavy Equipment Operators</div>
+    <div class="card-company">S.T. Wooten Corporation</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466405433?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="164">
+    <div class="card-title">Cleanroom Technician</div>
+    <div class="card-company">Technical Source</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Manufacturing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466405220?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="165">
+    <div class="card-title">Medical Assistant</div>
+    <div class="card-company">FastMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466404325?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="166">
+    <div class="card-title">Biometrics (Fingerprinting) Technician - ON CALL</div>
+    <div class="card-company">HeiTech Services</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Customer Services Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466403307?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="167">
+    <div class="card-title">Automotive Aftermarket Technician</div>
+    <div class="card-company">Smart Start</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Social work Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466402837?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="168">
+    <div class="card-title">State Regulatory Specialist</div>
+    <div class="card-company">SuCitta Stealth</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466402759?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="169">
+    <div class="card-title">Utility Pipe Layer - Pipefitter</div>
+    <div class="card-company">T2 Contracting, Inc.</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466401359?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="170">
+    <div class="card-title">Optical Associate</div>
+    <div class="card-company">RS Eye Care</div>
+    <div class="card-location">Holly Springs, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466400505?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="171">
+    <div class="card-title">Crew Member</div>
+    <div class="card-company">Smithfield&#x27;s Chicken &#x27;N Bar-B-Q</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466398998?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="172">
+    <div class="card-title">Firmware &amp; BIOS Engineering Manager</div>
+    <div class="card-company">OnLogic</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466396392?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="173">
+    <div class="card-title">Sr. Salesforce Administrator</div>
+    <div class="card-company">Genesee Scientific Corporation</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466395314?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="174">
+    <div class="card-title">Med Tech</div>
+    <div class="card-company">Eagle Healthcare Services</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466394920?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="175">
+    <div class="card-title">COOK (FULL TIME AND PART TIME)</div>
+    <div class="card-company">Morrison Healthcare</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Part time Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466394756?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="176">
+    <div class="card-title">PRODUCT SPECIALIST</div>
+    <div class="card-company">Hiester Automotive</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466393005?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="177">
+    <div class="card-title">Miembro del Equipo de Limpieza</div>
+    <div class="card-company">The Maids</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466392360?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="178">
+    <div class="card-title">Private Investigator - Company Vehicle</div>
+    <div class="card-company">PhotoFax</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Travel Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466390311?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="179">
+    <div class="card-title">Account Manager</div>
+    <div class="card-company">KERRIDGE COMMERCIAL SYSTEMS CORP</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466389074?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="180">
+    <div class="card-title">Join Our Team as a CNA Where Your Happiness Matters!</div>
+    <div class="card-company">Assisting Hands of Cary</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466387776?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="181">
+    <div class="card-title">Regional Truck Driver Class A</div>
+    <div class="card-company">10-4 Logistics USA</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466386009?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="182">
+    <div class="card-title">Military Funeral Honors State Coordinator</div>
+    <div class="card-company">Patriot Enterprises LLC</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466384431?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="183">
+    <div class="card-title">Registered Nurse First Assist - (RNFA)</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466379853?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=8AEE21262F47D7B82538EA73CD711D8E685D66BE" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="184">
+    <div class="card-title">RN New Graduate Nurse-Cardiology and Oncology Stepdown Unit</div>
+    <div class="card-company">UNC Health</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Graduate Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466374768?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=DDC5DF02D4B894834F7677C3BA450EAD457BE5E9" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="185">
+    <div class="card-title">Certified Nurse Midwife</div>
+    <div class="card-company">Unified Women&#x27;s Healthcare</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466363951?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=0466C1DF460E345EB63896435D2E7D186D0AB6AB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="186">
+    <div class="card-title">Nurse Aide I &amp; Clinical Secretary, Step-Down/Intermediate Care, Cary Hospital</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466363318?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A9C682E9D0FC3CECC4FE7E0041EDD4166D5C995A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="187">
+    <div class="card-title">Surgical Tech I - Operating Room</div>
+    <div class="card-company">UNC Health</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466362846?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=5BC18B97DC37C00DCCD6DE016DE873E390ED578E" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="188">
+    <div class="card-title">RN Clinical Nurse IV- Surgical Trauma Critical Care Unit</div>
+    <div class="card-company">UNC Health</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466362787?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=2DE6228AD50C12C7B24EDE9B29782187CAC80E85" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="189">
+    <div class="card-title">Infusion Nurse II - Per Diem - Raleigh</div>
+    <div class="card-company">Option Care Health</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466361795?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=85A3637034E5A1A8E252B4E3CED26F7D9291B759" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="190">
+    <div class="card-title">Certified Nursing Assistant (CNA) FT nights</div>
+    <div class="card-company">Signature HealthCARE</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466345545?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A9C471E9F812441D315C98997FAE2643DDC4C09A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="191">
+    <div class="card-title">Registered Nurse (RN) PT nights</div>
+    <div class="card-company">Signature HealthCARE</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466344938?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=008E5F8C1C2EE0B7474E27C9FA1B377C8FC707AD" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="192">
+    <div class="card-title">Ambulatory Care Nurse IV</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466344763?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=9C648B6663A13E5F2049A3BEDEBDC2E3E479D38C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="193">
+    <div class="card-title">Neonatal Nurse Practitioner (NNP) - Peds Neonatology</div>
+    <div class="card-company">UNC Health</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466343854?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F1FC6D43F34D6AF3ED235D7413606455194F5FFB" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="194">
+    <div class="card-title">Registered Nurse (RN) - The Laurels of Chatham</div>
+    <div class="card-company">Ciena Healthcare</div>
+    <div class="card-location">Bynum, Chatham County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466343586?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=55581D3109920572C7749D34BB29D1AB640FBF5D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="195">
+    <div class="card-title">Clinical Nurse-WMTS</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466343551?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=58EF8756A9975BE074639676646C8D52F6E21869" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="196">
+    <div class="card-title">Clinical Nurse, Resident - Spring 2026 - Intensive Care Unit (Cary)</div>
+    <div class="card-company">WakeMed</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466343312?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=671C9A92E79C3B682FD05224411A99C1FE677185" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="197">
+    <div class="card-title">Licensed Practical Nurse (LPN) FT DAYS</div>
+    <div class="card-company">Signature HealthCARE</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466342788?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=A534A77CEFF523C320BD62E4199B99C7D0D586EE" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="198">
+    <div class="card-title">Certified Nursing Assistant (CNA) FT days</div>
+    <div class="card-company">Signature HealthCARE</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466341560?se=Fux6q66z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=7A6A6311C551E797AF72A97E6E7832CD486C93E4" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="199">
+    <div class="card-title">Associate Lab Support Technician</div>
+    <div class="card-company">Actalent</div>
+    <div class="card-location">Holly Springs, Wake County</div>
+    <div class="card-category">Scientific &amp; QA Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466298169?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="200">
+    <div class="card-title">Regional Support Dietitian</div>
+    <div class="card-company">CCL Hospitality Group</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466295657?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="201">
+    <div class="card-title">Pharmacy Technician</div>
+    <div class="card-company">Actalent</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466294768?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="202">
+    <div class="card-title">Manufacturing Engineer - CAD to CAM Programming</div>
+    <div class="card-company">SCHUNK Intec Inc</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466293914?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=C1D57C6B10EBF4018CC2913EEE19233642BEFB34" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="203">
+    <div class="card-title">Business Development Representative</div>
+    <div class="card-company">Klipboard</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466293884?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="204">
+    <div class="card-title">Per Diem Family Medicine Physician (Casual Employee)</div>
+    <div class="card-company">One Medical</div>
+    <div class="card-location">Mccullers, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466275662?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=4E28DB0A8878B59F1F189587EF2B723A36A1D252" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="205">
+    <div class="card-title">Assistant Store Manager - LOFT Crabtree Valley Mall</div>
+    <div class="card-company">LOFT</div>
+    <div class="card-location">Mccullers, Wake County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466270322?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D477D979AAC9BE56C8430342593622092A1E37E4" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="206">
+    <div class="card-title">Asst Sales Mgr- Outlet</div>
+    <div class="card-company">Talbots Outlet</div>
+    <div class="card-location">Mccullers, Wake County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466270239?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=FF460A0052C435AB1CC964DFED46F94E901E5A5C" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="207">
+    <div class="card-title">Sales Lead</div>
+    <div class="card-company">LOFT</div>
+    <div class="card-location">Mccullers, Wake County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466270093?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=4E799BC9724C5390CD08A189272E77BBE47200CE" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="208">
+    <div class="card-title">Store Manager, Triangle Town Center</div>
+    <div class="card-company">LOFT</div>
+    <div class="card-location">Mccullers, Wake County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466269839?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=58B962B86A91AFA022DEFAA3D828FB4DCBA75D00" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="209">
+    <div class="card-title">Sales Associate, Crabtree Valley Mall</div>
+    <div class="card-company">LOFT</div>
+    <div class="card-location">Mccullers, Wake County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466269892?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=80787ECB50F1ABBD09EBEF412FDE7CC44FAD21D5" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="210">
+    <div class="card-title">Part time Associate</div>
+    <div class="card-company">Lane Bryant</div>
+    <div class="card-location">Mccullers, Wake County</div>
+    <div class="card-category">Part time Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466269451?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F0D75BA46B27F6B3030A6343D0872D481872E6E2" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="211">
+    <div class="card-title">Allied Technician - Surgical Tech</div>
+    <div class="card-company">University of North Carolina Health Care System</div>
+    <div class="card-location">Holly Springs, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466255855?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="212">
+    <div class="card-title">Software Engineer - Level 5</div>
+    <div class="card-company">Northrop Grumman</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466234576?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="213">
+    <div class="card-title">Assistant Manager</div>
+    <div class="card-company">Taco Bell</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466233616?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="214">
+    <div class="card-title">LPN Evenings | Consistent Hours, No Weekend Grind</div>
+    <div class="card-company">Southern Health Partners</div>
+    <div class="card-location">Holly Springs, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466232413?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=797D0665E0050E31A7CD59677F4FDB8A649D306A" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="215">
+    <div class="card-title">LPN Evenings | Consistent Hours, No Weekend Grind</div>
+    <div class="card-company">Southern Health Partners</div>
+    <div class="card-location">Bynum, Chatham County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466232349?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B19F2CDF5760FCC7C7CA531AB64FF03902DF8052" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="216">
+    <div class="card-title">LPN Evenings | Consistent Hours, No Weekend Grind</div>
+    <div class="card-company">Southern Health Partners</div>
+    <div class="card-location">Pittsboro, Chatham County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466232333?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=05DAD0B9BD8E761B2EF271DE008B1282A0C0C5A6" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="217">
+    <div class="card-title">LPN Evenings | Consistent Hours, No Weekend Grind</div>
+    <div class="card-company">Southern Health Partners</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466232278?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F169B9B4396CC48A44A74ED976447154670C3BEC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="218">
+    <div class="card-title">LPN Evenings | Consistent Hours, No Weekend Grind</div>
+    <div class="card-company">Southern Health Partners</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466232274?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=471D79993160DA3F322CE38B92F4CCCD556C98F8" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="219">
+    <div class="card-title">LPN Evenings | Consistent Hours, No Weekend Grind</div>
+    <div class="card-company">Southern Health Partners</div>
+    <div class="card-location">Moncure, Chatham County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466232304?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=B9A1DF7575224912DB0E340A2F927637DE5370D6" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="220">
+    <div class="card-title">LPN Evenings | Consistent Hours, No Weekend Grind</div>
+    <div class="card-company">Southern Health Partners</div>
+    <div class="card-location">New Hill, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466232239?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=FF1320BEDDA8E0316D81C07F00952A6727D32BED" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="221">
+    <div class="card-title">Sales Counselor</div>
+    <div class="card-company">Everstory Partners</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466226854?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="222">
+    <div class="card-title">Sales Rep - FT/PT Work From Home!</div>
+    <div class="card-company">Reed Agency</div>
+    <div class="card-location">Crabtree Valley, Wake County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466222419?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="223">
+    <div class="card-title">Programmeur sénior, moteur - Fortnite Build Health</div>
+    <div class="card-company">Epic Games</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466222193?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="224">
+    <div class="card-title">Crew Member</div>
+    <div class="card-company">Smithfield&#x27;s Chicken &#x27;N Bar-B-Q</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466220813?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=513D5CFA6DD394076F4A70A12FFFA1FCD52C5A53" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="225">
+    <div class="card-title">Tennis Shop Staff</div>
+    <div class="card-company">Chapel Hill Country Club</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Maintenance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466219355?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="226">
+    <div class="card-title">Civil or Architectural Engineer (Capital Reserve Projects)</div>
+    <div class="card-company">Giles Flythe Engineers</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466218634?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="227">
+    <div class="card-title">Laborer</div>
+    <div class="card-company">Everstory Partners</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466207693?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="228">
+    <div class="card-title">Funeral Attendant</div>
+    <div class="card-company">Everstory Partners</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466204817?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="229">
+    <div class="card-title">Service Supervisor</div>
+    <div class="card-company">DEX Imaging</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466204798?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="230">
+    <div class="card-title">Experienced Emergency Veterinary Technician(RVT) or Veterinary Medical Assistant</div>
+    <div class="card-company">Triangle Veterinary Referral Hospital of Holly Springs</div>
+    <div class="card-location">Holly Springs, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466204079?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="231">
+    <div class="card-title">Sous Chef</div>
+    <div class="card-company">Chapel Hill Country Club</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466203679?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="232">
+    <div class="card-title">Senior Engine Programmer - Fortnite Build Health</div>
+    <div class="card-company">Epic Games</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466195227?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="233">
+    <div class="card-title">Senior Engine Programmer - Fortnite Build Health</div>
+    <div class="card-company">Epic Games</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466195214?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="234">
+    <div class="card-title">Maintenance Technician - Marquis at Silverton</div>
+    <div class="card-company">CWS Apartment Homes</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Maintenance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466193386?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=79A48D261DD050E316E73BAFE8399F81D09375F8" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="235">
+    <div class="card-title">Data Scientist</div>
+    <div class="card-company">Epic Games</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466188745?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="236">
+    <div class="card-title">Sales Rep - FT/PT Work from Home!</div>
+    <div class="card-company">The Weiner Group</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466188610?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="237">
+    <div class="card-title">General Manager II- Store 3039</div>
+    <div class="card-company">Advance Stores Company</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466187005?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="238">
+    <div class="card-title">Allied - CVOR - Tech</div>
+    <div class="card-company">UNC Rex</div>
+    <div class="card-location">Crabtree Valley, Wake County</div>
+    <div class="card-category">HR &amp; Recruitment Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466186997?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="239">
+    <div class="card-title">Project Controls Specialist/Scheduler</div>
+    <div class="card-company">ATCS</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466171946?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="240">
+    <div class="card-title">Full Time - Receiver/Stocker - Overnight</div>
+    <div class="card-company">Lowe&#x27;s Home Centers</div>
+    <div class="card-location">Holly Springs, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466170029?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="241">
+    <div class="card-title">Housekeeping Attendant | Full Time | Hampton Inn &amp; Suites | Holly Springs, NC</div>
+    <div class="card-company">OCI Hospitality</div>
+    <div class="card-location">Holly Springs, Wake County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466164118?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="242">
+    <div class="card-title">Director, Corporate Quality</div>
+    <div class="card-company">Clever Devices Ltd.</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466136020?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="243">
+    <div class="card-title">Stormwater Engineer</div>
+    <div class="card-company">Giles Flythe Engineers</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466069274?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="244">
+    <div class="card-title">Audiology Clinical Assistant/ Audiology Tech/Audiology Assistant</div>
+    <div class="card-company">Raleigh Capitol Ear, Nose, and Throat</div>
+    <div class="card-location">Crabtree Valley, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466045742?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="245">
+    <div class="card-title">Director of Human Resources</div>
+    <div class="card-company">SPCA of Wake County</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">HR &amp; Recruitment Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466045651?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="246">
+    <div class="card-title">Night Crew - Racquets</div>
+    <div class="card-company">Chapel Hill Country Club</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Maintenance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466042924?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="247">
+    <div class="card-title">Travel Ultrasound Technologist - $2,575 per week (Urgent)</div>
+    <div class="card-company">Coast Medical Service</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5466041226?se=bBjrrq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=F68EF221DCA10219768E20F169E3CBD5BFDA7757" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="248">
+    <div class="card-title">PT Personal Care Assistant (PCA)</div>
+    <div class="card-company">Broadway Home Care</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466037610?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="249">
+    <div class="card-title">Producteur Sénior</div>
+    <div class="card-company">Epic Games</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466035823?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="250">
+    <div class="card-title">Civil, Site or Land Development Project Manager</div>
+    <div class="card-company">Giles Flythe Engineers</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466031637?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="251">
+    <div class="card-title">Experienced Collision Center Technician</div>
+    <div class="card-company">Hendrick</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">PR, Advertising &amp; Marketing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466024554?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="252">
+    <div class="card-title">Care Manager I-Non-Waiver (Full-time Hybrid, Morrisville, North Carolina Based)</div>
+    <div class="card-company">Alliance</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466024395?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="253">
+    <div class="card-title">Surgical Tech - 20302134</div>
+    <div class="card-company">UNC REX Healthcare</div>
+    <div class="card-location">Crabtree Valley, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466021190?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="254">
+    <div class="card-title">Dental Receptionist</div>
+    <div class="card-company">Dr Lane &amp; Associates</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Admin Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466018204?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="255">
+    <div class="card-title">CVOR Technologist - CVOR</div>
+    <div class="card-company">UNC Rex</div>
+    <div class="card-location">Crabtree Valley, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466016303?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="256">
+    <div class="card-title">Advanced Practice Provider - Cary, NC - Per Diem</div>
+    <div class="card-company">PM Pediatrics</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466015813?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="257">
+    <div class="card-title">Customer Service Rep(08849) - 708 Slash Pine Dr</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466004198?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="258">
+    <div class="card-title">Delivery Driver(08849) - 708 Slash Pine Dr</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466003146?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="259">
+    <div class="card-title">Delivery Driver(08903) - 1183 W Chatham St</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466003011?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="260">
+    <div class="card-title">Assistant Manager(08816) - 987-I East St.</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Pittsboro, Chatham County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466002750?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="261">
+    <div class="card-title">General Manager(08940) - 1368 N Main St.</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466001942?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="262">
+    <div class="card-title">Customer Service Rep(08903) - 1183 W Chatham St</div>
+    <div class="card-company">Domino&#x27;s Franchise</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5466001447?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="263">
+    <div class="card-title">Cleaner (Morrisville, PM Shift)</div>
+    <div class="card-company">Nfm &amp; J Lp</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Domestic help &amp; Cleaning Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465996990?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="264">
+    <div class="card-title">Forklift Outbound</div>
+    <div class="card-company">Freshpoint</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465996345?se=vBuPsq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=573E0F4612B4DAE20DCB3A6261A2B06E771A16C3" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="265">
+    <div class="card-title">Regional New Business Developer</div>
+    <div class="card-company">Freshpoint</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465996249?se=vBuPsq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=2D5AA44FD26C86B4FE3E538B41068F3C0DFFA049" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="266">
+    <div class="card-title">Per Diem NP or PA Senior Community Care</div>
+    <div class="card-company">Optum</div>
+    <div class="card-location">Pittsboro, Chatham County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465995345?se=vBuPsq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=00C9BCDE6539D78A83F7A4348C80CFBC8E970447" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="267">
+    <div class="card-title">Full Time - Sales Associate - Hardware - Closing</div>
+    <div class="card-company">Lowe&#x27;s Home Centers</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465994314?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="268">
+    <div class="card-title">Maintenance Director - Full-Time</div>
+    <div class="card-company">Chapel Hill Country Club</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Maintenance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465993160?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="269">
+    <div class="card-title">Registered Behavior Technician (RBT)</div>
+    <div class="card-company">Blue Jay ABA</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465992225?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="270">
+    <div class="card-title">CoOp Engineer</div>
+    <div class="card-company">Zurn Elkay Water Solutions</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465991101?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="271">
+    <div class="card-title">Remote Sales Associate — Entry-Level | Flexible Hours | Part-Time or Full-Time</div>
+    <div class="card-company">The Zelaya Agency</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Part time Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465990516?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="272">
+    <div class="card-title">Travel Radiation Therapist - $2,502 per week</div>
+    <div class="card-company">LeaderStat</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465990250?se=vBuPsq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=D8302E3672ECD37F5960E388E479EA3E198C590B" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="273">
+    <div class="card-title">Travel Radiologic Technologist - $2,117 per week</div>
+    <div class="card-company">LeaderStat</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465987453?se=vBuPsq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=35BE5A051C84AB534DF26CEF874AC8BEBE0D2910" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="274">
+    <div class="card-title">Principal Game Designer, Engagement</div>
+    <div class="card-company">Epic Games</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465987118?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="275">
+    <div class="card-title">Office Assistant - On site</div>
+    <div class="card-company">Definiti</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Admin Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465983568?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="276">
+    <div class="card-title">Team Member</div>
+    <div class="card-company">Wegmans Food Markets</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Manufacturing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465980434?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="277">
+    <div class="card-title">MEDICATION TECHNICIAN (CNA) - TEMPLETON OF CARY</div>
+    <div class="card-company">Liberty Health</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465978886?se=vBuPsq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E2390B912C36CC2C4188F6DED91B02298E8A2673" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="278">
+    <div class="card-title">Allied Technician - Radiology Tech</div>
+    <div class="card-company">University of North Carolina Health Care System</div>
+    <div class="card-location">Holly Springs, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465977363?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="279">
+    <div class="card-title">Auto Glass Installation Technician Trainee</div>
+    <div class="card-company">Safelite</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465976916?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="280">
+    <div class="card-title">Building Enclosure Project Manager (Engineer)</div>
+    <div class="card-company">Giles Flythe Engineers</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465976862?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="281">
+    <div class="card-title">Clinical Care Nurse (PITTSBORO)</div>
+    <div class="card-company">The Laurels of Chatham</div>
+    <div class="card-location">Bynum, Chatham County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465973285?se=vBuPsq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=4DA5A027662022AB52A2B934FB37A62E21DB1326" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="282">
+    <div class="card-title">Patient Care Specialist (PITTSBORO)</div>
+    <div class="card-company">The Laurels of Chatham</div>
+    <div class="card-location">Bynum, Chatham County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465973160?se=vBuPsq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=ABFD1710274A0417EF0247E6DD4797F4CF3740E6" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="283">
+    <div class="card-title">Registered Nurse (RN) - $15,000 Retention Bonus (PITTSBORO)</div>
+    <div class="card-company">The Laurels of Chatham</div>
+    <div class="card-location">Bynum, Chatham County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465972569?se=vBuPsq6z8BGEX54W_AEEcA&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=E78030DD5C9B2DBAFE6753C7C575674A29571A93" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="284">
+    <div class="card-title">Treatment Coordinator</div>
+    <div class="card-company">Dr Lane &amp; Associates</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465972063?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="285">
+    <div class="card-title">Sales Manager - FT/PT Work From Home!</div>
+    <div class="card-company">The Weiner Group</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465966354?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="286">
+    <div class="card-title">PT Server</div>
+    <div class="card-company">Galloway Ridge</div>
+    <div class="card-location">Bynum, Chatham County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465963202?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="287">
+    <div class="card-title">General Cleaner -Part time $14.00/hour (Cary, NC)</div>
+    <div class="card-company">St. Moritz Building Services</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Part time Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465962789?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="288">
+    <div class="card-title">Sales Associate</div>
+    <div class="card-company">Petco</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465961873?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="289">
+    <div class="card-title">Pediatric Urgent Care Medical Assistant - Morrisville, NC - Full Time</div>
+    <div class="card-company">PM Pediatrics</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465960308?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="290">
+    <div class="card-title">Senior Engine Programmer - Fortnite Build Health</div>
+    <div class="card-company">Epic Games</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465956065?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="291">
+    <div class="card-title">Assembler I</div>
+    <div class="card-company">Novanta</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Manufacturing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465955637?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="292">
+    <div class="card-title">Health Concierge</div>
+    <div class="card-company">Community Care Of North Carolina Inc</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465952270?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="293">
+    <div class="card-title">Sales Representative Remote High Commission</div>
+    <div class="card-company">Symmetry</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465952246?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="294">
+    <div class="card-title">Civil, Site or Land Development Engineer</div>
+    <div class="card-company">Giles Flythe Engineers</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465944081?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="295">
+    <div class="card-title">Truck Driver</div>
+    <div class="card-company">Charah Solutions, Inc.</div>
+    <div class="card-location">Moncure, Chatham County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465930243?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="296">
+    <div class="card-title">Heavy Equipment Operator</div>
+    <div class="card-company">Charah Solutions, Inc.</div>
+    <div class="card-location">Moncure, Chatham County</div>
+    <div class="card-category">Trade &amp; Construction Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465930229?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="297">
+    <div class="card-title">JMP 2026 Summer Intern; Machine Learning / LLM / C++</div>
+    <div class="card-company">SAS</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465928837?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="298">
+    <div class="card-title">JMP 2026 Summer Intern; Advanced Analytics Testing</div>
+    <div class="card-company">SAS</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">IT Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465928795?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="299">
+    <div class="card-title">Senior Electrical Engineer - Cell/Gene Therapy Design</div>
+    <div class="card-company">NV5</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Engineering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465928709?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="300">
+    <div class="card-title">Green Hope High School - 441</div>
+    <div class="card-company">Wake County Public Schools</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465921565?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="301">
+    <div class="card-title">Special Education Services - 815/915</div>
+    <div class="card-company">Wake County Public Schools</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465921528?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="302">
+    <div class="card-title">Special Education Services - 815/915</div>
+    <div class="card-company">Wake County Public Schools</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465921510?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="303">
+    <div class="card-title">Pleasant Grove Elementary School - 533</div>
+    <div class="card-company">Wake County Public Schools</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Teaching Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465921459?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="304">
+    <div class="card-title">Transportation - 880/980</div>
+    <div class="card-company">Wake County Public Schools</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Admin Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465921430?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="305">
+    <div class="card-title">Pick &amp; Prep Chef</div>
+    <div class="card-company">Alex Lee</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465911461?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="306">
+    <div class="card-title">RN - ICU - Intensive Care Unit in Chapel Hill, North Carolina - $1,709/week</div>
+    <div class="card-company">Vetted</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465903161?se=FK4Ptq6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=887FE80869DEEA58A7029F5325A053CE0461DABC" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="307">
+    <div class="card-title">Team Manager - Cary, NC</div>
+    <div class="card-company">Panera Bread</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465894961?se=FK4Ptq6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=80B46128701890DB4670E79C5A21126452FD3A41" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="308">
+    <div class="card-title">Pharmaceutical Field Sales Representative</div>
+    <div class="card-company">Inizio Engage</div>
+    <div class="card-location">West Raleigh, Raleigh</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465893919?se=FK4Ptq6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=63A1973F7BDE4FADB1649F4F7A19702BE4D3BB5D" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="309">
+    <div class="card-title">VP Manufacturing and Site Head</div>
+    <div class="card-company">CSL</div>
+    <div class="card-location">Holly Springs, Wake County</div>
+    <div class="card-category">Manufacturing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465886448?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="310">
+    <div class="card-title">Manufacturing Specialist Single Use Systems (SUS) Lead</div>
+    <div class="card-company">Amgen</div>
+    <div class="card-location">Holly Springs, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465886356?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="311">
+    <div class="card-title">CDL-A Company Truck Driver</div>
+    <div class="card-company">J&amp;R Schugel</div>
+    <div class="card-location">Holly Springs, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465868458?se=FK4Ptq6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=1F8837ACA5269E876AA2AFA1707CE38DC19D5E54" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="312">
+    <div class="card-title">CDL-A Company Truck Driver</div>
+    <div class="card-company">J&amp;R Schugel</div>
+    <div class="card-location">Apex, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465868378?se=FK4Ptq6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=6413B5CE4F1435147299C8A1726665C7AFAEB6B2" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="313">
+    <div class="card-title">CDL-A Company Truck Driver</div>
+    <div class="card-company">J&amp;R Schugel</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Logistics &amp; Warehouse Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465868309?se=FK4Ptq6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=95CC78C3421FDED3A35E2C5A9F3792400C82D7A4" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="314">
+    <div class="card-title">Closing Manager</div>
+    <div class="card-company">Smithfield&#x27;s Chicken &#x27;N Bar-B-Q</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Hospitality &amp; Catering Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465845596?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="315">
+    <div class="card-title">Direct Support Professional - Helmsdale Group Home</div>
+    <div class="card-company">BrightSpring Health Services</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Social work Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465843763?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="316">
+    <div class="card-title">Marketing Associate - State Farm Agent Team Member</div>
+    <div class="card-company">Sara Donaldson - State Farm Agent</div>
+    <div class="card-location">Pittsboro, Chatham County</div>
+    <div class="card-category">Sales Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465841368?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="317">
+    <div class="card-title">Clinical Pharmacist - Primary Care/Internal Medicine - Fuquay Varina</div>
+    <div class="card-company">Axil Health</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465841232?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="318">
+    <div class="card-title">California Closets Installation Technician</div>
+    <div class="card-company">California Closets - Raleigh, NC / Richmond, VA</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Maintenance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465832267?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="319">
+    <div class="card-title">2nd/3rd Shift Care Staff</div>
+    <div class="card-company">Calyx Living</div>
+    <div class="card-location">Fuquay Varina, Wake County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465829133?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="320">
+    <div class="card-title">Restoration Technician</div>
+    <div class="card-company">Voda Cleaning &amp; Restoration of West Raleigh &amp; Chapel Hill</div>
+    <div class="card-location">Morrisville, Wake County</div>
+    <div class="card-category">Maintenance Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465827530?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="321">
+    <div class="card-title">Executive Assistant for CEO: Mastermind of Systems, Strategy and Precision</div>
+    <div class="card-company">ProCraft Restoration Group, LLC</div>
+    <div class="card-location">Cary, Wake County</div>
+    <div class="card-category">Retail Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/details/5465781757?utm_medium=api&amp;utm_source=dd160bca" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+  <div class="title-card" data-row="322">
+    <div class="card-title">Registered Nurse Program Manager-Cardiothoracic Surgery</div>
+    <div class="card-company">Christus Health</div>
+    <div class="card-location">Carrboro, Orange County</div>
+    <div class="card-category">Healthcare &amp; Nursing Jobs</div>
+    <div class="card-actions"><a class="card-link" href="https://www.adzuna.com/land/ad/5465771630?se=FK4Ptq6z8BGBZeVmmEjTfQ&amp;utm_medium=api&amp;utm_source=dd160bca&amp;v=14582D543DDEBA4477AE2BE1C64CB5D64E0616F1" target="_blank" rel="noopener noreferrer">Job Posting</a></div>
+  </div>
+</div>
+<script>
+(function(){
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const qraw = (params.get('q') || '').trim();
+    if (!qraw) return;
+
+    const q = qraw.toLowerCase();
+    const terms = q.split(/\s+/).filter(Boolean);
+    const cards = document.querySelectorAll('.title-card');
+    let shown = 0;
+
+    cards.forEach(card => {
+      const hay = card.textContent.toLowerCase();
+      const match = terms.every(t => hay.includes(t));
+      card.style.display = match ? '' : 'none';
+      if (match) shown++;
+    });
+
+    // Small banner to show filter status and offer a "Clear" link
+    const grid = document.querySelector('.title-grid');
+    if (grid && grid.parentNode) {
+      const bar = document.createElement('div');
+      bar.setAttribute('role','status');
+      bar.style.cssText = 'margin:12px 0 16px;padding:10px 12px;border:1px solid #e6e8eb;border-radius:12px;background:#fff;line-height:1.45;';
+      // escape < > & in qraw
+      const safe = qraw.replace(/[&<>]/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[s]));
+      bar.innerHTML = 'Filtering by "<strong>' + safe + '</strong>" — <strong>' + shown + '</strong> match' + (shown===1?'':'es') + '. ' +
+                      '<a href="' + location.pathname + '">Clear</a>';
+      grid.parentNode.insertBefore(bar, grid);
+    }
+  } catch (e) {
+    if (window.console) console.warn('Filter error:', e);
+  }
+})();
+</script>
+
+  </main>
+  <footer>
+    &copy; 2024 North Carolina Careers Hub. Generated report.
+  </footer>
+</body>
+</html>
